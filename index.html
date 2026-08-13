@@ -31,7 +31,7 @@ body{
 }
 .app{display:flex;flex-direction:column;height:100dvh;padding-top:var(--safe-t);padding-bottom:var(--safe-b)}
 
-#top{flex:0 0 auto;display:flex;gap:7px;align-items:center;padding:8px 10px;overflow-x:auto;scrollbar-width:none}
+#top{flex:0 0 auto;display:flex;gap:7px;align-items:center;padding:7px 10px;overflow-x:auto;scrollbar-width:none}
 #top::-webkit-scrollbar{display:none}
 .chip{
   flex:0 0 auto;padding:7px 13px;border-radius:999px;border:1px solid var(--line);
@@ -40,9 +40,10 @@ body{
 .chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ground)}
 .chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 
-/* Der Rahmen zeigt exakt den Bildausschnitt, der aufgenommen wird. */
+/* Der Rahmen zeigt exakt den Ausschnitt, der aufgenommen wird. */
 #frame{flex:1 1 auto;position:relative;min-height:0;display:flex;align-items:center;justify-content:center;background:#000}
 #view{max-width:100%;max-height:100%;display:block;background:#000;cursor:pointer}
+#out{display:none}
 
 #badge{
   position:absolute;top:10px;left:50%;transform:translateX(-50%);
@@ -58,7 +59,7 @@ body{
   @keyframes blink{50%{opacity:.15}}
 }
 
-#deck{flex:0 0 auto;display:flex;flex-direction:column;gap:8px;padding:8px 12px 10px}
+#deck{flex:0 0 auto;display:flex;flex-direction:column;gap:8px;padding:7px 12px 10px}
 .meter{display:flex;flex-direction:column;gap:5px}
 .track{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
 .track>span{display:block;height:100%;width:0;background:var(--gold)}
@@ -89,8 +90,8 @@ body{
 #shoot:focus-visible{outline:2px solid var(--text);outline-offset:3px}
 
 .sheet{
-  position:fixed;inset:0;z-index:20;background:var(--ground);display:none;flex-direction:column;gap:14px;
-  padding:calc(var(--safe-t) + 22px) 20px calc(var(--safe-b) + 22px);overflow-y:auto;
+  position:fixed;inset:0;z-index:20;background:var(--ground);display:none;flex-direction:column;gap:13px;
+  padding:calc(var(--safe-t) + 20px) 20px calc(var(--safe-b) + 20px);overflow-y:auto;
 }
 .sheet.on{display:flex}
 .sheet h1{margin:0;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
@@ -109,13 +110,13 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 
 .qrow{display:flex;gap:7px;flex-wrap:wrap}
 .qrow button{
-  flex:1 1 auto;min-width:74px;height:40px;border-radius:11px;border:1px solid var(--line);
+  flex:1 1 auto;min-width:70px;height:40px;border-radius:11px;border:1px solid var(--line);
   background:var(--surface2);color:var(--muted);font-size:13px;font-weight:700;cursor:pointer;
 }
 .qrow button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ground)}
 .qrow button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-#qualNote{font-size:12px;line-height:1.5;color:var(--muted)}
-#qualNote.miss{color:var(--gold)}
+.note{font-size:12px;line-height:1.5;color:var(--muted)}
+.note.miss{color:var(--gold)}
 
 .btn{width:100%;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:15px;font-weight:700;cursor:pointer}
 .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--ground)}
@@ -124,12 +125,12 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 .pair{display:flex;gap:10px}
 .pair>*{flex:1}
 .grow{flex:1 1 auto;min-height:0}
-#note{font-size:12px;line-height:1.5;color:var(--muted);border-left:2px solid var(--gold-dim);padding-left:11px}
+#gateNote{font-size:12px;line-height:1.5;color:var(--muted);border-left:2px solid var(--gold-dim);padding-left:11px}
 #stand{font-size:11px;color:var(--muted);letter-spacing:.05em}
 #revVid{width:100%;flex:1 1 auto;min-height:0;border-radius:14px;background:#000;object-fit:contain}
 
 #toast{
-  position:fixed;left:50%;bottom:128px;transform:translateX(-50%) translateY(8px);
+  position:fixed;left:50%;bottom:126px;transform:translateX(-50%) translateY(8px);
   background:var(--surface2);border:1px solid var(--gold-dim);color:var(--text);
   padding:10px 16px;border-radius:999px;font-size:13px;font-weight:600;
   opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:30;max-width:86vw;text-align:center;
@@ -144,6 +145,7 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 
   <div id="frame">
     <canvas id="view" width="1080" height="1920"></canvas>
+    <canvas id="out" width="1080" height="1920"></canvas>
     <div id="badge"><b></b><span id="badgeT">0:00</span></div>
   </div>
 
@@ -162,8 +164,8 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 
 <div class="sheet on" id="gate">
   <h1>Reel-Prompter</h1>
-  <p><b>Frontkamera mit Text darüber.</b> Der Rahmen ist 9:16 — du siehst genau den Ausschnitt, der aufgenommen wird.</p>
-  <div id="note"><b>Der Text steht nur auf deinem Bildschirm.</b> Im fertigen Video ist er nicht drin — dort ist nur dein Bild und dein Ton. Die Aufnahme legst du danach über das Teilen-Blatt in deine Fotos.</div>
+  <p><b>Frontkamera mit Text darüber.</b> Der Rahmen zeigt genau den Ausschnitt, der aufgenommen wird — hochkant fürs Reel oder quer.</p>
+  <div id="gateNote"><b>Der Text steht nur auf deinem Bildschirm.</b> Im fertigen Video ist er nicht drin — dort ist nur dein Bild und dein Ton. Danach legst du die Aufnahme über das Teilen-Blatt in deine Fotos.</div>
   <div class="grow"></div>
   <button class="btn primary" id="goCam" type="button">Kamera und Mikrofon einschalten</button>
   <button class="btn" id="goPlain" type="button">Nur Text, ohne Kamera</button>
@@ -172,6 +174,21 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 
 <div class="sheet" id="settings">
   <h1>Einstellen</h1>
+
+  <div class="field">
+    <label>Format</label>
+    <div id="fmt" class="qrow"></div>
+  </div>
+
+  <div class="field">
+    <label>Bildausschnitt <b><span id="vZoom">1.00</span>×</b></label>
+    <input type="range" id="sZoom" min="0.7" max="2.5" step="0.05">
+  </div>
+  <div class="field">
+    <label>Bild verschieben <b><span id="vPan">0</span> %</b></label>
+    <input type="range" id="sPan" min="-30" max="30" step="1">
+  </div>
+
   <div class="field">
     <label>Tempo <b><span id="vWpm">175</span> W/Min</b></label>
     <input type="range" id="sWpm" min="90" max="280" step="5">
@@ -188,16 +205,19 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
     <label>Hintergrund abdunkeln <b><span id="vScrim">45</span> %</b></label>
     <input type="range" id="sScrim" min="0" max="90" step="5">
   </div>
+
   <div class="field">
     <label>Aufnahmequalität <b id="vQual">—</b></label>
     <div id="qual" class="qrow"></div>
-    <div id="qualNote">Wähle, was du willst — was dein iPhone im Browser tatsächlich hergibt, steht oben.</div>
+    <div id="qualNote" class="note">Wähle, was du willst — was dein iPhone im Browser hergibt, steht oben.</div>
   </div>
+
   <div class="pair">
     <button class="pill" id="tFlip" type="button" style="width:100%">Vorschau spiegeln</button>
     <button class="pill" id="tFacing" type="button" style="width:100%">Kamera wechseln</button>
   </div>
-  <p style="font-size:12px">Das Spiegeln gilt nur für deine Vorschau, damit du dich wie im Spiegel siehst. Die Aufnahme bleibt seitenrichtig — sonst stünde die Schrift auf deinem Shirt verkehrt herum.</p>
+  <p style="font-size:12px">Das Spiegeln gilt nur für deine Vorschau. Die Aufnahme bleibt seitenrichtig, sonst stünde die Schrift auf deinem Shirt verkehrt herum.</p>
+
   <div class="grow"></div>
   <button class="btn primary" id="closeSet" type="button">Fertig</button>
 </div>
@@ -220,34 +240,43 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 "use strict";
 var $=function(i){return document.getElementById(i)};
 
-var view=$("view"), ctx=view.getContext("2d"), src=$("src");
+var view=$("view"), vctx=view.getContext("2d");
+var out=$("out"),  octx=out.getContext("2d");
+var src=$("src");
 var top_=$("top"), bar=$("bar"), clock=$("clock"), est=$("est");
 var badge=$("badge"), badgeT=$("badgeT"), shoot=$("shoot");
-
-var W=1080, H=1920;
 
 var FALLBACK={updated:"offline",scripts:[{id:"leer",label:"Kein Text",target:0,
   paragraphs:["Noch kein Text geladen. Einmal mit dem Netz verbinden, dann liegt alles offline bereit."]}]};
 
-var S={data:FALLBACK,idx:0,wpm:175,fs:78,top:34,scrim:45,flip:true,facing:"user",qual:"auto",
-       running:false,recording:false,offset:0,span:0,words:0,last:0,elapsed:0,lines:[],lineH:0,got:null};
-
-function load(k,d){try{var v=localStorage.getItem("rp3_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
-function save(k,v){try{localStorage.setItem("rp3_"+k,JSON.stringify(v))}catch(e){}}
-["wpm","fs","top","scrim","flip","facing","qual"].forEach(function(k){S[k]=load(k,S[k])});
-
-/* Wunschauflösung. "auto" fragt das Höchste ab und nimmt, was das Gerät hergibt. */
-var QUAL=[
-  {id:"auto", label:"Beste", w:3840, h:2160},
-  {id:"2160", label:"4K",    w:2160, h:3840},
-  {id:"1440", label:"1440p", w:1440, h:2560},
-  {id:"1080", label:"1080p", w:1080, h:1920},
-  {id:"720",  label:"720p",  w:720,  h:1280}
+var FMT=[
+  {id:"9:16", label:"Hochkant 9:16", w:1080, h:1920},
+  {id:"4:5",  label:"Feed 4:5",      w:1080, h:1350},
+  {id:"1:1",  label:"Quadrat 1:1",   w:1080, h:1080},
+  {id:"16:9", label:"Quer 16:9",     w:1920, h:1080}
 ];
+var QUAL=[
+  {id:"auto", label:"Beste", s:2160},
+  {id:"2160", label:"4K",    s:2160},
+  {id:"1440", label:"1440p", s:1440},
+  {id:"1080", label:"1080p", s:1080},
+  {id:"720",  label:"720p",  s:720}
+];
+
+var S={data:FALLBACK,idx:0,fmt:"9:16",zoom:1,pan:0,wpm:175,fs:78,top:34,scrim:45,
+       flip:true,facing:"user",qual:"auto",
+       running:false,recording:false,offset:0,span:0,words:0,last:0,elapsed:0,
+       lines:[],lineH:0,got:null};
+
+var W=1080, H=1920;
+
+function load(k,d){try{var v=localStorage.getItem("rp4_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+function save(k,v){try{localStorage.setItem("rp4_"+k,JSON.stringify(v))}catch(e){}}
+["fmt","zoom","pan","wpm","fs","top","scrim","flip","facing","qual"].forEach(function(k){S[k]=load(k,S[k])});
 
 var tId=0;
 function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tId);tId=setTimeout(function(){t.classList.remove("on")},2600)}
-function fmt(s){s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
+function fmtT(s){s=Math.max(0,Math.round(s));return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")}
 
 /* ── Texte ──────────────────────────────────────────────── */
 function fetchScripts(){
@@ -274,78 +303,123 @@ function pick(i){
   layout();
 }
 
+/* ── Format ─────────────────────────────────────────────── */
+function setFormat(id,silent){
+  var f=FMT.filter(function(x){return x.id===id})[0]||FMT[0];
+  S.fmt=f.id;save("fmt",f.id);
+  W=f.w;H=f.h;
+  view.width=W;view.height=H;out.width=W;out.height=H;
+  var box=$("fmt").querySelectorAll("button");
+  for(var k=0;k<box.length;k++)box[k].setAttribute("aria-pressed",box[k].dataset.id===f.id?"true":"false");
+  layout();
+  if(!silent)toast(f.label+" · "+W+"×"+H);
+}
+function buildFmt(){
+  var box=$("fmt");box.innerHTML="";
+  FMT.forEach(function(f){
+    var b=document.createElement("button");
+    b.type="button";b.textContent=f.id;b.dataset.id=f.id;b.title=f.label;
+    b.setAttribute("aria-pressed",f.id===S.fmt?"true":"false");
+    b.addEventListener("click",function(){
+      if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
+      setFormat(f.id);
+    });
+    box.appendChild(b);
+  });
+}
+
 /* ── Umbruch ────────────────────────────────────────────── */
 function font(){return "650 "+S.fs+"px -apple-system, BlinkMacSystemFont, system-ui, sans-serif"}
 function layout(){
   var s=S.data.scripts[S.idx];
   S.words=s.paragraphs.join(" ").split(/\s+/).filter(Boolean).length;
-  ctx.font=font();
-  var maxW=W*.86, out=[];
+  vctx.font=font();
+  var maxW=W*.86, o=[];
   s.paragraphs.forEach(function(p,pi){
-    if(pi)out.push("");
+    if(pi)o.push("");
     var words=p.split(" "), line="";
     words.forEach(function(w){
       var t=line?line+" "+w:w;
-      if(ctx.measureText(t).width>maxW&&line){out.push(line);line=w} else line=t;
+      if(vctx.measureText(t).width>maxW&&line){o.push(line);line=w} else line=t;
     });
-    if(line)out.push(line);
+    if(line)o.push(line);
   });
-  S.lines=out;
+  S.lines=o;
   S.lineH=Math.round(S.fs*1.42);
-  S.span=out.length*S.lineH+H*.7;
+  S.span=o.length*S.lineH+H*.7;
   stop();reset();meter();
 }
 function meter(){
   var secs=S.words/S.wpm*60, s=S.data.scripts[S.idx];
-  var t=S.words+" W · ca. "+fmt(secs);
+  var t=S.words+" W · ca. "+fmtT(secs);
   if(s.target){
     var d=Math.round(secs-s.target);
-    t+="  (Ziel "+fmt(s.target)+(Math.abs(d)>4?", "+(d>0?"+":"")+d+" s":", passt")+")";
+    t+="  (Ziel "+fmtT(s.target)+(Math.abs(d)>4?", "+(d>0?"+":"")+d+" s":", passt")+")";
     est.innerHTML=Math.abs(secs-s.target)>4?'<span class="warn">'+t+"</span>":t;
   } else est.textContent=t;
 }
 function reset(){S.offset=-H*(S.top/100)-S.lineH;S.elapsed=0;bar.style.width="0%";clock.textContent="0:00";badgeT.textContent="0:00"}
 
-/* ── Anzeige ────────────────────────────────────────────── */
-var cd=0, raf=0;
-function draw(){
-  ctx.fillStyle="#000";ctx.fillRect(0,0,W,H);
+/* ── Kamerabild in den Rahmen ───────────────────────────── */
+function paintCam(g){
+  g.fillStyle="#000";g.fillRect(0,0,W,H);
+  if(!src.videoWidth)return;
+  var vw=src.videoWidth, vh=src.videoHeight;
+  var cover=Math.max(W/vw,H/vh);
 
-  if(src.videoWidth){
-    var vw=src.videoWidth, vh=src.videoHeight;
-    var sc=Math.min(W/vw,H/vh), dw=vw*sc, dh=vh*sc;   /* ganzes Kamerabild, nichts abgeschnitten */
-    ctx.save();
-    ctx.translate(W/2,H/2);
-    if(S.flip)ctx.scale(-1,1);
-    ctx.drawImage(src,-dw/2,-dh/2,dw,dh);
-    ctx.restore();
+  /* Unter 1.0 entstünden schwarze Ränder — dahinter ein weich gezeichneter
+     Ausschnitt desselben Bildes, damit der Rahmen gefüllt bleibt. */
+  if(S.zoom<1){
+    var bs=cover*1.25, bw=vw*bs, bh=vh*bs;
+    g.save();
+    try{g.filter="blur(38px)"}catch(e){}
+    g.translate(W/2,H/2); if(S.flip)g.scale(-1,1);
+    g.drawImage(src,-bw/2,-bh/2,bw,bh);
+    g.restore();
+    g.fillStyle="rgba(10,11,13,.35)";g.fillRect(0,0,W,H);
   }
 
-  if(S.scrim>0){ctx.fillStyle="rgba(10,11,13,"+(S.scrim/100).toFixed(2)+")";ctx.fillRect(0,0,W,H)}
+  var sc=cover*S.zoom, dw=vw*sc, dh=vh*sc;
+  g.save();
+  g.translate(W/2, H/2 + (S.pan/100)*H);
+  if(S.flip)g.scale(-1,1);
+  g.drawImage(src,-dw/2,-dh/2,dw,dh);
+  g.restore();
+}
 
-  ctx.save();
-  ctx.font=font();ctx.textAlign="center";ctx.textBaseline="top";
-  ctx.shadowColor="rgba(0,0,0,.9)";ctx.shadowBlur=20;ctx.shadowOffsetY=3;
-  ctx.fillStyle="#F6F3EC";
+var cd=0, raf=0;
+function draw(){
+  paintCam(vctx);
+
+  if(S.scrim>0){vctx.fillStyle="rgba(10,11,13,"+(S.scrim/100).toFixed(2)+")";vctx.fillRect(0,0,W,H)}
+
+  vctx.save();
+  vctx.font=font();vctx.textAlign="center";vctx.textBaseline="top";
+  vctx.shadowColor="rgba(0,0,0,.9)";vctx.shadowBlur=20;vctx.shadowOffsetY=3;
+  vctx.fillStyle="#F6F3EC";
   var y0=-S.offset;
   for(var i=0;i<S.lines.length;i++){
     var y=y0+i*S.lineH;
-    if(y>-S.lineH*1.5&&y<H+S.lineH)ctx.fillText(S.lines[i],W/2,y);
+    if(y>-S.lineH*1.5&&y<H+S.lineH)vctx.fillText(S.lines[i],W/2,y);
   }
-  ctx.restore();
+  vctx.restore();
 
   var ey=H*(S.top/100);
-  ctx.fillStyle="#C8A461";
-  ctx.beginPath();ctx.moveTo(0,ey-16);ctx.lineTo(22,ey);ctx.lineTo(0,ey+16);ctx.fill();
-  ctx.beginPath();ctx.moveTo(W,ey-16);ctx.lineTo(W-22,ey);ctx.lineTo(W,ey+16);ctx.fill();
+  vctx.fillStyle="#C8A461";
+  vctx.beginPath();vctx.moveTo(0,ey-16);vctx.lineTo(22,ey);vctx.lineTo(0,ey+16);vctx.fill();
+  vctx.beginPath();vctx.moveTo(W,ey-16);vctx.lineTo(W-22,ey);vctx.lineTo(W,ey+16);vctx.fill();
 
   if(cd>0){
-    ctx.fillStyle="rgba(10,11,13,.5)";ctx.fillRect(0,0,W,H);
-    ctx.font="800 260px -apple-system, system-ui, sans-serif";
-    ctx.textAlign="center";ctx.textBaseline="middle";ctx.fillStyle="#C8A461";
-    ctx.fillText(String(cd),W/2,H/2);
+    vctx.fillStyle="rgba(10,11,13,.5)";vctx.fillRect(0,0,W,H);
+    vctx.font="800 "+Math.round(Math.min(W,H)*.24)+"px -apple-system, system-ui, sans-serif";
+    vctx.textAlign="center";vctx.textBaseline="middle";vctx.fillStyle="#C8A461";
+    vctx.fillText(String(cd),W/2,H/2);
   }
+
+  /* Die Aufnahme bekommt dieselbe Bildführung — nur ohne Text und Marken. */
+  if(S.recording)paintCam(octx);
 }
+
 function loop(now){
   raf=requestAnimationFrame(loop);
   if(S.running&&cd===0){
@@ -354,8 +428,8 @@ function loop(now){
     S.offset+=pps*dt;S.elapsed+=dt;
     var p=Math.min(100,Math.max(0,(S.offset+H*(S.top/100))/S.span*100));
     bar.style.width=p.toFixed(1)+"%";
-    clock.textContent=fmt(S.elapsed);badgeT.textContent=fmt(S.elapsed);
-    if(S.offset>S.span){if(S.recording)stopRec();else{stop();toast("Durch. "+fmt(S.elapsed))}}
+    clock.textContent=fmtT(S.elapsed);badgeT.textContent=fmtT(S.elapsed);
+    if(S.offset>S.span){if(S.recording)stopRec();else{stop();toast("Durch. "+fmtT(S.elapsed))}}
   } else S.last=now;
   draw();
 }
@@ -370,10 +444,7 @@ function awake(on){
 }
 function countIn(then){
   cd=3;
-  cdTimer=setInterval(function(){
-    cd--;
-    if(cd<=0){clearInterval(cdTimer);cdTimer=0;cd=0;then()}
-  },800);
+  cdTimer=setInterval(function(){cd--;if(cd<=0){clearInterval(cdTimer);cdTimer=0;cd=0;then()}},800);
 }
 function begin(){
   S.running=true;S.last=performance.now();awake(true);
@@ -399,13 +470,13 @@ function startCam(){
   }
   if(stream)stream.getTracks().forEach(function(t){t.stop()});
   var q=QUAL.filter(function(x){return x.id===S.qual})[0]||QUAL[0];
-  var want=q.id==="auto"
-    ? {facingMode:S.facing,width:{ideal:2160},height:{ideal:3840},frameRate:{ideal:30}}
-    : {facingMode:S.facing,width:{ideal:q.w},height:{ideal:q.h},frameRate:{ideal:30}};
-
+  /* Immer die lange Kante anfragen — Safari liefert das Bild ohnehin quer. */
+  var want={facingMode:S.facing,
+            width:{ideal:Math.round(q.s*16/9)},
+            height:{ideal:q.s},
+            frameRate:{ideal:30}};
   return navigator.mediaDevices.getUserMedia({
-    video:want,
-    audio:{echoCancellation:true,noiseSuppression:true,sampleRate:48000}
+    video:want, audio:{echoCancellation:true,noiseSuppression:true,sampleRate:48000}
   }).then(function(st){
     stream=st;src.srcObject=st;src.play().catch(function(){});
     readSettings(q);
@@ -417,26 +488,22 @@ function startCam(){
     shoot.disabled=true;return false;
   });
 }
-
-/* Was die Kamera WIRKLICH liefert — nicht was wir erbeten haben. */
 function readSettings(q){
   var t=stream&&stream.getVideoTracks()[0];
   if(!t){S.got=null;return}
   var s=t.getSettings?t.getSettings():{};
   var w=s.width||0, h=s.height||0, f=Math.round(s.frameRate||0);
   S.got={w:w,h:h,fps:f};
-  var lbl=w&&h?(Math.min(w,h)+"p · "+w+"×"+h+(f?" @ "+f:"")):"unbekannt";
-  $("vQual").textContent=lbl;
-  var note=$("qualNote"), askedShort=q.id==="auto"?null:Math.min(q.w,q.h);
-  if(askedShort && w && h && Math.min(w,h)<askedShort){
-    note.className="miss";
-    note.textContent="Mehr gibt dein iPhone im Browser nicht her — "+Math.min(w,h)+"p statt "+askedShort+"p. Das ist eine Grenze von Safari, keine Einstellung.";
-  } else if(q.id==="auto" && w && h){
-    note.className="";
-    note.textContent="Das ist das Höchste, was Safari hier freigibt. Die Kamera-App von Apple kommt höher, kann aber keinen Text einblenden.";
-  } else { note.className=""; note.textContent="Wähle, was du willst — was dein iPhone im Browser tatsächlich hergibt, steht oben."; }
+  $("vQual").textContent = w&&h ? (w+"×"+h+(f?" @ "+f:"")) : "unbekannt";
+  var note=$("qualNote"), got=Math.min(w,h);
+  if(q.id!=="auto" && got && got<q.s){
+    note.className="note miss";
+    note.textContent="Mehr gibt dein iPhone im Browser nicht her: "+got+"p statt "+q.s+"p. Das ist eine Grenze von Safari, keine Einstellung.";
+  } else if(w&&h){
+    note.className="note";
+    note.textContent="Safari liefert das Bild quer. Für ein Reel schneide ich daraus hochkant zu — deshalb wirkst du näher. Mit Bildausschnitt und Verschieben stellst du das ein.";
+  }
 }
-
 function buildQual(){
   var box=$("qual");box.innerHTML="";
   QUAL.forEach(function(q){
@@ -454,29 +521,32 @@ function buildQual(){
   });
 }
 
-/* ── Aufnahme: NUR die Kamera, ohne den Text ────────────── */
+/* ── Aufnahme: der zugeschnittene Rahmen, ohne Text ─────── */
 var mr=null, chunks=[], blob=null, startedAt=0;
-function canRecord(){return !!(window.MediaRecorder && stream)}
+function canRecord(){return !!(window.MediaRecorder && out.captureStream && stream)}
 function pickMime(){
   var c=["video/mp4;codecs=avc1.42E01E,mp4a.40.2","video/mp4","video/webm;codecs=vp9,opus","video/webm;codecs=vp8,opus","video/webm"];
   for(var i=0;i<c.length;i++){try{if(MediaRecorder.isTypeSupported(c[i]))return c[i]}catch(e){}}
   return "";
 }
-/* Datenrate an die tatsächliche Auflösung koppeln — sonst verschenkt man Schärfe. */
 function bitrate(){
-  var g=S.got, px=g?Math.max(g.w*g.h,0):0;
-  if(px>=3840*2160) return 45000000;
-  if(px>=2560*1440) return 26000000;
-  if(px>=1920*1080) return 16000000;
-  if(px>=1280*720)  return 8000000;
-  return 5000000;
+  var px=W*H;
+  if(px>=3840*2160)return 45000000;
+  if(px>=2560*1440)return 26000000;
+  if(px>=1920*1080)return 16000000;
+  if(px>=1280*720) return 10000000;
+  return 6000000;
 }
 function startRec(){
   if(!canRecord()){toast("Aufnahme hier nicht möglich");return}
   if(S.running||cd>0)stop();
+  paintCam(octx);
+  var cs;
+  try{ cs=out.captureStream(30) }catch(e){ toast("Aufnahme wird hier nicht unterstützt");return }
+  stream.getAudioTracks().forEach(function(t){cs.addTrack(t)});
   var mime=pickMime();
-  try{ mr=mime?new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:bitrate(),audioBitsPerSecond:128000}):new MediaRecorder(stream) }
-  catch(e){ try{mr=new MediaRecorder(stream)}catch(e2){toast("Der Browser lehnt die Aufnahme ab");return} }
+  try{ mr=mime?new MediaRecorder(cs,{mimeType:mime,videoBitsPerSecond:bitrate(),audioBitsPerSecond:128000}):new MediaRecorder(cs) }
+  catch(e){ try{mr=new MediaRecorder(cs)}catch(e2){toast("Der Browser lehnt die Aufnahme ab");return} }
   chunks=[];blob=null;
   mr.ondataavailable=function(e){if(e.data&&e.data.size)chunks.push(e.data)};
   mr.onstop=function(){
@@ -486,11 +556,9 @@ function startRec(){
   S.recording=true;
   shoot.classList.add("rec");shoot.setAttribute("aria-label","Aufnahme stoppen");
   reset();
-  countIn(function(){                       /* erst nach dem Countdown mitschneiden */
+  countIn(function(){
     try{mr.start(250)}catch(e){toast("Aufnahme konnte nicht starten");S.recording=false;shoot.classList.remove("rec");return}
-    startedAt=Date.now();
-    badge.classList.add("on");
-    begin();
+    startedAt=Date.now();badge.classList.add("on");begin();
   });
 }
 function stopRec(){
@@ -503,10 +571,7 @@ function stopRec(){
 }
 function showReview(){
   var sec=(Date.now()-startedAt)/1000, mb=blob.size/1048576;
-  var g=S.got;
-  $("revLen").textContent="· "+fmt(sec)
-    +(g&&g.w?" · "+g.w+"×"+g.h:"")
-    +" · "+mb.toFixed(1)+" MB"
+  $("revLen").textContent="· "+fmtT(sec)+" · "+W+"×"+H+" · "+mb.toFixed(1)+" MB"
     +(sec>0?" · "+Math.round(blob.size*8/sec/1e6)+" Mbit/s":"");
   var v=$("revVid");
   if(v.src)URL.revokeObjectURL(v.src);
@@ -522,7 +587,7 @@ function closeReview(){
 function saveTake(){
   if(!blob)return;
   var ext=blob.type.indexOf("mp4")!==-1?"mp4":"webm";
-  var name=(S.data.scripts[S.idx].id||"reel")+"-"+fmt((Date.now()-startedAt)/1000).replace(":","m")+"s."+ext;
+  var name=(S.data.scripts[S.idx].id||"reel")+"-"+S.fmt.replace(":","x")+"."+ext;
   var file=new File([blob],name,{type:blob.type});
   if(navigator.canShare&&navigator.canShare({files:[file]})){
     navigator.share({files:[file],title:name}).then(function(){
@@ -547,13 +612,15 @@ $("revAgain").addEventListener("click",function(){closeReview();setTimeout(start
 $("revSave").addEventListener("click",saveTake);
 
 function bind(id,key,show,after){
-  var el=$(id), out=$("v"+id.slice(1));
-  el.value=S[key];out.textContent=show(S[key]);
+  var el=$(id), o=$("v"+id.slice(1));
+  el.value=S[key];o.textContent=show(S[key]);
   el.addEventListener("input",function(){
-    S[key]=parseFloat(el.value);out.textContent=show(S[key]);save(key,S[key]);
+    S[key]=parseFloat(el.value);o.textContent=show(S[key]);save(key,S[key]);
     if(after)after();
   });
 }
+bind("sZoom","zoom",function(v){return v.toFixed(2)});
+bind("sPan","pan",function(v){return v});
 bind("sWpm","wpm",function(v){return v},meter);
 bind("sFs","fs",function(v){return v},layout);
 bind("sTop","top",function(v){return v},function(){if(!S.running)reset()});
@@ -579,7 +646,8 @@ window.addEventListener("resize",function(){setTimeout(layout,120)});
 function boot(withCam){
   $("gate").classList.remove("on");
   $("tFlip").classList.toggle("on",S.flip);
-  buildQual();buildChips();layout();
+  buildFmt();buildQual();buildChips();
+  setFormat(S.fmt,true);
   raf=requestAnimationFrame(loop);
   if(withCam)startCam(); else shoot.disabled=true;
 }

@@ -1,5 +1,5 @@
 /* Hülle offline halten, Texte immer frisch versuchen. */
-var CACHE = "reel-prompter-v3";
+var CACHE = "reel-prompter-v4";
 var SHELL = [
   "./",
   "./index.html",
