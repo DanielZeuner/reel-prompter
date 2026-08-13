@@ -107,6 +107,16 @@ input[type=range]::-moz-range-track{height:4px;border-radius:2px;background:var(
 input[type=range]::-moz-range-thumb{width:28px;height:28px;border-radius:50%;background:var(--gold);border:0}
 input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
 
+.qrow{display:flex;gap:7px;flex-wrap:wrap}
+.qrow button{
+  flex:1 1 auto;min-width:74px;height:40px;border-radius:11px;border:1px solid var(--line);
+  background:var(--surface2);color:var(--muted);font-size:13px;font-weight:700;cursor:pointer;
+}
+.qrow button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ground)}
+.qrow button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+#qualNote{font-size:12px;line-height:1.5;color:var(--muted)}
+#qualNote.miss{color:var(--gold)}
+
 .btn{width:100%;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:15px;font-weight:700;cursor:pointer}
 .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--ground)}
 .btn.danger{color:var(--live)}
@@ -178,6 +188,11 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
     <label>Hintergrund abdunkeln <b><span id="vScrim">45</span> %</b></label>
     <input type="range" id="sScrim" min="0" max="90" step="5">
   </div>
+  <div class="field">
+    <label>Aufnahmequalität <b id="vQual">—</b></label>
+    <div id="qual" class="qrow"></div>
+    <div id="qualNote">Wähle, was du willst — was dein iPhone im Browser tatsächlich hergibt, steht oben.</div>
+  </div>
   <div class="pair">
     <button class="pill" id="tFlip" type="button" style="width:100%">Vorschau spiegeln</button>
     <button class="pill" id="tFacing" type="button" style="width:100%">Kamera wechseln</button>
@@ -214,12 +229,21 @@ var W=1080, H=1920;
 var FALLBACK={updated:"offline",scripts:[{id:"leer",label:"Kein Text",target:0,
   paragraphs:["Noch kein Text geladen. Einmal mit dem Netz verbinden, dann liegt alles offline bereit."]}]};
 
-var S={data:FALLBACK,idx:0,wpm:175,fs:78,top:34,scrim:45,flip:true,facing:"user",
-       running:false,recording:false,offset:0,span:0,words:0,last:0,elapsed:0,lines:[],lineH:0};
+var S={data:FALLBACK,idx:0,wpm:175,fs:78,top:34,scrim:45,flip:true,facing:"user",qual:"auto",
+       running:false,recording:false,offset:0,span:0,words:0,last:0,elapsed:0,lines:[],lineH:0,got:null};
 
 function load(k,d){try{var v=localStorage.getItem("rp3_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function save(k,v){try{localStorage.setItem("rp3_"+k,JSON.stringify(v))}catch(e){}}
-["wpm","fs","top","scrim","flip","facing"].forEach(function(k){S[k]=load(k,S[k])});
+["wpm","fs","top","scrim","flip","facing","qual"].forEach(function(k){S[k]=load(k,S[k])});
+
+/* Wunschauflösung. "auto" fragt das Höchste ab und nimmt, was das Gerät hergibt. */
+var QUAL=[
+  {id:"auto", label:"Beste", w:3840, h:2160},
+  {id:"2160", label:"4K",    w:2160, h:3840},
+  {id:"1440", label:"1440p", w:1440, h:2560},
+  {id:"1080", label:"1080p", w:1080, h:1920},
+  {id:"720",  label:"720p",  w:720,  h:1280}
+];
 
 var tId=0;
 function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tId);tId=setTimeout(function(){t.classList.remove("on")},2600)}
@@ -374,17 +398,59 @@ function startCam(){
     toast("Kamera hier nicht verfügbar — läuft als reiner Prompter");return Promise.resolve(false);
   }
   if(stream)stream.getTracks().forEach(function(t){t.stop()});
+  var q=QUAL.filter(function(x){return x.id===S.qual})[0]||QUAL[0];
+  var want=q.id==="auto"
+    ? {facingMode:S.facing,width:{ideal:2160},height:{ideal:3840},frameRate:{ideal:30}}
+    : {facingMode:S.facing,width:{ideal:q.w},height:{ideal:q.h},frameRate:{ideal:30}};
+
   return navigator.mediaDevices.getUserMedia({
-    video:{facingMode:S.facing,width:{ideal:1080},height:{ideal:1920}},
-    audio:{echoCancellation:true,noiseSuppression:true}
+    video:want,
+    audio:{echoCancellation:true,noiseSuppression:true,sampleRate:48000}
   }).then(function(st){
     stream=st;src.srcObject=st;src.play().catch(function(){});
+    readSettings(q);
     shoot.disabled=!canRecord();
     if(!canRecord())toast("Dieser Browser nimmt nicht auf — nimm die Bildschirmaufnahme");
     return true;
   }).catch(function(){
     toast("Kein Zugriff auf Kamera oder Mikrofon — läuft als reiner Prompter");
     shoot.disabled=true;return false;
+  });
+}
+
+/* Was die Kamera WIRKLICH liefert — nicht was wir erbeten haben. */
+function readSettings(q){
+  var t=stream&&stream.getVideoTracks()[0];
+  if(!t){S.got=null;return}
+  var s=t.getSettings?t.getSettings():{};
+  var w=s.width||0, h=s.height||0, f=Math.round(s.frameRate||0);
+  S.got={w:w,h:h,fps:f};
+  var lbl=w&&h?(Math.min(w,h)+"p · "+w+"×"+h+(f?" @ "+f:"")):"unbekannt";
+  $("vQual").textContent=lbl;
+  var note=$("qualNote"), askedShort=q.id==="auto"?null:Math.min(q.w,q.h);
+  if(askedShort && w && h && Math.min(w,h)<askedShort){
+    note.className="miss";
+    note.textContent="Mehr gibt dein iPhone im Browser nicht her — "+Math.min(w,h)+"p statt "+askedShort+"p. Das ist eine Grenze von Safari, keine Einstellung.";
+  } else if(q.id==="auto" && w && h){
+    note.className="";
+    note.textContent="Das ist das Höchste, was Safari hier freigibt. Die Kamera-App von Apple kommt höher, kann aber keinen Text einblenden.";
+  } else { note.className=""; note.textContent="Wähle, was du willst — was dein iPhone im Browser tatsächlich hergibt, steht oben."; }
+}
+
+function buildQual(){
+  var box=$("qual");box.innerHTML="";
+  QUAL.forEach(function(q){
+    var b=document.createElement("button");
+    b.type="button";b.textContent=q.label;
+    b.setAttribute("aria-pressed",q.id===S.qual?"true":"false");
+    b.addEventListener("click",function(){
+      if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
+      S.qual=q.id;save("qual",q.id);
+      var all=box.querySelectorAll("button");
+      for(var k=0;k<all.length;k++)all[k].setAttribute("aria-pressed",all[k]===b?"true":"false");
+      startCam();
+    });
+    box.appendChild(b);
   });
 }
 
@@ -396,11 +462,20 @@ function pickMime(){
   for(var i=0;i<c.length;i++){try{if(MediaRecorder.isTypeSupported(c[i]))return c[i]}catch(e){}}
   return "";
 }
+/* Datenrate an die tatsächliche Auflösung koppeln — sonst verschenkt man Schärfe. */
+function bitrate(){
+  var g=S.got, px=g?Math.max(g.w*g.h,0):0;
+  if(px>=3840*2160) return 45000000;
+  if(px>=2560*1440) return 26000000;
+  if(px>=1920*1080) return 16000000;
+  if(px>=1280*720)  return 8000000;
+  return 5000000;
+}
 function startRec(){
   if(!canRecord()){toast("Aufnahme hier nicht möglich");return}
   if(S.running||cd>0)stop();
   var mime=pickMime();
-  try{ mr=mime?new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:10000000}):new MediaRecorder(stream) }
+  try{ mr=mime?new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:bitrate(),audioBitsPerSecond:128000}):new MediaRecorder(stream) }
   catch(e){ try{mr=new MediaRecorder(stream)}catch(e2){toast("Der Browser lehnt die Aufnahme ab");return} }
   chunks=[];blob=null;
   mr.ondataavailable=function(e){if(e.data&&e.data.size)chunks.push(e.data)};
@@ -427,7 +502,12 @@ function stopRec(){
   else toast("Vor dem Start abgebrochen");
 }
 function showReview(){
-  $("revLen").textContent="· "+fmt((Date.now()-startedAt)/1000);
+  var sec=(Date.now()-startedAt)/1000, mb=blob.size/1048576;
+  var g=S.got;
+  $("revLen").textContent="· "+fmt(sec)
+    +(g&&g.w?" · "+g.w+"×"+g.h:"")
+    +" · "+mb.toFixed(1)+" MB"
+    +(sec>0?" · "+Math.round(blob.size*8/sec/1e6)+" Mbit/s":"");
   var v=$("revVid");
   if(v.src)URL.revokeObjectURL(v.src);
   v.src=URL.createObjectURL(blob);
@@ -499,7 +579,7 @@ window.addEventListener("resize",function(){setTimeout(layout,120)});
 function boot(withCam){
   $("gate").classList.remove("on");
   $("tFlip").classList.toggle("on",S.flip);
-  buildChips();layout();
+  buildQual();buildChips();layout();
   raf=requestAnimationFrame(loop);
   if(withCam)startCam(); else shoot.disabled=true;
 }
