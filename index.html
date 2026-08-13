@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Reel-Prompter</title>
+
+<meta name="theme-color" content="#0A0B0D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Prompter">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" href="icon-192.png">
+
+<style>
+/* Ein Teleprompter muss dunkel sein — helles Display spiegelt im Gesicht.
+   Deshalb bewusst nur ein Erscheinungsbild, alle Farben explizit gesetzt. */
+:root{
+  --ground:#0A0B0D;
+  --surface:#15171B;
+  --surface2:#1E2126;
+  --line:#2A2E35;
+  --gold:#C8A461;
+  --gold-dim:#7C6534;
+  --text:#F6F3EC;
+  --muted:#8A8D95;
+  --live:#E2483D;
+  --fs:44px;
+  --scrim:.45;
+  --safe-t:env(safe-area-inset-top);
+  --safe-b:env(safe-area-inset-bottom);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%}
+body{
+  margin:0;background:var(--ground);color:var(--text);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+  overflow:hidden;overscroll-behavior:none;
+  -webkit-user-select:none;user-select:none;
+}
+
+/* ── Kameraebene ────────────────────────────────────────── */
+#cam{
+  position:fixed;inset:0;width:100%;height:100%;
+  object-fit:cover;background:#000;
+  transform:scaleX(-1);          /* Selbstbild spiegeln, wie im Spiegel */
+  display:none;
+}
+#cam.on{display:block}
+
+#scrim{
+  position:fixed;inset:0;
+  background:#0A0B0D;
+  opacity:1;
+  transition:opacity .3s;
+}
+body.cam #scrim{opacity:var(--scrim)}
+
+/* 9:16-Hilfslinien — zeigt, was nach dem Zuschnitt übrig bleibt */
+#guide{position:fixed;inset:0;display:none;pointer-events:none}
+#guide.on{display:block}
+#guide .band{position:absolute;left:0;right:0;background:rgba(10,11,13,.55)}
+#guide .edge{position:absolute;left:0;right:0;height:1px;background:var(--gold-dim);opacity:.7}
+
+/* ── Textebene ──────────────────────────────────────────── */
+#stage{position:fixed;inset:0;overflow:hidden}
+#scroller{position:absolute;inset:0 0 auto 0;padding:0 22px;will-change:transform}
+#script{
+  max-width:22ch;margin:0 auto;
+  font-size:var(--fs);line-height:1.42;font-weight:650;
+  letter-spacing:-.005em;text-wrap:pretty;
+  text-shadow:0 2px 14px rgba(0,0,0,.85), 0 0 3px rgba(0,0,0,.9);
+}
+#script p{margin:0 0 .8em}
+#script p:last-child{margin-bottom:0}
+
+/* Blickhöhe: dort soll das Auge kleben */
+#eye{position:fixed;top:34%;left:0;right:0;display:flex;justify-content:space-between;pointer-events:none}
+#eye i{width:0;height:0;border-top:7px solid transparent;border-bottom:7px solid transparent}
+#eye i:first-child{border-left:10px solid var(--gold)}
+#eye i:last-child{border-right:10px solid var(--gold)}
+
+#count{
+  position:fixed;inset:0;display:none;align-items:center;justify-content:center;
+  font-size:130px;font-weight:800;color:var(--gold);
+  text-shadow:0 4px 30px rgba(0,0,0,.9);font-variant-numeric:tabular-nums;
+  pointer-events:none;
+}
+#count.on{display:flex}
+
+#rec{
+  position:fixed;top:calc(var(--safe-t) + 62px);left:50%;transform:translateX(-50%);
+  display:none;align-items:center;gap:7px;
+  background:rgba(10,11,13,.7);border:1px solid var(--live);
+  padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;
+  letter-spacing:.1em;text-transform:uppercase;color:var(--live);
+  font-variant-numeric:tabular-nums;pointer-events:none;
+}
+#rec.on{display:flex}
+#rec b{width:7px;height:7px;border-radius:50%;background:var(--live)}
+
+/* ── Bedienung ──────────────────────────────────────────── */
+.ui{transition:opacity .35s, visibility .35s}
+.ui.hide{opacity:0;visibility:hidden}
+
+#top{
+  position:fixed;top:0;left:0;right:0;
+  padding:calc(var(--safe-t) + 8px) 10px 8px;
+  display:flex;gap:7px;align-items:center;overflow-x:auto;scrollbar-width:none;
+  background:linear-gradient(to bottom,rgba(10,11,13,.92),rgba(10,11,13,0));
+}
+#top::-webkit-scrollbar{display:none}
+.chip{
+  flex:0 0 auto;padding:7px 13px;border-radius:999px;
+  border:1px solid var(--line);background:rgba(21,23,27,.85);
+  color:var(--muted);font-size:13px;font-weight:650;cursor:pointer;white-space:nowrap;
+}
+.chip[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:var(--ground)}
+.chip:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+#bottom{
+  position:fixed;left:0;right:0;bottom:0;
+  padding:10px 12px calc(var(--safe-b) + 10px);
+  display:flex;flex-direction:column;gap:9px;
+  background:linear-gradient(to top,rgba(10,11,13,.94),rgba(10,11,13,.55) 70%,rgba(10,11,13,0));
+}
+.meter{display:flex;flex-direction:column;gap:5px}
+.track{height:3px;background:rgba(255,255,255,.16);border-radius:2px;overflow:hidden}
+.track>span{display:block;height:100%;width:0;background:var(--gold)}
+.readout{
+  display:flex;justify-content:space-between;font-size:12px;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+.readout b{color:var(--text);font-weight:700}
+.readout .warn{color:var(--gold)}
+
+.row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:9px}
+.grp{display:flex;align-items:center;gap:6px}
+.grp.r{justify-content:flex-end}
+
+.step{display:flex;align-items:center;background:rgba(30,33,38,.9);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.step button{width:40px;height:42px;border:0;background:transparent;color:var(--text);font-size:18px;font-weight:700;cursor:pointer;line-height:1}
+.step button:active{background:var(--line)}
+.step span{min-width:48px;text-align:center;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.step span b{display:block;color:var(--text);font-size:14px;letter-spacing:0;font-variant-numeric:tabular-nums}
+
+#play{
+  width:74px;height:74px;border-radius:50%;
+  border:2px solid var(--gold);background:var(--gold);color:var(--ground);
+  font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;cursor:pointer;
+}
+#play.running{background:transparent;color:var(--live);border-color:var(--live)}
+#play:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+
+.ico{
+  width:40px;height:42px;border-radius:12px;border:1px solid var(--line);
+  background:rgba(30,33,38,.9);color:var(--muted);font-size:15px;font-weight:700;cursor:pointer;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.ico[aria-pressed="true"]{color:var(--gold);border-color:var(--gold-dim)}
+.ico:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+/* ── Startschleuse ──────────────────────────────────────── */
+#gate{
+  position:fixed;inset:0;z-index:20;background:var(--ground);
+  display:flex;flex-direction:column;justify-content:center;gap:16px;
+  padding:28px 22px calc(var(--safe-b) + 28px);
+}
+#gate.off{display:none}
+#gate h1{margin:0;font-size:12px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+#gate p{margin:0;font-size:15px;line-height:1.55;color:var(--muted);max-width:34ch}
+#gate p b{color:var(--text);font-weight:650}
+.big{
+  width:100%;padding:17px;border-radius:14px;border:1px solid var(--gold);
+  background:var(--gold);color:var(--ground);font-size:15px;font-weight:800;cursor:pointer;
+}
+.ghost{
+  width:100%;padding:15px;border-radius:14px;border:1px solid var(--line);
+  background:var(--surface);color:var(--text);font-size:14px;font-weight:650;cursor:pointer;
+}
+.big:focus-visible,.ghost:focus-visible{outline:2px solid var(--text);outline-offset:3px}
+#gateNote{font-size:12px;line-height:1.5;color:var(--muted);border-left:2px solid var(--gold-dim);padding-left:11px}
+#stand{font-size:11px;color:var(--muted);letter-spacing:.05em}
+
+#toast{
+  position:fixed;left:50%;bottom:145px;transform:translateX(-50%) translateY(8px);
+  background:var(--surface2);border:1px solid var(--gold-dim);color:var(--text);
+  padding:10px 16px;border-radius:999px;font-size:13px;font-weight:600;
+  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:30;
+}
+#toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+
+@media (min-width:760px){ #script{max-width:18ch} }
+@media (prefers-reduced-motion:reduce){ .ui{transition:none} #scrim{transition:none} }
+</style>
+</head>
+<body>
+
+<video id="cam" playsinline autoplay muted></video>
+<div id="scrim"></div>
+<div id="guide"><div class="band" id="gTop"></div><div class="edge" id="eTop"></div><div class="edge" id="eBot"></div><div class="band" id="gBot"></div></div>
+
+<div id="stage">
+  <div id="scroller"><div id="script"></div></div>
+</div>
+
+<div id="eye"><i></i><i></i></div>
+<div id="count">3</div>
+<div id="rec"><b></b><span id="recT">0:00</span></div>
+
+<div id="top" class="ui"></div>
+
+<div id="bottom" class="ui">
+  <div class="meter">
+    <div class="track"><span id="bar"></span></div>
+    <div class="readout"><span id="clock">0:00</span><span id="est"></span></div>
+  </div>
+  <div class="row">
+    <div class="grp">
+      <div class="step">
+        <button type="button" id="slower" aria-label="Langsamer">−</button>
+        <span>Tempo<b id="wpmOut">175</b></span>
+        <button type="button" id="faster" aria-label="Schneller">+</button>
+      </div>
+    </div>
+    <button id="play" type="button">Start</button>
+    <div class="grp r">
+      <div class="step">
+        <button type="button" id="smaller" aria-label="Kleiner">A−</button>
+        <button type="button" id="bigger" aria-label="Größer">A+</button>
+      </div>
+      <button class="ico" id="dim" type="button" title="Text-Hintergrund">◐</button>
+      <button class="ico" id="guideBtn" type="button" aria-pressed="false" title="9:16 Hilfslinien">▭</button>
+    </div>
+  </div>
+</div>
+
+<div id="gate">
+  <h1>Reel-Prompter</h1>
+  <p><b>Frontkamera an, Text darüber.</b> Du siehst dich beim Sprechen und liest gleichzeitig ab — auf einem Gerät, ohne Zeichenlimit.</p>
+  <div id="gateNote">
+    <b>Aufnehmen</b> über die iOS-Bildschirmaufnahme: im Kontrollzentrum lange auf den Aufnahme-Knopf drücken, <b>Mikrofon einschalten</b>, starten. Das Video landet in Fotos.
+  </div>
+  <button class="big" id="goCam" type="button">Kamera einschalten</button>
+  <button class="ghost" id="goPlain" type="button">Nur Text, ohne Kamera</button>
+  <div id="stand"></div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+(function(){
+"use strict";
+
+var $=function(i){return document.getElementById(i)};
+var cam=$("cam"), stage=$("stage"), scroller=$("scroller"), script=$("script");
+var top_=$("top"), bottom=$("bottom"), play=$("play"), bar=$("bar"), clock=$("clock"), est=$("est");
+var count=$("count"), gate=$("gate"), guide=$("guide"), recEl=$("rec"), recT=$("recT");
+
+var FALLBACK={updated:"offline",scripts:[{id:"own",label:"Eigener Text",target:0,paragraphs:["Noch kein Text geladen. Verbinde dich einmal mit dem Netz, dann liegt alles offline bereit."]}]};
+
+var S={data:FALLBACK,idx:0,wpm:175,fs:44,scrim:45,guide:false,
+       running:false,offset:0,span:0,words:0,last:0,raf:0,elapsed:0};
+
+function load(k,d){try{var v=localStorage.getItem("rp2_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
+function save(k,v){try{localStorage.setItem("rp2_"+k,JSON.stringify(v))}catch(e){}}
+
+S.wpm=load("wpm",175); S.fs=load("fs",44); S.scrim=load("scrim",45); S.guide=load("guide",false);
+
+/* ── Texte holen: erst Netz, sonst Speicher ─────────────── */
+function fetchScripts(){
+  return fetch("scripts.json?t="+Date.now(),{cache:"no-store"})
+    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+    .then(function(j){ save("data",j); return j; })
+    .catch(function(){ return load("data",FALLBACK); });
+}
+
+function buildChips(){
+  top_.innerHTML="";
+  S.data.scripts.forEach(function(s,i){
+    var b=document.createElement("button");
+    b.className="chip"; b.type="button"; b.textContent=s.label;
+    b.setAttribute("aria-pressed", i===S.idx?"true":"false");
+    b.addEventListener("click",function(e){e.stopPropagation();pick(i)});
+    top_.appendChild(b);
+  });
+}
+function pick(i){
+  S.idx=i;
+  var c=top_.querySelectorAll(".chip");
+  for(var k=0;k<c.length;k++) c[k].setAttribute("aria-pressed",k===i?"true":"false");
+  render();
+}
+
+function render(){
+  var s=S.data.scripts[S.idx];
+  script.innerHTML="";
+  s.paragraphs.forEach(function(p){var el=document.createElement("p");el.textContent=p;script.appendChild(el)});
+  S.words=s.paragraphs.join(" ").split(/\s+/).filter(Boolean).length;
+  stop(); reset(); measure();
+}
+
+function fmt(sec){sec=Math.max(0,Math.round(sec));return Math.floor(sec/60)+":"+String(sec%60).padStart(2,"0")}
+
+function measure(){
+  S.span=script.scrollHeight+window.innerHeight*.66;
+  var secs=S.words/S.wpm*60, s=S.data.scripts[S.idx];
+  var t=S.words+" W · ca. "+fmt(secs);
+  if(s.target){
+    var d=Math.round(secs-s.target);
+    t+="  (Ziel "+fmt(s.target)+(Math.abs(d)>4?", "+(d>0?"+":"")+d+" s":", passt")+")";
+    est.innerHTML=Math.abs(secs-s.target)>4?'<span class="warn">'+t+"</span>":t;
+  } else est.textContent=t;
+}
+
+function reset(){S.offset=-window.innerHeight*.30;S.elapsed=0;apply();bar.style.width="0%";clock.textContent="0:00";recT.textContent="0:00"}
+function apply(){scroller.style.transform="translate3d(0,"+(-S.offset).toFixed(2)+"px,0)"}
+
+var wake=null;
+function awake(on){
+  try{
+    if(on&&"wakeLock" in navigator){navigator.wakeLock.request("screen").then(function(w){wake=w},function(){})}
+    else if(wake){wake.release();wake=null}
+  }catch(e){}
+}
+
+function tick(now){
+  if(!S.running)return;
+  var dt=(now-S.last)/1000; S.last=now; if(dt>.5)dt=.5;
+  var secs=S.words/S.wpm*60, pps=secs>0?S.span/secs:0;
+  S.offset+=pps*dt; S.elapsed+=dt; apply();
+  var p=Math.min(100,Math.max(0,(S.offset+window.innerHeight*.30)/S.span*100));
+  bar.style.width=p.toFixed(1)+"%";
+  clock.textContent=fmt(S.elapsed); recT.textContent=fmt(S.elapsed);
+  if(S.offset>S.span){stop();toast("Durch. "+fmt(S.elapsed));return}
+  S.raf=requestAnimationFrame(tick);
+}
+
+function chrome(show){
+  top_.classList.toggle("hide",!show);
+  bottom.classList.toggle("hide",!show);
+  recEl.classList.toggle("on",!show);
+}
+
+function start(){
+  if(S.running)return;
+  chrome(false);
+  var n=3; count.textContent=n; count.classList.add("on");
+  var iv=setInterval(function(){
+    n--;
+    if(n===0){
+      clearInterval(iv); count.classList.remove("on");
+      S.running=true; S.last=performance.now();
+      play.textContent="Stopp"; play.classList.add("running");
+      awake(true); S.raf=requestAnimationFrame(tick);
+    } else count.textContent=n;
+  },800);
+}
+function stop(){
+  S.running=false; cancelAnimationFrame(S.raf);
+  count.classList.remove("on"); chrome(true);
+  play.textContent="Start"; play.classList.remove("running");
+  awake(false);
+}
+function toggle(){S.running?stop():start()}
+
+/* ── Kamera ─────────────────────────────────────────────── */
+function startCam(){
+  if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){
+    toast("Kamera nicht verfügbar — läuft als reiner Prompter"); return Promise.resolve(false);
+  }
+  return navigator.mediaDevices.getUserMedia({
+    video:{facingMode:"user",width:{ideal:1080},height:{ideal:1920}},
+    audio:false
+  }).then(function(st){
+    cam.srcObject=st; cam.classList.add("on");
+    document.body.classList.add("cam");
+    return true;
+  }).catch(function(){
+    toast("Kamerazugriff abgelehnt — läuft als reiner Prompter"); return false;
+  });
+}
+
+/* ── 9:16-Hilfslinien ───────────────────────────────────── */
+function drawGuide(){
+  var h=window.innerHeight, w=window.innerWidth, want=w*16/9;
+  if(want>=h){guide.classList.remove("on");return}
+  var band=(h-want)/2;
+  $("gTop").style.cssText="top:0;height:"+band+"px";
+  $("gBot").style.cssText="bottom:0;height:"+band+"px";
+  $("eTop").style.top=band+"px";
+  $("eBot").style.top=(h-band)+"px";
+  guide.classList.toggle("on",S.guide);
+}
+
+/* ── Bedienung ──────────────────────────────────────────── */
+stage.addEventListener("click",toggle);
+play.addEventListener("click",function(e){e.stopPropagation();toggle()});
+
+function setWpm(v){S.wpm=Math.min(280,Math.max(90,v));$("wpmOut").textContent=S.wpm;save("wpm",S.wpm);measure()}
+$("faster").addEventListener("click",function(e){e.stopPropagation();setWpm(S.wpm+5)});
+$("slower").addEventListener("click",function(e){e.stopPropagation();setWpm(S.wpm-5)});
+
+function setFs(v){S.fs=Math.min(86,Math.max(20,v));document.documentElement.style.setProperty("--fs",S.fs+"px");save("fs",S.fs);measure()}
+$("bigger").addEventListener("click",function(e){e.stopPropagation();setFs(S.fs+3)});
+$("smaller").addEventListener("click",function(e){e.stopPropagation();setFs(S.fs-3)});
+
+$("dim").addEventListener("click",function(e){
+  e.stopPropagation();
+  var steps=[15,30,45,60,80]; var i=steps.indexOf(S.scrim);
+  S.scrim=steps[(i+1)%steps.length];
+  document.documentElement.style.setProperty("--scrim",(S.scrim/100).toFixed(2));
+  save("scrim",S.scrim); toast("Hintergrund "+S.scrim+" %");
+});
+
+$("guideBtn").addEventListener("click",function(e){
+  e.stopPropagation();
+  S.guide=!S.guide; save("guide",S.guide);
+  this.setAttribute("aria-pressed",S.guide?"true":"false");
+  drawGuide();
+});
+
+document.addEventListener("keydown",function(e){
+  if(e.code==="Space"){e.preventDefault();toggle()}
+  if(e.key==="ArrowUp"){e.preventDefault();setWpm(S.wpm+5)}
+  if(e.key==="ArrowDown"){e.preventDefault();setWpm(S.wpm-5)}
+  if(e.key==="r"||e.key==="R"){stop();reset()}
+});
+
+var tId=0;
+function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tId);tId=setTimeout(function(){t.classList.remove("on")},1900)}
+
+var rId=0;
+window.addEventListener("resize",function(){clearTimeout(rId);rId=setTimeout(function(){measure();drawGuide();if(!S.running)reset()},150)});
+document.addEventListener("visibilitychange",function(){if(document.hidden)stop()});
+
+/* ── Start ──────────────────────────────────────────────── */
+function boot(withCam){
+  gate.classList.add("off");
+  document.documentElement.style.setProperty("--fs",S.fs+"px");
+  document.documentElement.style.setProperty("--scrim",(S.scrim/100).toFixed(2));
+  $("wpmOut").textContent=S.wpm;
+  $("guideBtn").setAttribute("aria-pressed",S.guide?"true":"false");
+  buildChips(); render(); drawGuide();
+  if(withCam) startCam();
+}
+$("goCam").addEventListener("click",function(){boot(true)});
+$("goPlain").addEventListener("click",function(){boot(false)});
+
+fetchScripts().then(function(j){
+  S.data=j&&j.scripts&&j.scripts.length?j:FALLBACK;
+  $("stand").textContent="Texte: "+S.data.scripts.length+" · Stand "+(S.data.updated||"—");
+  if(!gate.classList.contains("off")) return;
+  buildChips(); render();
+});
+
+if("serviceWorker" in navigator){
+  window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});
+}
+})();
+</script>
+</body>
+</html>
