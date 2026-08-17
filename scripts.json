@@ -1,13 +1,44 @@
 {
-  "updated": "2026-08-14",
+  "updated": "2026-08-17",
   "scripts": [
+    {
+      "id": "r25",
+      "label": "R25 · Die 3 Fragen nach dem Probetraining",
+      "target": 72,
+      "paragraphs": [
+        "Der teuerste Satz nach einem Probetraining ist: „Und, willst du dich anmelden?“",
+        "Ich hab den jahrelang gesagt. Der Mensch steht verschwitzt vor dir, hat gerade zum ersten Mal seit Jahren was für sich gemacht, und die erste Frage ist eine Kaufentscheidung. Er sagt: „Ich überleg mir das nochmal.“ Weg.",
+        "Ich stelle heute drei Fragen, immer in der gleichen Reihenfolge.",
+        "Erste Frage: „Wie war's für dich?“ Nicht wie's fachlich lief. Wie es sich angefühlt hat.",
+        "Zweite Frage: „Was hat dich dazu gebracht, heute herzukommen?“ Und dann halt ich die Klappe. Da kommt der echte Grund. Das Kind, das in der Schule Ärger hat. Die zwanzig Kilo. Die Angst, abends allein nach Hause zu gehen.",
+        "Dritte Frage: „Was müsste in vier Wochen passieren, damit du sagst: Das war richtig?“ Jetzt redet er über seine Zukunft in deiner Schule. Nicht über den Preis.",
+        "Und dann frag ich nicht, OB er will. Ich frag, WANN er anfangen will. Das ist ein anderer Satz.",
+        "Keiner muss überredet werden. Du musst nur aufhören, an der falschen Stelle zu fragen.",
+        "Probier's beim nächsten Probetraining. Drei Fragen, in der Reihenfolge. Du wirst hören, wie anders das Gespräch läuft."
+      ]
+    },
+    {
+      "id": "r26",
+      "label": "R26 · Woche zwei entscheidet",
+      "target": 84,
+      "paragraphs": [
+        "Die meisten Kündigungen passieren nicht im dritten Monat. Sie passieren in Woche zwei. Du merkst es nur drei Monate später.",
+        "So läuft das: Er ist begeistert, kommt zweimal die Woche, kauft sich eigene Handschuhe. Dann kommt was dazwischen. Grippe, Schichtdienst, Urlaub. Zwei Wochen nicht da.",
+        "Und jetzt der Punkt, den ich lange nicht verstanden hab: Nach zwei Wochen ist das Problem nicht der Sport. Das Problem ist die Scham. Die anderen sind weiter, er hat den Anschluss verloren, und jeder Tag macht die Tür ein Stück kleiner. Er kündigt nicht. Er kommt einfach nicht mehr. Die Kündigung ist später nur noch das Formular.",
+        "Was ich deshalb in Woche zwei mache. Kostet nichts.",
+        "Erstens: Jeder Neue kriegt einen Menschen, nicht einen Kurs. Einen Trainer, der seinen Namen weiß und ihn beim Reinkommen anspricht. Wer angesprochen wird, kommt wieder.",
+        "Zweitens: Ich häng ihn an zwei, drei Leute aus seiner Gruppe dran. Wer Freunde im Training hat, hört nicht auf. Wer allein in der Ecke steht, hört auf.",
+        "Drittens: Wenn einer zweimal fehlt, kriegt er eine Nachricht. Kein Vorwurf, kein Verkauf. Ein Satz: „Alles gut bei dir? Wir sehen dich Donnerstag.“ Du machst ihm die Tür wieder groß, bevor sie zu ist.",
+        "Schau diese Woche in deine Anwesenheitsliste, wer zweimal gefehlt hat. Schreib genau diesen Leuten. Das sind die Mitglieder, die du im November noch hast."
+      ]
+    },
     {
       "id": "r22",
       "label": "R22 · Jörg & Inis (+30 %)",
       "target": 66,
       "paragraphs": [
         "30 Prozent mehr Leute, die wirklich zum Probetraining erscheinen — ohne einen Euro mehr Werbung.",
-        "Jörg und Inis von der Kampfsportschule Fischer kannten das Spiel: Es wird gebucht — und dann erscheint die Hälfte nicht. Zeit geblockt, Matte frei gemacht, keiner da.",
+        "Jörg und Inis von der Sportschule Bischoff kannten das Spiel: Es wird gebucht — und dann erscheint die Hälfte nicht. Zeit geblockt, Matte frei gemacht, keiner da.",
         "Und dann fängt das an, was jeder Schulleiter hasst: hinterhertelefonieren. Der geht nicht ran. Der ruft nicht zurück. Beim dritten Versuch fragst du dich, ob der überhaupt noch will.",
         "Abends sitzt du da und arbeitest deine eigene Liste ab — wer will wirklich, wer nicht.",
         "Genau das muss nicht mehr sein. Seit ihr Nachfassen und Vorbereiten automatisch läuft, erscheinen 30 Prozent mehr ihrer Gebuchten wirklich auf der Matte. Gleiche Anfragen, gleiches Budget — nur dass keiner mehr vergessen wird und keiner mehr hinterhertelefonieren muss.",
