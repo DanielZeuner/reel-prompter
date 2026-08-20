@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-20",
   "scripts": [
     {
       "id": "r25",
@@ -20,16 +20,19 @@
     {
       "id": "r26",
       "label": "R26 · Woche zwei entscheidet",
-      "target": 84,
+      "target": 120,
       "paragraphs": [
         "Die meisten Kündigungen passieren nicht im dritten Monat. Sie passieren in Woche zwei. Du merkst es nur drei Monate später.",
-        "So läuft das: Er ist begeistert, kommt zweimal die Woche, kauft sich eigene Handschuhe. Dann kommt was dazwischen. Grippe, Schichtdienst, Urlaub. Zwei Wochen nicht da.",
-        "Und jetzt der Punkt, den ich lange nicht verstanden hab: Nach zwei Wochen ist das Problem nicht der Sport. Das Problem ist die Scham. Die anderen sind weiter, er hat den Anschluss verloren, und jeder Tag macht die Tür ein Stück kleiner. Er kündigt nicht. Er kommt einfach nicht mehr. Die Kündigung ist später nur noch das Formular.",
-        "Was ich deshalb in Woche zwei mache. Kostet nichts.",
-        "Erstens: Jeder Neue kriegt einen Menschen, nicht einen Kurs. Einen Trainer, der seinen Namen weiß und ihn beim Reinkommen anspricht. Wer angesprochen wird, kommt wieder.",
-        "Zweitens: Ich häng ihn an zwei, drei Leute aus seiner Gruppe dran. Wer Freunde im Training hat, hört nicht auf. Wer allein in der Ecke steht, hört auf.",
-        "Drittens: Wenn einer zweimal fehlt, kriegt er eine Nachricht. Kein Vorwurf, kein Verkauf. Ein Satz: „Alles gut bei dir? Wir sehen dich Donnerstag.“ Du machst ihm die Tür wieder groß, bevor sie zu ist.",
-        "Schau diese Woche in deine Anwesenheitsliste, wer zweimal gefehlt hat. Schreib genau diesen Leuten. Das sind die Mitglieder, die du im November noch hast."
+        "Er ist begeistert, kommt zweimal die Woche, kauft sich eigene Handschuhe. Dann kommt was dazwischen. Grippe, Schichtdienst, Urlaub. Zwei Wochen nicht da.",
+        "Und jetzt der Punkt, den ich lange nicht verstanden hab: Nach zwei Wochen ist das Problem nicht der Sport. Das Problem ist die Scham. Die anderen sind weiter, er hat den Anschluss verloren, und jeder Tag macht die Tür ein Stück kleiner. Er kündigt nicht. Er kommt einfach nicht mehr.",
+        "Deshalb unterschreibt bei mir keiner einfach einen Vertrag. Jeder Neue kriegt einen eigenen Onboarding-Termin: Ich zeig ihm, wie es ab jetzt läuft, in welche Kurse er geht, an wen er sich wendet, wenn er was nicht versteht. Der geht nicht mit einem Papier raus, der geht mit einem Plan raus.",
+        "Und danach hört er drei Wochen lang von mir. Vier feste Punkte, einmal aufgesetzt, seitdem läuft das von allein.",
+        "Am selben Tag die Willkommensnachricht, per Mail und per WhatsApp: das Wichtigste auf einen Blick, dazu ein Gutscheincode für den Shop.",
+        "Nach einer Woche die Einladung, jemanden mitzubringen — eigener Link, hundert Euro auf seinen Beitrag, wenn jemand kommt.",
+        "Nach vierzehn Tagen die Frage nach einer Google-Bewertung, mit einem Dankeschön, das er sich bei uns abholt.",
+        "Und nach drei Wochen: Du bist jetzt drei Wochen dabei, zwei- bis dreimal die Woche ist genau richtig, meld dich, wenn was ist.",
+        "Das sind genau die drei Wochen, in denen er sonst still verschwindet. Er verschwindet nicht, weil in dem Fenster jemand da ist.",
+        "Schau nach, was deine letzten zehn Anmeldungen nach der Unterschrift von dir gehört haben. Wenn die Antwort nichts ist, hast du deinen Hebel für diese Woche."
       ]
     },
     {
