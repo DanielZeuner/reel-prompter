@@ -1,6 +1,118 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-27",
   "scripts": [
+    {
+      "id": "r27",
+      "label": "R27 · Der Anruf am Tag davor (Entwurf 27.08.)",
+      "target": 85,
+      "paragraphs": [
+        "Der letzte Hebel gegen No-Shows ist ein Anruf. Zwei Minuten. Die meisten Schulen machen ihn nicht.",
+        "Bei uns fängt Julia um halb zwei an. Der erste Kurs geht erst um halb vier los, die Minis. Aber um halb zwei setzt sie sich hin, guckt durch, wer geschrieben hat — und dann ruft sie die an, die morgen ihr Probetraining haben.",
+        "Der Anruf ist kurz: „Grüß dich, die Franziska hat morgen ihr Probetraining, wir freuen uns drauf. Braucht ihr noch irgendwas? Kaffee oder Wasser?“ Punkt. Aus. Du willst da nicht lange reden. Du willst Vorfreude machen.",
+        "Und der Anruf ist die letzte Stelle, an der jemand sagen kann: „Ach Mensch, ich wollte eigentlich absagen.“ Oder: „Ich bin krank geworden.“ Dann machst du direkt einen neuen Termin aus. Verschieben ist nicht schlimm. Schlimm ist: morgen eine Stunde für jemanden freihalten, der nicht kommt — und es nicht wissen.",
+        "Eine Absage für morgen ist besser als keine Absage.",
+        "Die Erinnerung per Nachricht kriegen die Leute bei uns sowieso. Der Anruf kommt obendrauf. Weil eine Stimme was anderes ist als ein Text.",
+        "Nimm dir morgen Mittag zehn Minuten und ruf die an, die übermorgen dran sind. Dann weißt du, wer kommt — bevor du wartest."
+      ]
+    },
+    {
+      "id": "r28",
+      "label": "R28 · Der Satz, an dem ich die Anmeldung erkenne (Entwurf 27.08.)",
+      "target": 80,
+      "paragraphs": [
+        "Ich weiß oft schon vor dem Probetraining, wer sich anmelden wird. An einem einzigen Satz.",
+        "Vor dem Probetraining kriegt bei uns jeder die Infos: Was anziehen, was mitbringen, dass es bei uns Wasser gibt. Ganz normal.",
+        "Und dann antworten manche: „Danke — wir bringen uns selber was zu trinken mit.“",
+        "Das ist der Satz. Ich krieg den gefühlt jeden Tag. Und ein befreundeter Schulleiter hat mir letzte Woche gesagt: Bei ihm ist das wie eine sichere Anmeldung. Dasselbe.",
+        "Warum? Wer über seine Trinkflasche nachdenkt, hat den Abend schon geplant. Der überlegt nicht mehr, OB er kommt. Der bereitet sich vor. Der ist im Kopf schon Mitglied — er weiß es nur noch nicht.",
+        "Und das ändert, wie du ihn empfängst. Der braucht keine Überzeugung. Der braucht die Bestätigung, dass er hier richtig ist. Mit Namen begrüßen an der Tür. Den Trainer vorstellen. Und nach dem Training nicht verkaufen, sondern fragen, wie's für ihn war.",
+        "Es gibt mehr solche Sätze. Du kennst deine. Du hast sie nur noch nie als Signal gelesen.",
+        "Schau dir heute die Antworten deiner nächsten Probetrainings an. Da stehen die Anmeldungen schon drin. Du musst sie nur lesen."
+      ]
+    },
+    {
+      "id": "r29",
+      "label": "R29 · Wer bei mir in vier Wochen buchen will, kann das nicht (Entwurf 27.08.)",
+      "target": 78,
+      "paragraphs": [
+        "Wer bei mir ein Probetraining in vier Wochen buchen will, kann das nicht. Absichtlich.",
+        "Unser Buchungsfenster sind zwei Wochen. Nicht drei, nicht vier. Das empfehle ich jedem Schulleiter, mit dem ich rede.",
+        "Warum: Der Moment, in dem jemand ein Probetraining bucht, ist der Moment, in dem er am meisten Lust hat. Abends auf dem Sofa, er hat sich gerade entschieden, jetzt was zu ändern. Wenn der Termin dann in vier Wochen liegt, liegt zwischen seiner Entscheidung und deiner Matte ein ganzer Monat Alltag. Arbeit, Kinder, Wetter, Ausreden.",
+        "Die Lust vom Sofa ist bis dahin weg. Und das sind die No-Shows, über die du dich später ärgerst.",
+        "Zwei Wochen heißt: Die Entscheidung und das Training gehören noch zusammen.",
+        "Und wenn einer sagt: „Ich bin die nächsten drei Wochen im Urlaub“? Dann meldet er sich, wenn er zurück ist. Wer wirklich will, kommt wieder. Und wer nicht — den hätte ich in fünf Wochen auch nicht auf der Matte gehabt.",
+        "Schau heute in dein Buchungstool, wie weit man bei dir im Voraus buchen kann. Wenn's mehr als zwei Wochen sind: stell's um. Dauert fünf Minuten."
+      ]
+    },
+    {
+      "id": "r30",
+      "label": "R30 · 30 Abgänge in einem Monat — und ich schlaf trotzdem ruhig (Entwurf 27.08.)",
+      "target": 82,
+      "paragraphs": [
+        "Dreißig Abgänge in einem Monat. Und ich hab trotzdem ruhig geschlafen. Ich erklär dir, warum.",
+        "Wir sind siebenhundert Mitglieder. Da sind zwanzig Abgänge im Monat normal — Umzug, neuer Job, Verletzung, das Leben. Im August waren's dreißig. Sommer. Kann passieren.",
+        "Die meisten Schulleiter, die ich kenne, reagieren auf so eine Zahl mit Panik. Oder gar nicht, weil sie die Zahl nicht kennen. Beides ist das Problem.",
+        "Ich reagier mit einer Gegenfrage: Wie viele sind im selben Monat reingekommen? Bei uns im August: einunddreißig.",
+        "Das ist der ganze Trick. Ich versuch nicht, die Abgänge auf null zu drücken. Das schafft keine Schule. Ich sorge dafür, dass mein Zulauf jeden Monat mindestens so groß ist wie mein Abgang. Und dafür muss ich beide Zahlen kennen. Jeden Monat. Nicht gefühlt — gezählt.",
+        "Wenn ich die Zahl nicht kenne, merk ich den Schwund erst, wenn die Halle leerer wird. Und dann ist es drei Monate zu spät.",
+        "Zähl heute Abend zwei Zahlen: Wer ist im August gegangen, wer ist gekommen. Wenn die zweite kleiner ist als die erste, weißt du, was dein Thema für September ist."
+      ]
+    },
+    {
+      "id": "r31",
+      "label": "R31 · Der Einwand, der keiner ist (Entwurf 27.08.)",
+      "target": 98,
+      "paragraphs": [
+        "„Ich muss das erst mit meiner Frau besprechen.“ Das ist kein Nein. Das ist die ehrlichste Antwort, die du kriegen kannst.",
+        "Nach dem Probetraining sitzt du mit dem Menschen zusammen, und dann kommt einer von drei Sätzen. „Ich muss das mit meiner Frau besprechen.“ „Ich hab gerade wenig Zeit.“ „Ich überleg mir das nochmal.“",
+        "Ich hab die früher alle als Absage genommen. Heute weiß ich: Das sind drei verschiedene Sachen.",
+        "Erstens: Er entscheidet nicht allein. Dann sag ich: „Alles gut. Sprich das ab — und bring sie am besten gleich mit zum nächsten Training.“ Nicht „melde dich“. Einladen.",
+        "Zweitens: Keine Zeit. Dann sag ich ehrlich: Zweimal die Woche reicht. Und wenn's nur einmal ist, bringt auch das was — dazu kriegst du Übungen für zuhause. Die meisten haben nicht keine Zeit. Die haben Angst, dass es nicht reicht.",
+        "Drittens: „Ich überleg's mir.“ Da frag ich: „Wenn ich dir versichern könnte, dass du dein Ziel mit uns erreichst — würdest du dann starten?“ Sagt er ja, war der Einwand nicht das Problem, und wir reden über das eigentliche Thema. Sagt er nein, war's ehrlich. Und wer's sich gerade wirklich nicht leisten kann, dem sag ich: Melde dich, wenn's passt. Ohne Druck.",
+        "Schreib dir die drei Sätze auf, die du am häufigsten hörst. Und zu jedem eine Antwort, die eine Frage ist. Dann bist du beim nächsten Gespräch nicht mehr überrascht."
+      ]
+    },
+    {
+      "id": "r32",
+      "label": "R32 · Beim Kinder-Probetraining entscheidet die Mutter am Fenster (Entwurf 27.08.)",
+      "target": 78,
+      "paragraphs": [
+        "Beim Kinder-Probetraining entscheidet nicht das Kind. Die Mutter am Fenster entscheidet.",
+        "Bei uns kommt beim ersten Mal kein Kind ohne Elternteil. Punkt. Und die Eltern dürfen zugucken — durchs Glasfenster oder über die Kamera auf dem Bildschirm.",
+        "Auf der Matte stehen bis zu drei Trainer. Einer davon ist nur für die Neuen da. Das Kind steht nie allein rum, nie am Rand, nie überfordert.",
+        "Und die Eltern wissen vorher schon alles: Barfuß auf der Matte, Latschen für den Weg, Trinkflasche mit — und dass ihr Kind nichts können muss. Außer Lust zu haben.",
+        "Warum das alles? Weil die Mutter am Fenster in den ersten zehn Minuten entscheidet. Nicht, ob das Training gut ist. Ob ihr Kind hier sicher ist. Ob jemand hinguckt. Ob sie's mit gutem Gewissen zweimal die Woche herbringen kann.",
+        "Wenn sie das sieht, redest du nachher nicht über den Preis. Dann redest du über Kurstage.",
+        "Geh morgen in dein Kindertraining und stell dich ans Fenster. Guck's dir an wie eine Mutter, die ihr Kind zum ersten Mal abgibt. Was du da siehst, ist dein Verkaufsgespräch."
+      ]
+    },
+    {
+      "id": "r33",
+      "label": "R33 · Bei mir kostet das Probetraining zehn Euro (Entwurf 27.08.)",
+      "target": 74,
+      "paragraphs": [
+        "Bei mir kostet das Probetraining zehn Euro. Die meisten Kollegen halten das für einen Fehler.",
+        "Wir nennen das Wertschätzungsbeitrag. Und wer danach Mitglied wird, kriegt ihn zurück. Am Ende zahlen ihn also nur die, die sowieso nicht bleiben.",
+        "Warum ich das mache: Bei uns stehen hauptberufliche Trainer auf der Matte. Für ein Probetraining nimmt sich jemand Zeit — Empfang, Rundgang, der Trainer, danach zehn Minuten Gespräch. Das ist Arbeit. Und die ist was wert.",
+        "Das Gegenargument kenn ich: „Dann kommt keiner.“ Ich hab's andersrum erlebt. Wer zehn Euro zahlt, hat schon eine kleine Entscheidung getroffen — die zweite fällt danach leichter. Und die, die nur mal gucken wollen oder Kampfsport falsch verstanden haben, sortiert der Beitrag von selbst aus. Bevor sie in meiner Gruppe stehen.",
+        "Ein Kinoticket kostet mehr. Zehn Euro für eine Stunde mit einem Profi sind kein Hindernis. Sie sind ein Signal: Das hier ist was wert.",
+        "Du musst keine zehn Euro nehmen. Aber frag dich heute mal ehrlich, was „kostenlos“ über dein Training aussagt."
+      ]
+    },
+    {
+      "id": "r34",
+      "label": "R34 · Warum ich spontane Probetrainings ablehne (Entwurf 27.08.)",
+      "target": 82,
+      "paragraphs": [
+        "Wenn einer spontan bei mir zur Tür reinkommt und fragt „Kann ich heute mal mitmachen?“, sag ich nein. Freundlich. Aber nein.",
+        "Er kriegt einen Rundgang, zwei Minuten. Ich zeig ihm die Flächen und sag ihm, dass unsere Trainer das hauptberuflich machen. Und dann sag ich ehrlich: „Wir wollen uns für jeden Zeit nehmen. Deshalb geht heute kein Probetraining.“",
+        "Dann nehmen wir seine Nummer auf, und er kriegt vorher alle Infos — was anziehen, was mitbringen, wie's abläuft. Beim nächsten Mal weiß der Trainer, dass er kommt, weiß, was er will, und hat ihn auf dem Zettel.",
+        "Warum ich das mache: Ein spontanes Probetraining ist für den Trainer eine Störung mitten im Kurs. Für die Gruppe ein Fremder. Und für den Neuen ein Abend, an dem sich keiner richtig um ihn kümmert. Der geht raus, sagt „war ganz nett“ — und kommt nie wieder.",
+        "Mit Termin geht er raus und weiß, wer er hier ist.",
+        "Und ja, ich verlier damit ab und zu jemanden, der nur heute Lust hatte. Den hätte ich in vier Wochen sowieso verloren.",
+        "Nimm den nächsten Spontanen nicht mit ins Training. Nimm seine Nummer. Und guck, ob er wiederkommt."
+      ]
+    },
     {
       "id": "r25",
       "label": "R25 · Die 3 Fragen nach dem Probetraining",
