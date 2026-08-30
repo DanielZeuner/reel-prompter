@@ -42,7 +42,7 @@ body{
 
 /* Der Rahmen zeigt exakt den Ausschnitt, der aufgenommen wird. */
 #frame{flex:1 1 auto;position:relative;min-height:0;display:flex;align-items:center;justify-content:center;background:#000}
-#view{max-width:100%;max-height:100%;display:block;background:#000;cursor:pointer}
+#view{max-width:100%;max-height:100%;display:block;background:#000;cursor:pointer;touch-action:none}
 #out{display:none}
 
 #badge{
@@ -176,6 +176,7 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
   <h1>Reel-Prompter</h1>
   <p><b>Frontkamera mit Text darüber.</b> Der Rahmen zeigt genau den Ausschnitt, der aufgenommen wird — hochkant fürs Reel oder quer.</p>
   <div id="gateNote"><b>Der Text steht nur auf deinem Bildschirm.</b> Im fertigen Video ist er nicht drin — dort ist nur dein Bild und dein Ton. Danach legst du die Aufnahme über das Teilen-Blatt in deine Fotos.</div>
+  <p><b>Den Text führst du mit dem Finger.</b> Über den Rahmen wischen schiebt ihn vor und zurück, Finger drauflassen hält ihn an — auch mitten in der Aufnahme. Was in der Vorschau oben steht, ist auch der Anfang der Aufnahme.</p>
   <div class="grow"></div>
   <button class="btn primary" id="goCam" type="button">Kamera und Mikrofon einschalten</button>
   <button class="btn" id="goPlain" type="button">Nur Text, ohne Kamera</button>
@@ -280,6 +281,8 @@ var S={data:FALLBACK,idx:0,fmt:"9:16",zoom:1,pan:0,wpm:175,fs:78,top:34,scrim:45
        lines:[],lineH:0,got:null};
 
 var W=1080, H=1920;
+var holding=false, glide=0;   /* Finger auf dem Rahmen · Nachlauf eines Wischers */
+var placed=false;             /* in der Vorschau von Hand gesetzte Textstelle */
 
 function load(k,d){try{var v=localStorage.getItem("rp4_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function save(k,v){try{localStorage.setItem("rp4_"+k,JSON.stringify(v))}catch(e){}}
@@ -369,7 +372,15 @@ function meter(){
     est.innerHTML=Math.abs(secs-s.target)>4?'<span class="warn">'+t+"</span>":t;
   } else est.textContent=t;
 }
-function reset(){S.offset=-H*(S.top/100)-S.lineH;S.elapsed=0;bar.style.width="0%";clock.textContent="0:00";badgeT.textContent="0:00"}
+function minOffset(){return -H*(S.top/100)-S.lineH}
+function clampOffset(o){var lo=minOffset();return o<lo?lo:(o>S.span?S.span:o)}
+function reset(){S.offset=minOffset();S.elapsed=0;glide=0;placed=false;bar.style.width="0%";clock.textContent="0:00";badgeT.textContent="0:00"}
+/* Hast du den Text in der Vorschau von Hand hingeschoben, faengt der Lauf dort an —
+   was du siehst, wird gesprochen. Sonst geht es wie bisher von vorne los. */
+function armStart(){
+  if(!placed){reset();return}
+  placed=false;glide=0;S.elapsed=0;clock.textContent="0:00";badgeT.textContent="0:00";
+}
 
 /* ── Kamerabild in den Rahmen ───────────────────────────── */
 function paintCam(g){
@@ -416,7 +427,7 @@ function draw(){
   vctx.restore();
 
   var ey=H*(S.top/100);
-  vctx.fillStyle="#C8A461";
+  vctx.fillStyle=holding?"#8A8D95":"#C8A461";
   vctx.beginPath();vctx.moveTo(0,ey-16);vctx.lineTo(22,ey);vctx.lineTo(0,ey+16);vctx.fill();
   vctx.beginPath();vctx.moveTo(W,ey-16);vctx.lineTo(W-22,ey);vctx.lineTo(W,ey+16);vctx.fill();
 
@@ -433,15 +444,33 @@ function draw(){
 
 function loop(now){
   raf=requestAnimationFrame(loop);
+  var dt=(now-S.last)/1000;S.last=now;
+  if(!(dt>0))dt=0; if(dt>.5)dt=.5;
+
   if(S.running&&cd===0){
-    var dt=(now-S.last)/1000;S.last=now;if(dt>.5)dt=.5;
-    var secs=S.words/S.wpm*60, pps=secs>0?S.span/secs:0;
-    S.offset+=pps*dt;S.elapsed+=dt;
-    var p=Math.min(100,Math.max(0,(S.offset+H*(S.top/100))/S.span*100));
-    bar.style.width=p.toFixed(1)+"%";
+    S.elapsed+=dt;
+    /* Der Finger auf dem Rahmen haelt nur den Text an. Die Uhr und die
+       laufende Aufnahme gehen weiter — sonst stimmte die Laenge nicht mehr. */
+    if(!holding){
+      var secs=S.words/S.wpm*60, pps=secs>0?S.span/secs:0;
+      S.offset+=pps*dt;
+    }
     clock.textContent=fmtT(S.elapsed);badgeT.textContent=fmtT(S.elapsed);
-    if(S.offset>S.span){if(S.recording)stopRec();else{stop();toast("Durch. "+fmtT(S.elapsed))}}
-  } else S.last=now;
+  }
+
+  /* Nachlauf: ein Wischer gleitet aus, statt hart stehen zu bleiben. */
+  if(glide!==0&&!holding){
+    S.offset=clampOffset(S.offset+glide*dt);
+    glide*=Math.exp(-3.4*dt);
+    if(Math.abs(glide)<60)glide=0;
+  }
+
+  var p=Math.min(100,Math.max(0,(S.offset+H*(S.top/100))/S.span*100));
+  bar.style.width=p.toFixed(1)+"%";
+
+  if(S.running&&cd===0&&!holding&&S.offset>S.span){
+    if(S.recording)stopRec(); else {stop();toast("Durch. "+fmtT(S.elapsed))}
+  }
   draw();
 }
 
@@ -470,7 +499,7 @@ function stop(){
 function toggleRun(){
   if(S.recording){stopRec();return}
   if(S.running||cd>0){stop();return}
-  reset();countIn(begin);
+  armStart();countIn(begin);
 }
 
 /* ── Kamera ─────────────────────────────────────────────── */
@@ -598,7 +627,7 @@ function startRec(){
   };
   S.recording=true;
   shoot.classList.add("rec");shoot.setAttribute("aria-label","Aufnahme stoppen");
-  reset();
+  armStart();
   countIn(function(){
     try{mr.start(250)}catch(e){toast("Aufnahme konnte nicht starten");S.recording=false;shoot.classList.remove("rec");return}
     startedAt=Date.now();badge.classList.add("on");begin();
@@ -645,7 +674,45 @@ function saveTake(){
 }
 
 /* ── Bedienung ──────────────────────────────────────────── */
-view.addEventListener("click",toggleRun);
+/* Der Text laesst sich jederzeit mit dem Finger fuehren — in der Vorschau,
+   in der Probe und waehrend der Aufnahme. Antippen startet und stoppt weiterhin;
+   ein Wischer wird davon unterschieden, sobald der Finger sich wirklich bewegt. */
+var pid=null, gy=0, goff=0, moved=false, ly=0, lt=0, vel=0, wasDrag=false;
+function pxPerCss(){var r=view.getBoundingClientRect();return r.height?H/r.height:1}
+
+view.addEventListener("pointerdown",function(e){
+  if(pid!==null)return;
+  pid=e.pointerId;gy=ly=e.clientY;goff=S.offset;lt=performance.now();
+  moved=false;wasDrag=false;vel=0;glide=0;holding=true;
+  try{view.setPointerCapture(pid)}catch(err){}
+});
+view.addEventListener("pointermove",function(e){
+  if(e.pointerId!==pid)return;
+  if(!moved&&Math.abs(e.clientY-gy)<7)return;
+  moved=true;
+  var k=pxPerCss();
+  S.offset=clampOffset(goff+(gy-e.clientY)*k);
+  var now=performance.now(), dt=(now-lt)/1000;
+  if(dt>.004){vel=.75*(((ly-e.clientY)*k)/dt)+.25*vel;ly=e.clientY;lt=now}
+  e.preventDefault();
+});
+function endDrag(e){
+  if(e.pointerId!==pid)return;
+  try{view.releasePointerCapture(pid)}catch(err){}
+  pid=null;holding=false;wasDrag=moved;
+  if(moved&&!S.running&&cd===0)placed=true;
+  if(moved&&performance.now()-lt<130){
+    glide=Math.max(-9000,Math.min(9000,vel));
+    if(Math.abs(glide)<200)glide=0;
+  }
+}
+view.addEventListener("pointerup",endDrag);
+view.addEventListener("pointercancel",endDrag);
+
+view.addEventListener("click",function(){
+  if(wasDrag){wasDrag=false;return}
+  toggleRun();
+});
 $("rehearse").addEventListener("click",toggleRun);
 shoot.addEventListener("click",function(){S.recording?stopRec():startRec()});
 $("openSet").addEventListener("click",function(){$("settings").classList.add("on")});
