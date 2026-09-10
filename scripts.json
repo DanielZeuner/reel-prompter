@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-07",
+  "updated": "2026-09-10",
   "scripts": [
     {
       "id": "r33",
@@ -57,12 +57,12 @@
     },
     {
       "id": "r37",
-      "label": "R37 · Warum wir keine Anmeldung mit nach Hause geben (neu 07.09. · Rechtssatz prüfen)",
-      "target": 78,
+      "label": "R37 · Warum wir keine Anmeldung mit nach Hause geben (korrigiert 10.09.)",
+      "target": 70,
       "paragraphs": [
         "Wir geben keine Anmeldung mit nach Hause. Nie. Und das hat nichts mit Druck zu tun.",
-        "„Ich nehm das mal mit und schau's mir in Ruhe an.“ Klingt vernünftig. In der Praxis kommt der Zettel nicht zurück. Nicht, weil die Leute nicht wollen — er liegt auf dem Küchentisch, unter der Post, und nach einer Woche ist die Entscheidung von selbst gefallen. Gegen dich.",
-        "Und dann gibt's noch einen Grund, den kaum einer kennt — ein Kollege hat ihn mir erklärt: Was außer Haus unterschrieben wird, kann vierzehn Tage widerrufen werden. Was bei dir am Tisch unterschrieben wird, in deinen Räumen, nicht. Ein mitgegebener Bogen ist also nicht nur langsamer. Er ist unsicherer.",
+        "„Ich nehm das mal mit und schau’s mir in Ruhe an.“ Klingt vernünftig. In der Praxis kommt der Zettel nicht zurück. Nicht, weil die Leute nicht wollen — er liegt auf dem Küchentisch, unter der Post, und nach einer Woche ist die Entscheidung von selbst gefallen. Gegen dich.",
+        "Die Entscheidung fällt direkt nach dem Training. Da spürt er noch, warum er gekommen ist. Zu Hause fragt ihn keiner mehr nach seinem Ziel — da kommen Arbeit, Kinder, Alltag. Und der Zettel wird jeden Tag ein bisschen leiser.",
         "Deshalb läuft es bei uns so: Unterschrieben wird hier, am Tablet, direkt nach dem Gespräch. Wer noch Fragen hat, kriegt sie hier beantwortet. Wer wirklich Bedenkzeit braucht, kriegt einen Termin: in drei Tagen, zehn Minuten, nur die Anmeldung. Aber der Bogen bleibt hier.",
         "Nimm heute den Stapel Anmeldebögen vom Empfang weg. Wer sich bei dir anmeldet, macht das bei dir. Nicht am Küchentisch."
       ]
