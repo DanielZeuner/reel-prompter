@@ -1,23 +1,139 @@
 {
-  "updated": "2026-09-10",
+  "updated": "2026-09-13",
   "scripts": [
     {
-      "id": "r33",
-      "label": "R33 · Bei uns kostet das Probetraining zehn Euro (Dreh 07.09., v3)",
-      "target": 88,
+      "id": "r41",
+      "label": "R41 · Der Bund hat sich Dojo Trust angeschaut (Founder · Dreh 13.09., läuft im Oktober)",
+      "target": 67,
       "paragraphs": [
-        "Bei uns kostet das Probetraining zehn Euro. In Deutschland halten das viele noch für einen Fehler. International ist das längst normal.",
-        "Wir nennen das Wertschätzungsbeitrag. Wer danach Mitglied wird, kriegt ihn zurück.",
-        "Das Gegenargument kenn ich: „Dann kommt keiner.“ Wir haben das Gegenteil festgestellt. Es kommen mehr Leute — seit dem Beitrag ist unsere Show-Rate um dreißig Prozent gestiegen. Die Leute sind verbindlicher. Und sie verstehen den Wert hinter Kampfsport ganz anders.",
-        "Warum das so ist: Bei uns stehen Profis auf der Matte, ausgebildete Trainer. Für ein Probetraining nimmt sich jemand Zeit — Empfang, Rundgang, der Trainer, danach zehn Minuten Gespräch. Das ist Arbeit. Und die ist was wert.",
-        "Ich finde, wir sollten als Branche wegkommen vom kostenlosen Probetraining und vom Fitnessstudio-Charakter. Wir machen Kampfsport, der Leben verändert. Gruppentraining mit Profis vorne. Das sollte immer bezahlt werden. Es schützt deine Trainer, es schützt deinen Ablauf — und es macht dein Training wertvoller.",
-        "Eine Bedingung: Dein Auftritt muss den Preis tragen. Wenn deine Website nicht gepflegt ist und du dann mit zehn Euro anfängst, versteht keiner den Wert. Zeigt sie Profis, schon.",
-        "Du musst keine zehn Euro nehmen. Aber frag dich heute mal ehrlich, was „kostenlos“ über dein Training aussagt."
+        "Der Bund hat sich Dojo Trust angeschaut. Und bescheinigt, dass das, was wir bauen, Forschung und Entwicklung ist.",
+        "Klingt groß. Ich sag dir ehrlich, was das heißt — und was nicht.",
+        "Die Bescheinigungsstelle Forschungszulage prüft im Auftrag des Bundes drei Dinge: Ist das Vorhaben neu? Trägt es ein echtes Risiko, dass es nicht klappt? Und läuft es planmäßig? Alle drei: ja. Seit August steht das schwarz auf weiß.",
+        "Was sie nicht geprüft haben: Sicherheit. Das macht die Stelle nicht, und ich häng mir das auch nicht ans Revers.",
+        "Was ich dir dafür sagen kann: Woran wir forschen, ist genau das, was du als Schulleiter brauchst — dass jede Schule nur ihre eigenen Daten sieht. Dass die Interessenten aus Erfurt nie bei Duisburg landen. Das ist das Neue daran. Nicht noch eine Buchungsmaske.",
+        "Wenn du wissen willst, was da genau entwickelt wird: Steht auf dojotrust.de. Ohne Siegel-Deko."
+      ]
+    },
+    {
+      "id": "k1",
+      "label": "K1 · KICK: Die Rechnung (für Fr 18.09., Dreh 13.09.)",
+      "target": 25,
+      "paragraphs": [
+        "Wie viele Anfragen hattest du letzten Monat? Und wie viele davon stehen heute bei dir auf der Matte?",
+        "Die Lücke dazwischen rechnen wir am 3. Oktober zusammen aus. Live im Saal, mit deinen Zahlen.",
+        "Ich steh beim KICK in Nürtingen auf der Bühne. Mein Thema: wie aus Anfragen Mitglieder werden, ohne dass du hinterhertelefonierst.",
+        "Mit dem Code Aussteller sechsundzwanzig bekommst du 30 Prozent aufs Messeticket. Link in der Bio."
+      ]
+    },
+    {
+      "id": "k2",
+      "label": "K2 · KICK: Live auf der Leinwand (für Di 22.09., Dreh 13.09.)",
+      "target": 26,
+      "paragraphs": [
+        "Am 3. Oktober schreibt jemand aus dem Publikum meiner Schule eine WhatsApp. Live, vor allen, auf der Leinwand.",
+        "Keine Testschule. La Familia, 700 Mitglieder, ein ganz normaler Samstag.",
+        "Und dann schauen alle zu, was passiert. Wie schnell die Antwort kommt, was drinsteht, wie daraus ein Probetraining wird.",
+        "Das zeig ich beim KICK in Nürtingen. Code Aussteller sechsundzwanzig, 30 Prozent aufs Messeticket. Link in der Bio."
+      ]
+    },
+    {
+      "id": "k3",
+      "label": "K3 · KICK: Diesen Samstag (für Di 29.09., Dreh 13.09.)",
+      "target": 27,
+      "paragraphs": [
+        "Wann warst du das letzte Mal auf einer Veranstaltung, bei der es nur ums Business deiner Kampfsportschule ging?",
+        "Diesen Samstag ist KICK in Nürtingen. Ein Tag mit Vorträgen zu Recruiting, Mitarbeiterentwicklung und Digitalisierung. Und von mir zu Lead-Management.",
+        "Komm danach an meinen Stand. Hol dir den Probetraining-Report und erzähl mir, wo es bei dir hakt.",
+        "Code Aussteller sechsundzwanzig, 30 Prozent aufs Messeticket. Link in der Bio. Wir sehen uns in Nürtingen."
+      ]
+    },
+    {
+      "id": "k4",
+      "label": "K4 · KICK: Morgen (Bonus für Fr 02.10., 10 s)",
+      "target": 10,
+      "paragraphs": [
+        "Morgen ist KICK in Nürtingen. Ich bin da, mit Vortrag und Stand. Wenn du kommst, sag hallo.",
+        "Noch kein Ticket? Code Aussteller sechsundzwanzig, Link in der Bio."
+      ]
+    },
+    {
+      "id": "r40",
+      "label": "R40 · Kinder kündigen nicht, weil das Training schlecht ist (gedreht)",
+      "target": 74,
+      "paragraphs": [
+        "Kinder kündigen nicht, weil das Training schlecht ist. Sie kündigen, weil sie nicht sehen, wo sie stehen.",
+        "Eine Schule, die ich begleite, verliert gerade siebzehn Mitglieder im Monat, viele davon Kinder. Der Schulleiter hat's selbst benannt: Es gibt kein sichtbares System. Die Kinder trainieren, trainieren — und irgendwann fragt das Kind: Wofür eigentlich?",
+        "Bei uns hat jedes Kind ein Heft. Jedes Training ein Stempel. Vierundzwanzig Stempel, dazu die Extra-Stempel fürs Können — dann steht die Prüfung an. Weiß, Gelb, Grün, Blau, Braun. Das Kind sieht nach jedem Training: Es geht weiter. Und die Eltern sehen's auch — im Heft, beim Abholen.",
+        "Ob Gürtel, Patch oder Stempel ist egal. Wichtig ist: sichtbar, für das Kind, jede Woche. Und dann guck mal, wie stolz die zum ersten Training mit dem neuen Gürtel kommen. Das ist Bindung. Nicht der Newsletter.",
+        "Frag heute ein Kind bei dir im Training: „Was kommt bei dir als Nächstes?“ Wenn es das nicht weiß, weißt du, woran du arbeiten musst."
+      ]
+    },
+    {
+      "id": "r39",
+      "label": "R39 · Rückrufe ohne Post-its (gedreht)",
+      "target": 84,
+      "paragraphs": [
+        "Die meisten Interessenten gehen nicht verloren, weil keiner anruft. Sie gehen verloren, weil keiner weiß, wer schon angerufen hat.",
+        "Ein Schulleiter hat mir neulich gesagt: „Ich hab vier Tage nicht reingeschaut und wusste nicht mehr, wen ich angerufen hatte und wen nicht.“ Kenn ich. Post-its am Bildschirm, Zettel am Empfang, „ich glaub, den hatte Julia schon“.",
+        "Bei uns gilt eine Regel: Jeder Anruf wird notiert. Drei Wörter reichen — erreicht, nicht erreicht, Mailbox. Dazu, wer angerufen hat. Und wenn er sagt „ruf mich Donnerstag an“, dann steht da Donnerstag, mit Uhrzeit. Nicht „nochmal versuchen“.",
+        "Warum das so wichtig ist: Du bist nicht der Einzige, der ans Telefon geht. Wer zweimal am Tag von zwei verschiedenen Leuten angerufen wird, fühlt sich zugeballert. Und wer von keinem angerufen wird, weil jeder denkt, der andere macht's — der ist weg. Beides passiert, wenn's nur im Kopf steht.",
+        "Dafür brauchst du kein Programm. Eine Liste, ein Ort, für alle sichtbar.",
+        "Häng heute Abend die Post-its ab. Und schreib bei jedem Anruf drei Wörter auf — egal wo, Hauptsache alle sehen's."
+      ]
+    },
+    {
+      "id": "r38",
+      "label": "R38 · „Wir fragen mal das Kind“ — und die Anmeldung ist weg (gedreht)",
+      "target": 83,
+      "paragraphs": [
+        "„Wir fragen mal das Kind, ob es ihm gefallen hat.“ Wenn ich den Satz nach einem Kinder-Probetraining höre, weiß ich: Die Anmeldung ist gerade weg.",
+        "Nicht, weil das Kind nein sagt. Sondern weil die Eltern die Entscheidung abgegeben haben. An ein Sechsjähriges.",
+        "Ein Kind kann das nicht entscheiden. Kein Kind will Zähne putzen. Machen sie trotzdem — weil die Eltern entscheiden. Genau das sagen wir den Eltern, freundlich: „Du weißt, was gut für dein Kind ist. Wenn's nach ihm ginge, würde er auch keine Hausaufgaben machen. Die Frage ist nicht, ob er heute Spaß hatte. Die Frage ist, was du für ihn willst.“",
+        "Und dann gibt's noch einen Trick, den ich von einem Kollegen habe: Das Kind kriegt fürs Probetraining einen weißen Gürtel umgebunden. Nach dem Training nimmt er ihn wieder ab. „Deinen eigenen kriegst du bei der Anmeldung.“ Er sagt, er fand das erst hart. Aber du glaubst nicht, wie schnell Eltern anmelden, wenn das Kind diesen Gürtel will.",
+        "Nächstes Kinder-Probetraining: Sprich danach mit den Eltern, nicht mit dem Kind. Ob's Spaß gemacht hat, siehst du. Ob es bleibt, entscheiden die zwei daneben."
+      ]
+    },
+    {
+      "id": "r37",
+      "label": "R37 · Warum wir keine Anmeldung mit nach Hause geben (gedreht)",
+      "target": 70,
+      "paragraphs": [
+        "Wir geben keine Anmeldung mit nach Hause. Nie. Und das hat nichts mit Druck zu tun.",
+        "„Ich nehm das mal mit und schau’s mir in Ruhe an.“ Klingt vernünftig. In der Praxis kommt der Zettel nicht zurück. Nicht, weil die Leute nicht wollen — er liegt auf dem Küchentisch, unter der Post, und nach einer Woche ist die Entscheidung von selbst gefallen. Gegen dich.",
+        "Die Entscheidung fällt direkt nach dem Training. Da spürt er noch, warum er gekommen ist. Zu Hause fragt ihn keiner mehr nach seinem Ziel — da kommen Arbeit, Kinder, Alltag. Und der Zettel wird jeden Tag ein bisschen leiser.",
+        "Deshalb läuft es bei uns so: Unterschrieben wird hier, am Tablet, direkt nach dem Gespräch. Wer noch Fragen hat, kriegt sie hier beantwortet. Wer wirklich Bedenkzeit braucht, kriegt einen Termin: in drei Tagen, zehn Minuten, nur die Anmeldung. Aber der Bogen bleibt hier.",
+        "Nimm heute den Stapel Anmeldebögen vom Empfang weg. Wer sich bei dir anmeldet, macht das bei dir. Nicht am Küchentisch."
+      ]
+    },
+    {
+      "id": "r36",
+      "label": "R36 · Der Satz, der den Schalter umlegt (gedreht)",
+      "target": 86,
+      "paragraphs": [
+        "Wenn nach dem Probetraining einer sagt „Ich schlaf nochmal drüber“, liegt das selten am Preis. Meistens hat das Gespräch nie richtig angefangen.",
+        "Bei uns beginnt jedes Beratungsgespräch mit Smalltalk — und dann mit einem Satz: „Übrigens, jetzt geht's zum Beratungsgespräch. Ich zeig dir, wie du längerfristig bei uns trainieren kannst und deine Ziele erreichst. Ist das okay für dich?“",
+        "Das ist wie ein Schalter. Ab da weiß jeder am Tisch: Jetzt geht's ans Eingemachte. Im positiven Sinne. Kein Geplänkel mehr, sondern: Was willst du — und wie kriegen wir das hin.",
+        "Und der Satz steht bei uns im Skript. Ich hab's selbst geschrieben, die ersten Gespräche selbst geführt. Dann Rollenspiele: Zwei sitzen daneben, Skript in der Hand, schreiben mit. Danach ehrliche Auswertung. Am nächsten Tag nochmal.",
+        "Eine Schule, die ich begleite: eine Woche zehn Probetrainings, zwei Anmeldungen. Die Woche davor neun und sieben. Gleiche Schule, gleiche Werbung. Der Unterschied: wer am Tisch saß — und ob er ein Skript hatte.",
+        "Schreib dir heute Abend den Satz auf, mit dem dein Beratungsgespräch anfängt. Wenn du keinen hast, hast du kein Gespräch. Du hast Smalltalk."
+      ]
+    },
+    {
+      "id": "r35",
+      "label": "R35 · Keiner geht bei uns ohne Termin raus (gedreht)",
+      "target": 84,
+      "paragraphs": [
+        "Die meisten Interessenten haben wir nicht im Gespräch verloren. Sondern an der Tür. Deshalb gilt bei uns: Keiner geht ohne Termin raus.",
+        "Es gibt genau drei Termine, die zählen. Das nächste Probetraining. Das Beratungsgespräch — das ist der Verkauf. Und der Rückruf — das ist: „Ich muss mich noch entscheiden.“",
+        "Wer nach dem Probetraining nicht unterschreibt, hat einen davon. Immer. Sagt einer: „Ich muss das mit meiner Frau besprechen“ — gut. Dann machen wir einen Deal: Du sprichst heute Abend mit ihr, und ich ruf dich morgen um sechs an. Das ist ein Rückruftermin. Steht im Kalender, mit Uhrzeit, mit Namen.",
+        "Was bei uns nicht mehr zählt: „Ich meld mich.“ Das heißt nie. Nicht, weil die Leute lügen — weil der Alltag dazwischenkommt. Ein Termin ist die einzige Verbindung, die den Alltag überlebt.",
+        "Dafür brauchst du kein System. Ein Kalender reicht. Was du brauchst, ist die Regel — und ein Team, das sie kennt: Bevor jemand das Studio verlässt, steht der nächste Schritt fest.",
+        "Geh heute Abend deine letzten zehn Probetrainings durch. Wer davon ist ohne Termin gegangen? Das sind die, die du verloren hast. Und die kannst du morgen anrufen."
       ]
     },
     {
       "id": "r34",
-      "label": "R34 · Warum wir spontane Probetrainings ablehnen (Dreh 07.09.)",
+      "label": "R34 · Warum wir spontane Probetrainings ablehnen (gedreht)",
       "target": 82,
       "paragraphs": [
         "Wenn einer spontan bei uns zur Tür reinkommt und fragt „Kann ich heute mal mitmachen?“, sagen wir nein. Freundlich. Aber nein.",
@@ -30,91 +146,17 @@
       ]
     },
     {
-      "id": "r35",
-      "label": "R35 · Keiner geht bei uns ohne Termin raus (neu 07.09.)",
-      "target": 84,
+      "id": "r33",
+      "label": "R33 · Bei uns kostet das Probetraining zehn Euro (gedreht)",
+      "target": 88,
       "paragraphs": [
-        "Die meisten Interessenten haben wir nicht im Gespräch verloren. Sondern an der Tür. Deshalb gilt bei uns: Keiner geht ohne Termin raus.",
-        "Es gibt genau drei Termine, die zählen. Das nächste Probetraining. Das Beratungsgespräch — das ist der Verkauf. Und der Rückruf — das ist: „Ich muss mich noch entscheiden.“",
-        "Wer nach dem Probetraining nicht unterschreibt, hat einen davon. Immer. Sagt einer: „Ich muss das mit meiner Frau besprechen“ — gut. Dann machen wir einen Deal: Du sprichst heute Abend mit ihr, und ich ruf dich morgen um sechs an. Das ist ein Rückruftermin. Steht im Kalender, mit Uhrzeit, mit Namen.",
-        "Was bei uns nicht mehr zählt: „Ich meld mich.“ Das heißt nie. Nicht, weil die Leute lügen — weil der Alltag dazwischenkommt. Ein Termin ist die einzige Verbindung, die den Alltag überlebt.",
-        "Dafür brauchst du kein System. Ein Kalender reicht. Was du brauchst, ist die Regel — und ein Team, das sie kennt: Bevor jemand das Studio verlässt, steht der nächste Schritt fest.",
-        "Geh heute Abend deine letzten zehn Probetrainings durch. Wer davon ist ohne Termin gegangen? Das sind die, die du verloren hast. Und die kannst du morgen anrufen."
-      ]
-    },
-    {
-      "id": "r36",
-      "label": "R36 · Der Satz, der den Schalter umlegt (neu 07.09.)",
-      "target": 86,
-      "paragraphs": [
-        "Wenn nach dem Probetraining einer sagt „Ich schlaf nochmal drüber“, liegt das selten am Preis. Meistens hat das Gespräch nie richtig angefangen.",
-        "Bei uns beginnt jedes Beratungsgespräch mit Smalltalk — und dann mit einem Satz: „Übrigens, jetzt geht's zum Beratungsgespräch. Ich zeig dir, wie du längerfristig bei uns trainieren kannst und deine Ziele erreichst. Ist das okay für dich?“",
-        "Das ist wie ein Schalter. Ab da weiß jeder am Tisch: Jetzt geht's ans Eingemachte. Im positiven Sinne. Kein Geplänkel mehr, sondern: Was willst du — und wie kriegen wir das hin.",
-        "Und der Satz steht bei uns im Skript. Ich hab's selbst geschrieben, die ersten Gespräche selbst geführt. Dann Rollenspiele: Zwei sitzen daneben, Skript in der Hand, schreiben mit. Danach ehrliche Auswertung. Am nächsten Tag nochmal.",
-        "Eine Schule, die ich begleite: eine Woche zehn Probetrainings, zwei Anmeldungen. Die Woche davor neun und sieben. Gleiche Schule, gleiche Werbung. Der Unterschied: wer am Tisch saß — und ob er ein Skript hatte.",
-        "Schreib dir heute Abend den Satz auf, mit dem dein Beratungsgespräch anfängt. Wenn du keinen hast, hast du kein Gespräch. Du hast Smalltalk."
-      ]
-    },
-    {
-      "id": "r37",
-      "label": "R37 · Warum wir keine Anmeldung mit nach Hause geben (korrigiert 10.09.)",
-      "target": 70,
-      "paragraphs": [
-        "Wir geben keine Anmeldung mit nach Hause. Nie. Und das hat nichts mit Druck zu tun.",
-        "„Ich nehm das mal mit und schau’s mir in Ruhe an.“ Klingt vernünftig. In der Praxis kommt der Zettel nicht zurück. Nicht, weil die Leute nicht wollen — er liegt auf dem Küchentisch, unter der Post, und nach einer Woche ist die Entscheidung von selbst gefallen. Gegen dich.",
-        "Die Entscheidung fällt direkt nach dem Training. Da spürt er noch, warum er gekommen ist. Zu Hause fragt ihn keiner mehr nach seinem Ziel — da kommen Arbeit, Kinder, Alltag. Und der Zettel wird jeden Tag ein bisschen leiser.",
-        "Deshalb läuft es bei uns so: Unterschrieben wird hier, am Tablet, direkt nach dem Gespräch. Wer noch Fragen hat, kriegt sie hier beantwortet. Wer wirklich Bedenkzeit braucht, kriegt einen Termin: in drei Tagen, zehn Minuten, nur die Anmeldung. Aber der Bogen bleibt hier.",
-        "Nimm heute den Stapel Anmeldebögen vom Empfang weg. Wer sich bei dir anmeldet, macht das bei dir. Nicht am Küchentisch."
-      ]
-    },
-    {
-      "id": "r38",
-      "label": "R38 · „Wir fragen mal das Kind“ — und die Anmeldung ist weg (neu 07.09.)",
-      "target": 83,
-      "paragraphs": [
-        "„Wir fragen mal das Kind, ob es ihm gefallen hat.“ Wenn ich den Satz nach einem Kinder-Probetraining höre, weiß ich: Die Anmeldung ist gerade weg.",
-        "Nicht, weil das Kind nein sagt. Sondern weil die Eltern die Entscheidung abgegeben haben. An ein Sechsjähriges.",
-        "Ein Kind kann das nicht entscheiden. Kein Kind will Zähne putzen. Machen sie trotzdem — weil die Eltern entscheiden. Genau das sagen wir den Eltern, freundlich: „Du weißt, was gut für dein Kind ist. Wenn's nach ihm ginge, würde er auch keine Hausaufgaben machen. Die Frage ist nicht, ob er heute Spaß hatte. Die Frage ist, was du für ihn willst.“",
-        "Und dann gibt's noch einen Trick, den ich von einem Kollegen habe: Das Kind kriegt fürs Probetraining einen weißen Gürtel umgebunden. Nach dem Training nimmt er ihn wieder ab. „Deinen eigenen kriegst du bei der Anmeldung.“ Er sagt, er fand das erst hart. Aber du glaubst nicht, wie schnell Eltern anmelden, wenn das Kind diesen Gürtel will.",
-        "Nächstes Kinder-Probetraining: Sprich danach mit den Eltern, nicht mit dem Kind. Ob's Spaß gemacht hat, siehst du. Ob es bleibt, entscheiden die zwei daneben."
-      ]
-    },
-    {
-      "id": "r39",
-      "label": "R39 · Rückrufe ohne Post-its (neu 07.09.)",
-      "target": 84,
-      "paragraphs": [
-        "Die meisten Interessenten gehen nicht verloren, weil keiner anruft. Sie gehen verloren, weil keiner weiß, wer schon angerufen hat.",
-        "Ein Schulleiter hat mir neulich gesagt: „Ich hab vier Tage nicht reingeschaut und wusste nicht mehr, wen ich angerufen hatte und wen nicht.“ Kenn ich. Post-its am Bildschirm, Zettel am Empfang, „ich glaub, den hatte Julia schon“.",
-        "Bei uns gilt eine Regel: Jeder Anruf wird notiert. Drei Wörter reichen — erreicht, nicht erreicht, Mailbox. Dazu, wer angerufen hat. Und wenn er sagt „ruf mich Donnerstag an“, dann steht da Donnerstag, mit Uhrzeit. Nicht „nochmal versuchen“.",
-        "Warum das so wichtig ist: Du bist nicht der Einzige, der ans Telefon geht. Wer zweimal am Tag von zwei verschiedenen Leuten angerufen wird, fühlt sich zugeballert. Und wer von keinem angerufen wird, weil jeder denkt, der andere macht's — der ist weg. Beides passiert, wenn's nur im Kopf steht.",
-        "Dafür brauchst du kein Programm. Eine Liste, ein Ort, für alle sichtbar.",
-        "Häng heute Abend die Post-its ab. Und schreib bei jedem Anruf drei Wörter auf — egal wo, Hauptsache alle sehen's."
-      ]
-    },
-    {
-      "id": "r40",
-      "label": "R40 · Kinder kündigen nicht, weil das Training schlecht ist (neu 07.09.)",
-      "target": 74,
-      "paragraphs": [
-        "Kinder kündigen nicht, weil das Training schlecht ist. Sie kündigen, weil sie nicht sehen, wo sie stehen.",
-        "Eine Schule, die ich begleite, verliert gerade siebzehn Mitglieder im Monat, viele davon Kinder. Der Schulleiter hat's selbst benannt: Es gibt kein sichtbares System. Die Kinder trainieren, trainieren — und irgendwann fragt das Kind: Wofür eigentlich?",
-        "Bei uns hat jedes Kind ein Heft. Jedes Training ein Stempel. Vierundzwanzig Stempel, dazu die Extra-Stempel fürs Können — dann steht die Prüfung an. Weiß, Gelb, Grün, Blau, Braun. Das Kind sieht nach jedem Training: Es geht weiter. Und die Eltern sehen's auch — im Heft, beim Abholen.",
-        "Ob Gürtel, Patch oder Stempel ist egal. Wichtig ist: sichtbar, für das Kind, jede Woche. Und dann guck mal, wie stolz die zum ersten Training mit dem neuen Gürtel kommen. Das ist Bindung. Nicht der Newsletter.",
-        "Frag heute ein Kind bei dir im Training: „Was kommt bei dir als Nächstes?“ Wenn es das nicht weiß, weißt du, woran du arbeiten musst."
-      ]
-    },
-    {
-      "id": "r41",
-      "label": "R41 · Der Bund hat sich Dojo Trust angeschaut (Founder, optional · neu 07.09.)",
-      "target": 67,
-      "paragraphs": [
-        "Der Bund hat sich Dojo Trust angeschaut. Und bescheinigt, dass das, was wir bauen, Forschung und Entwicklung ist.",
-        "Klingt groß. Ich sag dir ehrlich, was das heißt — und was nicht.",
-        "Die Bescheinigungsstelle Forschungszulage prüft im Auftrag des Bundes drei Dinge: Ist das Vorhaben neu? Trägt es ein echtes Risiko, dass es nicht klappt? Und läuft es planmäßig? Alle drei: ja. Seit August steht das schwarz auf weiß.",
-        "Was sie nicht geprüft haben: Sicherheit. Das macht die Stelle nicht, und ich häng mir das auch nicht ans Revers.",
-        "Was ich dir dafür sagen kann: Woran wir forschen, ist genau das, was du als Schulleiter brauchst — dass jede Schule nur ihre eigenen Daten sieht. Dass die Interessenten aus Erfurt nie bei Duisburg landen. Das ist das Neue daran. Nicht noch eine Buchungsmaske.",
-        "Wenn du wissen willst, was da genau entwickelt wird: Steht auf dojotrust.de. Ohne Siegel-Deko."
+        "Bei uns kostet das Probetraining zehn Euro. In Deutschland halten das viele noch für einen Fehler. International ist das längst normal.",
+        "Wir nennen das Wertschätzungsbeitrag. Wer danach Mitglied wird, kriegt ihn zurück.",
+        "Das Gegenargument kenn ich: „Dann kommt keiner.“ Wir haben das Gegenteil festgestellt. Es kommen mehr Leute — seit dem Beitrag ist unsere Show-Rate um dreißig Prozent gestiegen. Die Leute sind verbindlicher. Und sie verstehen den Wert hinter Kampfsport ganz anders.",
+        "Warum das so ist: Bei uns stehen Profis auf der Matte, ausgebildete Trainer. Für ein Probetraining nimmt sich jemand Zeit — Empfang, Rundgang, der Trainer, danach zehn Minuten Gespräch. Das ist Arbeit. Und die ist was wert.",
+        "Ich finde, wir sollten als Branche wegkommen vom kostenlosen Probetraining und vom Fitnessstudio-Charakter. Wir machen Kampfsport, der Leben verändert. Gruppentraining mit Profis vorne. Das sollte immer bezahlt werden. Es schützt deine Trainer, es schützt deinen Ablauf — und es macht dein Training wertvoller.",
+        "Eine Bedingung: Dein Auftritt muss den Preis tragen. Wenn deine Website nicht gepflegt ist und du dann mit zehn Euro anfängst, versteht keiner den Wert. Zeigt sie Profis, schon.",
+        "Du musst keine zehn Euro nehmen. Aber frag dich heute mal ehrlich, was „kostenlos“ über dein Training aussagt."
       ]
     },
     {
