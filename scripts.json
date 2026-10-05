@@ -1,6 +1,21 @@
 {
-  "updated": "2026-09-22",
+  "updated": "2026-10-05",
   "scripts": [
+    {
+      "id": "kn",
+      "label": "KICK-Nachbericht · Samstag in Nürtingen (Founder · Sa/So 10./11.10. · heute drehen)",
+      "target": 70,
+      "paragraphs": [
+        "Samstag stand ich in Nürtingen auf der Bühne. Und während ich erklärt hab, wie man Probetrainings füllt, ohne hinterherzutelefonieren, hat bei uns in der Schule jemand gebucht. Live. Per WhatsApp. Ohne dass einer von uns zum Hörer gegriffen hat.",
+        "Ein Saal voller Schulleiter. Leute, die selbst um sechs auf der Matte stehen. Genau für die mach ich das.",
+        "Und das meiste, worüber ich geredet hab, ist gar keine Software. Das ist Handwerk.",
+        "[O-Ton Bühne: „Wenn der reinkommt und Angst hat, dann müsst ihr den an die Hand nehmen.“ — nicht einsprechen]",
+        "Am meisten bewegt hat übrigens nicht die Technik. Sondern eine einzige Hausregel: Bei uns kostet das Probetraining zehn Euro. Darüber haben wir danach am Stand am längsten geredet.",
+        "Und der Satz, der mir am wichtigsten war: Keine der Schulen, mit denen ich arbeite, ist gewachsen, weil sie mehr Geld in Werbung gesteckt hat. Sondern weil aus denselben Anfragen mehr Mitglieder geworden sind.",
+        "Danke an Ertikin und die Kampfsportakademie für den Tag. Und an alle, die da waren.",
+        "Wenn du nicht da warst: Wie das bei dir aussehen kann, siehst du auf dojotrust.de."
+      ]
+    },
     {
       "id": "r43",
       "label": "R43 · Die Methode, die funktioniert — nur nicht bei dir (v2 22.09. · Drehtag 3 · Founder · Mo 28.09. · gedreht)",
