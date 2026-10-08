@@ -1,20 +1,123 @@
 {
-  "updated": "2026-10-05",
+  "updated": "2026-10-08",
   "scripts": [
     {
-      "id": "kn",
-      "label": "KICK-Nachbericht · Samstag in Nürtingen (Founder · Sa/So 10./11.10. · heute drehen)",
-      "target": 70,
+      "id": "r53",
+      "label": "R53 · Der Lehrling, der nachts nicht schläft (Founder · Mo 12.10. · jetzt drehen)",
+      "target": 73,
       "paragraphs": [
-        "Samstag stand ich in Nürtingen auf der Bühne. Und während ich erklärt hab, wie man Probetrainings füllt, ohne hinterherzutelefonieren, hat bei uns in der Schule jemand gebucht. Live. Per WhatsApp. Ohne dass einer von uns zum Hörer gegriffen hat.",
-        "Ein Saal voller Schulleiter. Leute, die selbst um sechs auf der Matte stehen. Genau für die mach ich das.",
-        "Und das meiste, worüber ich geredet hab, ist gar keine Software. Das ist Handwerk.",
-        "[O-Ton Bühne: „Wenn der reinkommt und Angst hat, dann müsst ihr den an die Hand nehmen.“ — nicht einsprechen]",
-        "Am meisten bewegt hat übrigens nicht die Technik. Sondern eine einzige Hausregel: Bei uns kostet das Probetraining zehn Euro. Darüber haben wir danach am Stand am längsten geredet.",
-        "Und der Satz, der mir am wichtigsten war: Keine der Schulen, mit denen ich arbeite, ist gewachsen, weil sie mehr Geld in Werbung gesteckt hat. Sondern weil aus denselben Anfragen mehr Mitglieder geworden sind.",
-        "Danke an Ertikin und die Kampfsportakademie für den Tag. Und an alle, die da waren.",
-        "Wenn du nicht da warst: Wie das bei dir aussehen kann, siehst du auf dojotrust.de."
+        "Alle reden gerade über KI. Ich sag dir, was KI in unserem Handwerk ist: der Lehrling, der nachts nicht schläft. Mehr nicht. Aber auch nicht weniger.",
+        "Halb elf abends schreibt eine Mutter: „Mein Sohn ist neun und würde gern Kickboxen ausprobieren.“ Du stehst seit dem Morgen in der Schule, oder du bist längst zu Hause.",
+        "Früher hat diese Nachricht bis zum nächsten Mittag gewartet. Da war die Mutter schon bei einer anderen Schule.",
+        "Der Lehrling antwortet sofort. Er fragt, wie alt, welcher Tag passt, und gibt ihr einen Termin. Er erinnert sie am Tag vorher. Und wenn sie nicht kommt, schreibt er nach.",
+        "Was er nicht kann: Er steht nicht auf der Matte. Er führt kein Beratungsgespräch. Er merkt nicht, dass das Kind an der Tür Angst hat. Das bist du.",
+        "Der Lehrling macht das, was täglich ist. Nicht schwer, nur täglich. Der Meister bist du.",
+        "Wie so ein Lehrling bei dir arbeiten kann, siehst du auf dojotrust.de."
       ]
+    },
+    {
+      "id": "r54",
+      "label": "R54 · Bei uns darf nicht jeder Mitglied werden (Drehtag 4 · Di 13.10.)",
+      "paragraphs": [
+        "Bei uns darf nicht jeder Mitglied werden. Manchmal sagen wir nach dem Rundgang: Ich glaube, das ist nichts für dich.",
+        "Klingt verrückt. Jeder Interessent hat Geld gekostet. Jede Anzeige, jeder Anruf. Und dann schickst du einen wieder heim?",
+        "Ja. Weil du es meistens schon vor dem Training merkst. Beim Rundgang hört er nicht zu. Er nimmt nichts wahr von dem, was du ihm zeigst. Und wenn du fragst, warum er hier ist, kommt nichts. Kein Commitment.",
+        "Ich hatte früher mal so einen, der durfte einfach mittrainieren. Kurz danach hat er meinen Leuten auf die Kniescheiben getreten.",
+        "Eine Absage schützt deine Mitglieder. Die zahlen jeden Monat dafür, dass sie bei dir sicher trainieren.",
+        "Schreib dir heute zwei Sätze auf, an denen du beim Rundgang merkst: Der passt nicht zu uns. Und sprich sie mit deinem Team durch."
+      ],
+      "target": 59
+    },
+    {
+      "id": "r55",
+      "label": "R55 · Bei uns kriegt 100 Euro, wer ein Mitglied bringt (Drehtag 4 · Mi 14.10.)",
+      "paragraphs": [
+        "Bei uns kriegt jeder hundert Euro, der uns ein neues Mitglied bringt. Als Gutschrift auf den Beitrag oder im Shop.",
+        "Viele Schulen finden das zu viel. Hundert Euro für eine Empfehlung? Die hätte er doch auch so gemacht.",
+        "Hat er aber nicht. Wir haben Mitglieder, die haben uns sieben neue Leute gebracht. Sieben mal hundert Euro sind siebenhundert Euro.",
+        "Und jetzt rechne dagegen, was ein Mitglied bei dir zahlt. Nicht im Monat. Über die ganze Zeit, die es bleibt. Dann sind siebenhundert Euro für sieben Mitglieder fast nichts.",
+        "Und der Neue kommt nicht über eine Anzeige. Er kommt mit einem Freund, der schon dabei ist. Der bleibt anders.",
+        "Rechne heute aus, was ein Mitglied bei dir im Schnitt über seine ganze Zeit bezahlt. Und dann frag dich, ob deine Prämie dazu passt."
+      ],
+      "target": 57
+    },
+    {
+      "id": "r56",
+      "label": "R56 · Bei uns wird der Empfang trainiert wie die Matte (Drehtag 4 · Do 15.10.)",
+      "paragraphs": [
+        "Bei uns wird der Empfang trainiert wie die Matte. Mit Ablauf, mit Wiederholung, mit Rollenspiel.",
+        "Auf der Matte würde keiner sagen: Die Kombination haben wir einmal gezeigt, jetzt sitzt sie. Am Empfang machen das fast alle.",
+        "Bei uns hängt der Ablauf in der Theke. Jemand kommt zum Probetraining: herzlich begrüßen, kurz rumführen, Trainer vorstellen. Schritt für Schritt.",
+        "Und dann üben wir das. Einer kommt rein, zwei schauen zu. Danach: Was war gut? Was war schlecht? Wir üben das morgen nochmal. Und nächste Woche nochmal.",
+        "Weil es sonst in Vergessenheit gerät. Das haben wir selbst erlebt.",
+        "Druck dir deinen Empfangsablauf aus und häng ihn sichtbar hin. Und spiel ihn diese Woche einmal mit deinem Team durch."
+      ],
+      "target": 50
+    },
+    {
+      "id": "r57",
+      "label": "R57 · Den Willkommensbonus gibt es bei uns nur heute (Drehtag 4 · Fr 16.10. 13:00)",
+      "paragraphs": [
+        "Den Willkommensbonus gibt es bei uns nur heute. Wer morgen kommt, zahlt die Aufnahmegebühr.",
+        "Nach dem Probetraining sagen wir: Wenn du dich heute entscheidest, fällt die Aufnahmegebühr weg. Fünfzig Euro. Und auf die Ausrüstung gibt es heute zwanzig Prozent.",
+        "Wenn er rausgeht und erst noch ein zweites Probetraining machen will, ist das okay. Aber dann ist der Bonus weg. Das ist nicht unfair. Das ist die Abmachung, und die kennt er vorher.",
+        "Wichtig ist nur eins: Du musst es durchziehen. Wer einmal sagt, na gut, für dich gilt es auch nächste Woche, dem glaubt beim nächsten Mal keiner mehr.",
+        "Ehrliche Verknappung heißt: Die Regel gilt für alle. Jeden Tag.",
+        "Schau dir an, was bei dir am Tag vom Probetraining anders ist als eine Woche später. Wenn die Antwort nichts ist, weißt du, warum so viele es sich nochmal überlegen."
+      ],
+      "target": 60
+    },
+    {
+      "id": "r58",
+      "label": "R58 · Bevor wir mehr Geld in Werbung stecken, schauen wir uns die Beratungsgespräche an (Drehtag 4 · Di 20.10.)",
+      "paragraphs": [
+        "Bevor wir mehr Geld in Werbung stecken, schauen wir uns unsere Beratungsgespräche an. Das ist der größte Hebel, den wir haben.",
+        "Wenn zu wenig Mitglieder kommen, ist der erste Reflex: mehr Anzeigen. Mehr Budget. Mehr Interessenten.",
+        "Aber wenn von zehn Probetrainings nur drei unterschreiben, dann verdoppelst du mit doppelter Werbung auch die sieben, die wieder gehen.",
+        "Deshalb gehen wir zuerst dahin, wo die Entscheidung fällt. Wir schulen unser Team im Beratungsgespräch. Wir schauen, ob nach Ablauf beraten wird. Und das nicht einmal, sondern immer wieder.",
+        "Erst wenn das Gespräch sitzt, lohnt sich jeder Euro mehr in Werbung.",
+        "Zähl für diesen Monat: Wie viele Probetrainings hattest du, und wie viele haben unterschrieben? Die Zahl sagt dir, wo dein nächster Euro hingehört."
+      ],
+      "target": 52
+    },
+    {
+      "id": "r59",
+      "label": "R59 · Unsere beste Werbung steht schon auf der Matte (Drehtag 4 · Mi 21.10.)",
+      "paragraphs": [
+        "Unsere beste Werbung steht schon auf der Matte. Wir müssen sie nur fragen.",
+        "Jede Schule hat Mitglieder mit einer Geschichte. Der, der vorher keine Treppe ohne Pause geschafft hat. Die, die sich abends nicht mehr allein auf die Straße getraut hat.",
+        "Die meisten Schulen lassen diese Geschichten liegen und zeigen in der Werbung lieber sich selbst.",
+        "Bei uns stellen wir vier Fragen. Wo standest du vorher? Wo stehst du jetzt? Was ist passiert? Und wem würdest du es empfehlen?",
+        "Mehr braucht es nicht. Da ist das Problem drin, in dem sich der nächste Interessent wiedererkennt. Und das Ziel, das er auch erreichen will.",
+        "Such dir diese Woche ein Mitglied aus, das sich verändert hat. Stell ihm die vier Fragen. Und nimm es mit dem Handy auf."
+      ],
+      "target": 55
+    },
+    {
+      "id": "r60",
+      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Drehtag 4 · Do 22.10.)",
+      "paragraphs": [
+        "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
+        "Ein Neuer bewertet nicht zuerst dein Training. Er bewertet zuerst, wie es riecht, wenn er reinkommt. Und wie die Umkleide aussieht, wenn er sich umzieht.",
+        "Das kann der beste Trainer der Stadt nicht mehr retten.",
+        "Deshalb steht es bei uns im Ablauf vom Empfang: Alle zwei Stunden ein Rundgang. Reinigungsliste abarbeiten. Lappen in die Hand nehmen.",
+        "Und der Satz dazu: Behandle das Gym wie dein Zuhause. Jeder Griff zum Lappen sorgt dafür, dass sich alle wohlfühlen.",
+        "Geh heute Abend durch deine Umkleide, als wärst du zum ersten Mal da. Und schau, was du siehst."
+      ],
+      "target": 48
+    },
+    {
+      "id": "r61",
+      "label": "R61 · Ganz oben auf unserer Website steht nicht unser Sport (Drehtag 4 · Fr 23.10. 13:00)",
+      "paragraphs": [
+        "Ganz oben auf unserer Website steht nicht, welchen Sport wir machen. Sondern was du davon hast.",
+        "Viele Schulen schreiben groß: Kung Fu. Kickboxen. Karate. Und darunter die Stilrichtung.",
+        "Das versteht nur einer, der sich schon auskennt. Der Interessent, der zum ersten Mal sucht, will nicht Kung Fu. Er will Selbstvertrauen. Stärker werden. Sich verteidigen können.",
+        "Das muss als Erstes da stehen. Der Sport ist der Weg dahin, nicht das Ziel.",
+        "Und gleich danach: Wer steht da vorne? Warum kann ich dem vertrauen?",
+        "Öffne heute deine eigene Website auf dem Handy und lies nur die erste Überschrift. Steht da, was du machst, oder was der andere davon hat?"
+      ],
+      "target": 47
     },
     {
       "id": "r43",
@@ -154,20 +257,6 @@
         "Bei uns kommt der Satz ganz am Anfang, gleich beim Ankommen: „Nimm dir nach dem Training bitte noch ungefähr zehn Minuten Zeit, für ein Feedback und ein kurzes Beratungsgespräch.“",
         "Das ist ehrlich. Er weiß, was kommt. Er kann sich während des Trainings schon überlegen, was er fragen will. Und wer bleibt, bleibt freiwillig.",
         "Sag ab morgen jedem Probetraining gleich an der Tür, dass es danach zehn Minuten Gespräch gibt. Und achte darauf, wie sich die Gespräche verändern."
-      ]
-    },
-    {
-      "id": "r53",
-      "label": "R53 · Der Lehrling, der nachts nicht schläft (Drehtag 3 · Founder · Mo 12.10., optional)",
-      "target": 73,
-      "paragraphs": [
-        "Alle reden gerade über KI. Ich sag dir, was KI in unserem Handwerk ist: der Lehrling, der nachts nicht schläft. Mehr nicht. Aber auch nicht weniger.",
-        "Halb elf abends schreibt eine Mutter: „Mein Sohn ist neun und würde gern Kickboxen ausprobieren.“ Du stehst seit dem Morgen in der Schule, oder du bist längst zu Hause.",
-        "Früher hat diese Nachricht bis zum nächsten Mittag gewartet. Da war die Mutter schon bei einer anderen Schule.",
-        "Der Lehrling antwortet sofort. Er fragt, wie alt, welcher Tag passt, und gibt ihr einen Termin. Er erinnert sie am Tag vorher. Und wenn sie nicht kommt, schreibt er nach.",
-        "Was er nicht kann: Er steht nicht auf der Matte. Er führt kein Beratungsgespräch. Er merkt nicht, dass das Kind an der Tür Angst hat. Das bist du.",
-        "Der Lehrling macht das, was täglich ist. Nicht schwer, nur täglich. Der Meister bist du.",
-        "Wie so ein Lehrling bei dir arbeiten kann, siehst du auf dojotrust.de."
       ]
     },
     {
@@ -518,6 +607,21 @@
         "Und irgendwann haben wir verstanden: Druck holt keinen rein. Dojo Trust heißt Vertrauen. Also bauen wir Vertrauen auf, ab der ersten Anfrage. Wir führen den Menschen zur Entscheidung — wir zwingen ihn nicht. Aber wir lassen ihn auch nicht im Dunkeln stehen. Er weiß Schritt für Schritt, wie's weitergeht.",
         "Das ist der Unterschied zu irgendeinem CRM. Das kommt nicht aus einem Büro. Das kommt von der Matte — von meiner, und von den Schulen, die jeden Tag damit arbeiten.",
         "Wie das System bei dir funktionieren kann — geh auf dojotrust.de und überzeug dich selbst davon."
+      ]
+    },
+    {
+      "id": "kn",
+      "label": "KICK-Nachbericht · Samstag in Nürtingen (Founder · Sa/So 10./11.10. · entfallen, ohne Dreh gebaut)",
+      "target": 70,
+      "paragraphs": [
+        "Samstag stand ich in Nürtingen auf der Bühne. Und während ich erklärt hab, wie man Probetrainings füllt, ohne hinterherzutelefonieren, hat bei uns in der Schule jemand gebucht. Live. Per WhatsApp. Ohne dass einer von uns zum Hörer gegriffen hat.",
+        "Ein Saal voller Schulleiter. Leute, die selbst um sechs auf der Matte stehen. Genau für die mach ich das.",
+        "Und das meiste, worüber ich geredet hab, ist gar keine Software. Das ist Handwerk.",
+        "[O-Ton Bühne: „Wenn der reinkommt und Angst hat, dann müsst ihr den an die Hand nehmen.“ — nicht einsprechen]",
+        "Am meisten bewegt hat übrigens nicht die Technik. Sondern eine einzige Hausregel: Bei uns kostet das Probetraining zehn Euro. Darüber haben wir danach am Stand am längsten geredet.",
+        "Und der Satz, der mir am wichtigsten war: Keine der Schulen, mit denen ich arbeite, ist gewachsen, weil sie mehr Geld in Werbung gesteckt hat. Sondern weil aus denselben Anfragen mehr Mitglieder geworden sind.",
+        "Danke an Ertikin und die Kampfsportakademie für den Tag. Und an alle, die da waren.",
+        "Wenn du nicht da warst: Wie das bei dir aussehen kann, siehst du auf dojotrust.de."
       ]
     }
   ]
