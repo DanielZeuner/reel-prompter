@@ -1,6 +1,88 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-20",
   "scripts": [
+    {
+      "id": "r62",
+      "label": "R62 · Bei uns geht keiner unter Druck aus dem Büro (Drehtag 5 · Mi 21.10.)",
+      "target": 69,
+      "paragraphs": [
+        "Bei uns geht keiner unter Druck aus dem Büro.",
+        "Viele Schulen halten den Interessenten nach dem Probetraining so lange im Büro, bis er unterschreibt. Und freuen sich dann über die Abschlussquote.",
+        "Ich habe mit einem Inhaber gesprochen, in dessen Schule früher genau so verkauft wurde. Fast jeder hat unterschrieben. Viele nur, um endlich aus dem Büro rauszukommen.",
+        "Die kamen danach nie zum Training. Dafür kamen kurz darauf die Kündigungen. Heute hat er deutlich weniger Mitglieder als zu seinen besten Zeiten.",
+        "Bei uns passiert die Arbeit vorher. Zehn Euro zugesagt, Termin bestätigt. Und schon vor dem Training sagen wir: Danach setzen wir uns zehn Minuten zusammen, und am Ende sagst du mir ehrlich Ja oder Nein. Beides ist völlig okay.",
+        "Ich sage dir ehrlich: Ein Vertrag, der im Büro erzwungen wird, ist eine Kündigung mit Verspätung.",
+        "Schau beim nächsten Beratungsgespräch auf die Uhr. Und frag dich, ob dein Gast noch bleiben will oder nur nicht weiß, wie er rauskommt."
+      ]
+    },
+    {
+      "id": "r61",
+      "label": "R61 · Ganz oben auf unserer Website steht nicht unser Sport (Drehtag 5 · Fr 23.10.)",
+      "paragraphs": [
+        "Ganz oben auf unserer Website steht nicht, welchen Sport wir machen. Sondern was du davon hast.",
+        "Viele Schulen schreiben groß: Kung Fu. Kickboxen. Karate. Und darunter die Stilrichtung.",
+        "Das versteht nur einer, der sich schon auskennt. Der Interessent, der zum ersten Mal sucht, will nicht Kung Fu. Er will Selbstvertrauen. Stärker werden. Sich verteidigen können.",
+        "Das muss als Erstes da stehen. Der Sport ist der Weg dahin, nicht das Ziel.",
+        "Und gleich danach: Wer steht da vorne? Warum kann ich dem vertrauen?",
+        "Öffne heute deine eigene Website auf dem Handy und lies nur die erste Überschrift. Steht da, was du machst, oder was der andere davon hat?"
+      ],
+      "target": 47
+    },
+    {
+      "id": "r63",
+      "label": "R63 · Wir verschenken kein zweites Probetraining (Di 27.10.)",
+      "target": 67,
+      "paragraphs": [
+        "Wir verschenken kein zweites Probetraining. Das ist für beide Seiten nur der bequemste Ausweg aus dem Gespräch.",
+        "In vielen Schulen läuft es so: Der Interessent sagt, ich bin mir noch nicht sicher. Und der Berater sagt erleichtert: Komm doch einfach nochmal zum Probetraining. Damit ist das Gespräch für beide vorbei.",
+        "Ein Inhaber hat mir erzählt, wie das bei ihm ausgeht. Von denen, die ein zweites Probetraining bekommen, kommen achtzig Prozent nicht wieder. Das ist seine Zahl, nicht meine.",
+        "Bei uns fragen wir stattdessen nach: Was genau willst du dir noch überlegen? Dann klären wir das gleich. Der erste Grund ist selten der echte.",
+        "Wer danach trotzdem nochmal kommen will, kann das. Aber wir bieten es nicht an, um uns das Gespräch zu sparen.",
+        "Ein zweites Probetraining beantwortet keine Frage. Es verschiebt sie nur.",
+        "Schau heute in deinen Kalender, wie viele zweite Probetrainings du letzten Monat hattest. Und zähl, wie viele davon wirklich gekommen sind."
+      ]
+    },
+    {
+      "id": "r60",
+      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Mi 28.10.)",
+      "paragraphs": [
+        "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
+        "Ein Neuer bewertet nicht zuerst dein Training. Er bewertet zuerst, wie es riecht, wenn er reinkommt. Und wie die Umkleide aussieht, wenn er sich umzieht.",
+        "Das kann der beste Trainer der Stadt nicht mehr retten.",
+        "Deshalb steht es bei uns im Ablauf vom Empfang: Alle zwei Stunden ein Rundgang. Reinigungsliste abarbeiten. Lappen in die Hand nehmen.",
+        "Und der Satz dazu: Behandle das Gym wie dein Zuhause. Jeder Griff zum Lappen sorgt dafür, dass sich alle wohlfühlen.",
+        "Geh heute Abend durch deine Umkleide, als wärst du zum ersten Mal da. Und schau, was du siehst."
+      ],
+      "target": 48
+    },
+    {
+      "id": "r64",
+      "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Do 29.10.)",
+      "target": 59,
+      "paragraphs": [
+        "Bei uns improvisiert kein Trainer sein Training.",
+        "In vielen Schulen kommt der Trainer rein, schaut, wer da ist, und überlegt sich auf dem Weg zur Matte, was er heute macht.",
+        "Beim ersten Training merkt das keiner. Nach drei Monaten schon. Dann macht einer zum vierten Mal dieselbe Kombination und fragt sich, ob er überhaupt weiterkommt.",
+        "Bei uns stehen die Inhalte Wochen im Voraus fest. Unsere Trainer machen das hauptberuflich. Die kommen nicht nach der Schicht noch schnell vorbei.",
+        "Im Kickboxen gibt es drei Level, da weiß jeder, was als Nächstes kommt. Und das Kindertrainer-Team trifft sich jede Woche und bespricht jedes einzelne Kind.",
+        "Ein Mitglied merkt nicht, dass du planst. Es merkt nur, dass es besser wird.",
+        "Frag heute deine Trainer, was sie in drei Wochen unterrichten. Und achte darauf, wie lange die Antwort dauert."
+      ]
+    },
+    {
+      "id": "r65",
+      "label": "R65 · Bei uns wird keine Kündigung einfach abgeheftet (Fr 30.10.)",
+      "target": 67,
+      "paragraphs": [
+        "Bei uns wird keine Kündigung einfach abgeheftet.",
+        "Viele Schulen machen es so: Die Kündigung kommt per Mail, einer bestätigt den Eingang, Ordner zu. Keiner fragt, warum.",
+        "Dabei heißt Kündigung manchmal gar nicht: Ich will nicht mehr. Sondern: Ich kann gerade nicht. Ein Umzug. Ein neuer Job. Eine lange Krankheit.",
+        "Eine vorzeitige Kündigung ist bei uns im Vertrag nicht vorgesehen. Aber bei so einem Grund gibt es ein Gespräch. Wir suchen zusammen eine Lösung, statt auf den Vertrag zu zeigen.",
+        "Und das fängt schon beim Abschluss an. Bevor einer unterschreibt, erklären wir ihm, wie die Kündigung läuft. Schriftlich, bis vier Wochen vor dem Ende. Damit später nichts überraschend kommt.",
+        "Ich sehe das so: Wer sich beim Gehen über den Tisch gezogen fühlt, erzählt das weiter. Wer fair behandelt wurde, kommt vielleicht irgendwann wieder.",
+        "Schau heute nach, wer bei dir eine Kündigung als Erstes in die Hand bekommt. Und ob der weiß, was er dann macht."
+      ]
+    },
     {
       "id": "r53",
       "label": "R53 · Der Lehrling, der nachts nicht schläft (Drehtag 4 · Founder · Mo 12.10. · gedreht)",
@@ -92,32 +174,6 @@
         "Such dir diese Woche ein Mitglied aus, das sich verändert hat. Stell ihm die vier Fragen. Und nimm es mit dem Handy auf."
       ],
       "target": 55
-    },
-    {
-      "id": "r60",
-      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Drehtag 4 · Do 22.10.)",
-      "paragraphs": [
-        "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
-        "Ein Neuer bewertet nicht zuerst dein Training. Er bewertet zuerst, wie es riecht, wenn er reinkommt. Und wie die Umkleide aussieht, wenn er sich umzieht.",
-        "Das kann der beste Trainer der Stadt nicht mehr retten.",
-        "Deshalb steht es bei uns im Ablauf vom Empfang: Alle zwei Stunden ein Rundgang. Reinigungsliste abarbeiten. Lappen in die Hand nehmen.",
-        "Und der Satz dazu: Behandle das Gym wie dein Zuhause. Jeder Griff zum Lappen sorgt dafür, dass sich alle wohlfühlen.",
-        "Geh heute Abend durch deine Umkleide, als wärst du zum ersten Mal da. Und schau, was du siehst."
-      ],
-      "target": 48
-    },
-    {
-      "id": "r61",
-      "label": "R61 · Ganz oben auf unserer Website steht nicht unser Sport (Drehtag 4 · Fr 23.10. 13:00)",
-      "paragraphs": [
-        "Ganz oben auf unserer Website steht nicht, welchen Sport wir machen. Sondern was du davon hast.",
-        "Viele Schulen schreiben groß: Kung Fu. Kickboxen. Karate. Und darunter die Stilrichtung.",
-        "Das versteht nur einer, der sich schon auskennt. Der Interessent, der zum ersten Mal sucht, will nicht Kung Fu. Er will Selbstvertrauen. Stärker werden. Sich verteidigen können.",
-        "Das muss als Erstes da stehen. Der Sport ist der Weg dahin, nicht das Ziel.",
-        "Und gleich danach: Wer steht da vorne? Warum kann ich dem vertrauen?",
-        "Öffne heute deine eigene Website auf dem Handy und lies nur die erste Überschrift. Steht da, was du machst, oder was der andere davon hat?"
-      ],
-      "target": 47
     },
     {
       "id": "r43",
