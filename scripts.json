@@ -16,19 +16,6 @@
       ]
     },
     {
-      "id": "r60",
-      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Drehtag 6 · Mi 28.10.)",
-      "paragraphs": [
-        "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
-        "Ein Neuer bewertet nicht zuerst dein Training. Er bewertet zuerst, wie es riecht, wenn er reinkommt. Und wie die Umkleide aussieht, wenn er sich umzieht.",
-        "Das kann der beste Trainer der Stadt nicht mehr retten.",
-        "Deshalb steht es bei uns im Ablauf vom Empfang: Alle zwei Stunden ein Rundgang. Reinigungsliste abarbeiten. Lappen in die Hand nehmen.",
-        "Und der Satz dazu: Behandle das Gym wie dein Zuhause. Jeder Griff zum Lappen sorgt dafür, dass sich alle wohlfühlen.",
-        "Geh heute Abend durch deine Umkleide, als wärst du zum ersten Mal da. Und schau, was du siehst."
-      ],
-      "target": 48
-    },
-    {
       "id": "r64",
       "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Drehtag 6 · Do 29.10.)",
       "target": 63,
@@ -137,6 +124,19 @@
         "Klingt nach Kleinigkeiten. Aber der Gast hört nicht nur dein Angebot. Er hört deine Wörter. Und an denen merkt er, ob du selbst dahinterstehst.",
         "Schreib heute die fünf Sätze auf, die bei dir im Gespräch am häufigsten fallen. Und streich die, die nach Unsicherheit klingen."
       ]
+    },
+    {
+      "id": "r60",
+      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Drehtag 6 · Mi 28.10. · gedreht)",
+      "paragraphs": [
+        "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
+        "Ein Neuer bewertet nicht zuerst dein Training. Er bewertet zuerst, wie es riecht, wenn er reinkommt. Und wie die Umkleide aussieht, wenn er sich umzieht.",
+        "Das kann der beste Trainer der Stadt nicht mehr retten.",
+        "Deshalb steht es bei uns im Ablauf vom Empfang: Alle zwei Stunden ein Rundgang. Reinigungsliste abarbeiten. Lappen in die Hand nehmen.",
+        "Und der Satz dazu: Behandle das Gym wie dein Zuhause. Jeder Griff zum Lappen sorgt dafür, dass sich alle wohlfühlen.",
+        "Geh heute Abend durch deine Umkleide, als wärst du zum ersten Mal da. Und schau, was du siehst."
+      ],
+      "target": 48
     },
     {
       "id": "r63",
