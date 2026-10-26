@@ -1,51 +1,9 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-26",
   "scripts": [
     {
-      "id": "r62",
-      "label": "R62 · Bei uns geht keiner unter Druck aus dem Büro (Drehtag 5 · Mi 21.10. · gedreht)",
-      "target": 86,
-      "paragraphs": [
-        "Bei uns geht keiner unter Druck aus dem Büro.",
-        "Viele Schulen halten den Interessenten nach dem Probetraining so lange im Büro, bis er unterschreibt. Und freuen sich dann über die Abschlussquote.",
-        "Ich habe mit einem Inhaber gesprochen, in dessen Schule früher genau so verkauft wurde. Fast jeder hat unterschrieben. Viele nur, um endlich aus dem Büro rauszukommen.",
-        "Die kamen danach nie zum Training. Dafür kamen kurz darauf die Kündigungen. Heute hat er deutlich weniger Mitglieder als zu seinen besten Zeiten.",
-        "Bei uns passiert die Arbeit vorher. Zehn Euro zugesagt, Termin bestätigt. Und im Gespräch danach geht es nicht um Ja oder Nein. Wir fragen, was er sucht, und gehen genau darauf ein. Wir zeigen, wer wir sind: unsere Räume, unsere hauptberuflichen Trainer, unsere Erfolge. Und ein Team, in dem man sich sofort wohlfühlt.",
-        "Und wer beim ersten Mal nicht unterschreibt, bekommt einen Rückruf oder einen zweiten Termin. Viele unterschreiben dann beim zweiten Mal. Ganz ohne Druck.",
-        "Ich sage dir ehrlich: Ein Vertrag, der im Büro erzwungen wird, ist eine Kündigung mit Verspätung.",
-        "Wenn dein Training gut ist und deine Beratung sitzt, brauchst du keinen Druck. Dann wächst du nicht nur. Deine Mitglieder bleiben auch länger."
-      ]
-    },
-    {
-      "id": "r61",
-      "label": "R61 · Ganz oben auf unserer Website steht nicht unser Sport (Drehtag 5 · Fr 23.10.)",
-      "paragraphs": [
-        "Ganz oben auf unserer Website steht nicht, welchen Sport wir machen. Sondern was du davon hast.",
-        "Viele Schulen schreiben groß: Kung Fu. Kickboxen. Karate. Und darunter die Stilrichtung.",
-        "Das versteht nur einer, der sich schon auskennt. Der Interessent, der zum ersten Mal sucht, will nicht Kung Fu. Er will Selbstvertrauen. Stärker werden. Sich verteidigen können.",
-        "Das muss als Erstes da stehen. Der Sport ist der Weg dahin, nicht das Ziel.",
-        "Und gleich danach: Wer steht da vorne? Warum kann ich dem vertrauen?",
-        "Öffne heute deine eigene Website auf dem Handy und lies nur die erste Überschrift. Steht da, was du machst, oder was der andere davon hat?"
-      ],
-      "target": 47
-    },
-    {
-      "id": "r63",
-      "label": "R63 · Wir verschenken kein zweites Probetraining (Di 27.10.)",
-      "target": 67,
-      "paragraphs": [
-        "Wir verschenken kein zweites Probetraining. Das ist für beide Seiten nur der bequemste Ausweg aus dem Gespräch.",
-        "In vielen Schulen läuft es so: Der Interessent sagt, ich bin mir noch nicht sicher. Und der Berater sagt erleichtert: Komm doch einfach nochmal zum Probetraining. Damit ist das Gespräch für beide vorbei.",
-        "Ein Inhaber hat mir erzählt, wie das bei ihm ausgeht. Von denen, die ein zweites Probetraining bekommen, kommen achtzig Prozent nicht wieder. Das ist seine Zahl, nicht meine.",
-        "Bei uns fragen wir stattdessen nach: Was genau willst du dir noch überlegen? Dann klären wir das gleich. Der erste Grund ist selten der echte.",
-        "Wer danach trotzdem nochmal kommen will, kann das. Aber wir bieten es nicht an, um uns das Gespräch zu sparen.",
-        "Ein zweites Probetraining beantwortet keine Frage. Es verschiebt sie nur.",
-        "Schau heute in deinen Kalender, wie viele zweite Probetrainings du letzten Monat hattest. Und zähl, wie viele davon wirklich gekommen sind."
-      ]
-    },
-    {
       "id": "r60",
-      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Mi 28.10.)",
+      "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Drehtag 6 · Mi 28.10.)",
       "paragraphs": [
         "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
         "Ein Neuer bewertet nicht zuerst dein Training. Er bewertet zuerst, wie es riecht, wenn er reinkommt. Und wie die Umkleide aussieht, wenn er sich umzieht.",
@@ -58,7 +16,7 @@
     },
     {
       "id": "r64",
-      "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Do 29.10.)",
+      "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Drehtag 6 · Do 29.10.)",
       "target": 59,
       "paragraphs": [
         "Bei uns improvisiert kein Trainer sein Training.",
@@ -72,7 +30,7 @@
     },
     {
       "id": "r65",
-      "label": "R65 · Bei uns wird keine Kündigung einfach abgeheftet (Fr 30.10.)",
+      "label": "R65 · Bei uns wird keine Kündigung einfach abgeheftet (Drehtag 6 · Fr 30.10. 13:00)",
       "target": 67,
       "paragraphs": [
         "Bei uns wird keine Kündigung einfach abgeheftet.",
@@ -82,6 +40,61 @@
         "Und das fängt schon beim Abschluss an. Bevor einer unterschreibt, erklären wir ihm, wie die Kündigung läuft. Schriftlich, bis vier Wochen vor dem Ende. Damit später nichts überraschend kommt.",
         "Ich sehe das so: Wer sich beim Gehen über den Tisch gezogen fühlt, erzählt das weiter. Wer fair behandelt wurde, kommt vielleicht irgendwann wieder.",
         "Schau heute nach, wer bei dir eine Kündigung als Erstes in die Hand bekommt. Und ob der weiß, was er dann macht."
+      ]
+    },
+    {
+      "id": "r66",
+      "label": "R66 · Mein Neffe kann das (Drehtag 6 · Founder · Di 03.11.)",
+      "target": 58,
+      "paragraphs": [
+        "„Brauch ich nicht. Mein Neffe kann das.“ Den Satz hör ich von Schulleitern immer wieder.",
+        "Kann er bestimmt. Eine Buchungsseite, zwei Erinnerungen, eine Liste mit allen Anfragen. Das ist an einem Wochenende gebaut.",
+        "Aber die Frage ist nicht, wer es baut. Die Frage ist, wer es jeden Tag macht. Um halb elf abends, wenn die Anfrage reinkommt. Am Wochenende. Und auch dann, wenn dein Neffe gerade Klausuren schreibt.",
+        "Ich hab das jahrelang selbst gemacht, mit Bordmitteln, seit 2011 in meiner eigenen Schule. Irgendwann betreibst du zwei Läden: deine Schule und deine Technik. Und es scheitert nicht am Bauen. Es scheitert am Dienstag, wenn zwei Trainer krank sind.",
+        "Deshalb hab ich für meine Schule ein System gebaut, das diese Arbeit jeden Tag übernimmt. Es heißt Dojo Trust.",
+        "Wie das bei dir laufen kann, schau dir an auf dojotrust.de."
+      ]
+    },
+    {
+      "id": "r63",
+      "label": "R63 · Wir verschenken kein zweites Probetraining (Drehtag 5 · Di 27.10. · gedreht)",
+      "target": 67,
+      "paragraphs": [
+        "Wir verschenken kein zweites Probetraining. Das ist für beide Seiten nur der bequemste Ausweg aus dem Gespräch.",
+        "In vielen Schulen läuft es so: Der Interessent sagt, ich bin mir noch nicht sicher. Und der Berater sagt erleichtert: Komm doch einfach nochmal zum Probetraining. Damit ist das Gespräch für beide vorbei.",
+        "Ein Inhaber hat mir erzählt, wie das bei ihm ausgeht. Von denen, die ein zweites Probetraining bekommen, kommen achtzig Prozent nicht wieder. Das ist seine Zahl, nicht meine.",
+        "Bei uns fragen wir stattdessen nach: Was genau willst du dir noch überlegen? Dann klären wir das gleich. Der erste Grund ist selten der echte.",
+        "Wer danach trotzdem nochmal kommen will, kann das. Aber wir bieten es nicht an, um uns das Gespräch zu sparen.",
+        "Ein zweites Probetraining beantwortet keine Frage. Es verschiebt sie nur.",
+        "Schau heute in deinen Kalender, wie viele zweite Probetrainings du letzten Monat hattest. Und zähl, wie viele davon wirklich gekommen sind."
+      ]
+    },
+    {
+      "id": "r61",
+      "label": "R61 · Ganz oben auf unserer Website steht nicht unser Sport (Drehtag 5 · Fr 23.10. 13:00 · gedreht)",
+      "paragraphs": [
+        "Ganz oben auf unserer Website steht nicht, welchen Sport wir machen. Sondern was du davon hast.",
+        "Viele Schulen schreiben groß: Kung Fu. Kickboxen. Karate. Und darunter die Stilrichtung.",
+        "Das versteht nur einer, der sich schon auskennt. Der Interessent, der zum ersten Mal sucht, will nicht Kung Fu. Er will Selbstvertrauen. Stärker werden. Sich verteidigen können.",
+        "Das muss als Erstes da stehen. Der Sport ist der Weg dahin, nicht das Ziel.",
+        "Und gleich danach: Wer steht da vorne? Warum kann ich dem vertrauen?",
+        "Öffne heute deine eigene Website auf dem Handy und lies nur die erste Überschrift. Steht da, was du machst, oder was der andere davon hat?"
+      ],
+      "target": 47
+    },
+    {
+      "id": "r62",
+      "label": "R62 · Bei uns geht keiner unter Druck aus dem Büro (Drehtag 5 · Mi 21.10. · gedreht)",
+      "target": 86,
+      "paragraphs": [
+        "Bei uns geht keiner unter Druck aus dem Büro.",
+        "Viele Schulen halten den Interessenten nach dem Probetraining so lange im Büro, bis er unterschreibt. Und freuen sich dann über die Abschlussquote.",
+        "Ich habe mit einem Inhaber gesprochen, in dessen Schule früher genau so verkauft wurde. Fast jeder hat unterschrieben. Viele nur, um endlich aus dem Büro rauszukommen.",
+        "Die kamen danach nie zum Training. Dafür kamen kurz darauf die Kündigungen. Heute hat er deutlich weniger Mitglieder als zu seinen besten Zeiten.",
+        "Bei uns passiert die Arbeit vorher. Zehn Euro zugesagt, Termin bestätigt. Und im Gespräch danach geht es nicht um Ja oder Nein. Wir fragen, was er sucht, und gehen genau darauf ein. Wir zeigen, wer wir sind: unsere Räume, unsere hauptberuflichen Trainer, unsere Erfolge. Und ein Team, in dem man sich sofort wohlfühlt.",
+        "Und wer beim ersten Mal nicht unterschreibt, bekommt einen Rückruf oder einen zweiten Termin. Viele unterschreiben dann beim zweiten Mal. Ganz ohne Druck.",
+        "Ich sage dir ehrlich: Ein Vertrag, der im Büro erzwungen wird, ist eine Kündigung mit Verspätung.",
+        "Wenn dein Training gut ist und deine Beratung sitzt, brauchst du keinen Druck. Dann wächst du nicht nur. Deine Mitglieder bleiben auch länger."
       ]
     },
     {
@@ -165,7 +178,7 @@
     },
     {
       "id": "r59",
-      "label": "R59 · Unsere beste Werbung steht schon auf der Matte (Drehtag 4 · Mi 21.10.)",
+      "label": "R59 · Unsere beste Werbung steht schon auf der Matte (verschoben, Backlog · nicht gedreht)",
       "paragraphs": [
         "Unsere beste Werbung steht schon auf der Matte. Wir müssen sie nur fragen.",
         "Jede Schule hat Mitglieder mit einer Geschichte. Der, der vorher keine Treppe ohne Pause geschafft hat. Die, die sich abends nicht mehr allein auf die Straße getraut hat.",
