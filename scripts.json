@@ -1,20 +1,6 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "scripts": [
-    {
-      "id": "j40",
-      "label": "Privat · Gruß Daniel (nur für mich)",
-      "target": 40,
-      "paragraphs": [
-        "Jenny, du hast gerade gesehen, wie viele Menschen an dich denken. Das ist kein Zufall.",
-        "Du bist die, die alles zusammenhält. Für die Kinder, für mich, für alle um dich herum.",
-        "Ich weiß, dass ich oft im Tunnel bin. Viel Arbeit, viele Nächte. Und du trägst das mit, ohne viel darüber zu reden.",
-        "Danke dafür.",
-        "Deshalb gehören diese Tage nur dir. Kein Alltag, keine Termine. Nur wir zwei in Lissabon.",
-        "Vierzig steht dir. Ehrlich.",
-        "Ich liebe dich. Alles Gute zum Geburtstag."
-      ]
-    },
     {
       "id": "r64",
       "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Drehtag 6 · Do 29.10.)",
