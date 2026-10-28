@@ -1,59 +1,18 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "scripts": [
     {
-      "id": "r64",
-      "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Drehtag 6 · Do 29.10.)",
-      "target": 63,
-      "paragraphs": [
-        "Bei uns improvisiert kein Trainer sein Training.",
-        "In vielen Schulen kommt der Trainer rein, schaut, wer da ist, und überlegt sich auf dem Weg zur Matte, was er heute macht.",
-        "Beim ersten Training merkt das keiner. Nach drei Monaten schon. Dann macht einer zum vierten Mal dieselbe Kombination und fragt sich, ob er überhaupt weiterkommt.",
-        "Bei uns stehen die Inhalte und die Ziele Wochen im Voraus fest. Unsere Trainer machen das hauptberuflich. Die kommen nicht nach der Schicht noch schnell vorbei.",
-        "Im Kickboxen gibt es drei Level, da weiß jeder, was als Nächstes kommt. Und das Kindertrainer-Team trifft sich jede Woche und bespricht jedes einzelne Kind.",
-        "Ein Mitglied merkt nicht, dass du planst. Es merkt nur, dass es besser wird.",
-        "Frag heute deine Trainer, was sie in drei Wochen unterrichten. Und achte darauf, wie lange die Antwort dauert."
-      ]
-    },
-    {
-      "id": "r65",
-      "label": "R65 · Bei uns zeigt keiner einfach auf den Vertrag, wenn einer kündigen muss (Drehtag 6 · Fr 30.10. 13:00)",
-      "target": 70,
-      "paragraphs": [
-        "Bei uns zeigt keiner einfach auf den Vertrag, wenn einer kündigen muss.",
-        "Viele Schulen machen es so: Die Kündigung kommt, und wer früher raus muss, bekommt die Laufzeit vorgelesen. Fertig.",
-        "Dabei heißt Kündigung manchmal gar nicht: Ich will nicht mehr. Sondern: Ich kann gerade nicht. Ein Umzug. Ein neuer Job. Eine lange Krankheit.",
-        "Eine vorzeitige Kündigung ist bei uns im Vertrag nicht vorgesehen. Aber wer mit so einem Grund offen auf uns zukommt, mit dem reden wir. Und dann suchen wir zusammen eine Lösung.",
-        "Und das fängt schon beim Abschluss an. Bevor einer unterschreibt, erklären wir ihm, wie die Kündigung läuft. Schriftlich, bis vier Wochen vor dem Ende. Damit später nichts überraschend kommt.",
-        "Wer sich beim Gehen über den Tisch gezogen fühlt, erzählt das weiter. Wer fair behandelt wurde, kommt vielleicht irgendwann wieder.",
-        "Schau heute nach, wer bei dir eine Kündigung als Erstes in die Hand bekommt. Und ob der weiß, was er dann macht."
-      ]
-    },
-    {
       "id": "r66",
-      "label": "R66 · Mein Neffe kann das (Drehtag 6 · Founder · Di 03.11.)",
-      "target": 58,
+      "label": "R66 · Mein Mann kann das auch (Drehtag 7 · Fr 06.11. 13:00 · NEU 28.10.)",
+      "target": 62,
       "paragraphs": [
-        "„Brauch ich nicht. Mein Neffe kann das.“ Den Satz hör ich von Schulleitern immer wieder.",
-        "Kann er bestimmt. Eine Buchungsseite, zwei Erinnerungen, eine Liste mit allen Anfragen. Das ist an einem Wochenende gebaut.",
-        "Aber die Frage ist nicht, wer es baut. Die Frage ist, wer es jeden Tag macht. Um halb elf abends, wenn die Anfrage reinkommt. Am Wochenende. Und auch dann, wenn dein Neffe gerade Klausuren schreibt.",
-        "Ich hab das jahrelang selbst gemacht, mit Bordmitteln, seit 2011 in meiner eigenen Schule. Irgendwann betreibst du zwei Läden: deine Schule und deine Technik. Und es scheitert nicht am Bauen. Es scheitert am Dienstag, wenn zwei Trainer krank sind.",
-        "Deshalb hab ich für meine Schule ein System gebaut, das diese Arbeit jeden Tag übernimmt. Es heißt Dojo Trust.",
-        "Wie das bei dir laufen kann, schau dir an auf dojotrust.de."
-      ]
-    },
-    {
-      "id": "r67",
-      "label": "R67 · Bei uns gibt es keinen Studentenrabatt (Drehtag 6 · Fr 06.11. 13:00 · NEU 26.10.)",
-      "target": 61,
-      "paragraphs": [
-        "Bei uns gibt es keinen Studentenrabatt. Keinen Azubirabatt. Und auch keinen Geschwisterrabatt.",
-        "Die Frage kommt im Beratungsgespräch immer wieder. Und in vielen Schulen gibt der Berater dann schnell irgendeinen Nachlass, damit das Gespräch nicht kippt.",
-        "Damit sagst du dem Gast: Der Preis von eben war nicht ernst gemeint.",
-        "Bei uns zahlen alle dasselbe. Das gehört zu unserem Kodex. Auf der Matte sind alle gleich, also auch beim Beitrag.",
-        "Wer weniger zahlen will, kann das trotzdem. Mit einer längeren Laufzeit. Mit Vorauszahlung. Oder mit Freunden: Für jeden, der Mitglied wird, gibt es hundert Euro Gutschrift. Das sind Regeln, die für alle gelten.",
-        "Ein Rabatt, den du dir im Gespräch ausdenkst, ist kein Geschenk. Er ist ein Rückzieher.",
-        "Frag heute dein Team, was es sagt, wenn einer nach Rabatt fragt. Und hör hin, ob alle dasselbe sagen."
+        "„Mein Mann kann das auch.“ Mit diesem Satz hat sich eine Interessentin gegen das Training entschieden. Erzählt hat mir das ein Schulleiter, mit dem ich arbeite. Sie hatte bei ihm Ving Tsun ausprobiert.",
+        "Ihr Mann hat das früher wohl auch mal gemacht. Dann übt man eben ein bisschen zu Hause.",
+        "Kann man machen. Aber wer Selbstverteidigung wirklich sauber lernen will, lernt das nicht im Wohnzimmer. Und auch nicht im Fitnessstudio am Sandsack.",
+        "Sondern in einer Schule. Mit Trainern, die Erfahrung haben. Die sehen, was du falsch machst, und dich Schritt für Schritt nach vorne bringen. In einer sicheren Umgebung.",
+        "Wer das nicht sehen will, dem fehlt nicht die Zeit und nicht das Geld. Dem fehlt der Blick für den Wert. So jemanden willst du gar nicht als Mitglied. Sein Ziel erreicht er auch zu Hause nicht. Falls er überhaupt eins hatte.",
+        "Erklär den Wert einmal klar. Wer ihn dann nicht sieht, dem musst du nicht hinterherlaufen. Nicht jeder Interessent muss Mitglied werden.",
+        "Überleg dir heute, was du in einem Satz antwortest, wenn einer sagt: Das kann ich auch zu Hause."
       ]
     },
     {
@@ -109,6 +68,48 @@
         "Und keiner sagt: Ich würde vielleicht. Wir sagen: Ich empfehle dir.",
         "Klingt nach Kleinigkeiten. Aber der Gast hört nicht nur dein Angebot. Er hört deine Wörter. Und an denen merkt er, ob du selbst dahinterstehst.",
         "Schreib heute die fünf Sätze auf, die bei dir im Gespräch am häufigsten fallen. Und streich die, die nach Unsicherheit klingen."
+      ]
+    },
+    {
+      "id": "r67",
+      "label": "R67 · Bei uns gibt es keinen Studentenrabatt (Drehtag 6 · Di 03.11. 21:00 · gedreht)",
+      "target": 61,
+      "paragraphs": [
+        "Bei uns gibt es keinen Studentenrabatt. Keinen Azubirabatt. Und auch keinen Geschwisterrabatt.",
+        "Die Frage kommt im Beratungsgespräch immer wieder. Und in vielen Schulen gibt der Berater dann schnell irgendeinen Nachlass, damit das Gespräch nicht kippt.",
+        "Damit sagst du dem Gast: Der Preis von eben war nicht ernst gemeint.",
+        "Bei uns zahlen alle dasselbe. Das gehört zu unserem Kodex. Auf der Matte sind alle gleich, also auch beim Beitrag.",
+        "Wer weniger zahlen will, kann das trotzdem. Mit einer längeren Laufzeit. Mit Vorauszahlung. Oder mit Freunden: Für jeden, der Mitglied wird, gibt es hundert Euro Gutschrift. Das sind Regeln, die für alle gelten.",
+        "Ein Rabatt, den du dir im Gespräch ausdenkst, ist kein Geschenk. Er ist ein Rückzieher.",
+        "Frag heute dein Team, was es sagt, wenn einer nach Rabatt fragt. Und hör hin, ob alle dasselbe sagen."
+      ]
+    },
+    {
+      "id": "r65",
+      "label": "R65 · Bei uns zeigt keiner einfach auf den Vertrag, wenn einer kündigen muss (Drehtag 6 · Fr 30.10. 13:00 · gedreht)",
+      "target": 70,
+      "paragraphs": [
+        "Bei uns zeigt keiner einfach auf den Vertrag, wenn einer kündigen muss.",
+        "Viele Schulen machen es so: Die Kündigung kommt, und wer früher raus muss, bekommt die Laufzeit vorgelesen. Fertig.",
+        "Dabei heißt Kündigung manchmal gar nicht: Ich will nicht mehr. Sondern: Ich kann gerade nicht. Ein Umzug. Ein neuer Job. Eine lange Krankheit.",
+        "Eine vorzeitige Kündigung ist bei uns im Vertrag nicht vorgesehen. Aber wer mit so einem Grund offen auf uns zukommt, mit dem reden wir. Und dann suchen wir zusammen eine Lösung.",
+        "Und das fängt schon beim Abschluss an. Bevor einer unterschreibt, erklären wir ihm, wie die Kündigung läuft. Schriftlich, bis vier Wochen vor dem Ende. Damit später nichts überraschend kommt.",
+        "Wer sich beim Gehen über den Tisch gezogen fühlt, erzählt das weiter. Wer fair behandelt wurde, kommt vielleicht irgendwann wieder.",
+        "Schau heute nach, wer bei dir eine Kündigung als Erstes in die Hand bekommt. Und ob der weiß, was er dann macht."
+      ]
+    },
+    {
+      "id": "r64",
+      "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Drehtag 6 · Do 29.10. · gedreht)",
+      "target": 63,
+      "paragraphs": [
+        "Bei uns improvisiert kein Trainer sein Training.",
+        "In vielen Schulen kommt der Trainer rein, schaut, wer da ist, und überlegt sich auf dem Weg zur Matte, was er heute macht.",
+        "Beim ersten Training merkt das keiner. Nach drei Monaten schon. Dann macht einer zum vierten Mal dieselbe Kombination und fragt sich, ob er überhaupt weiterkommt.",
+        "Bei uns stehen die Inhalte und die Ziele Wochen im Voraus fest. Unsere Trainer machen das hauptberuflich. Die kommen nicht nach der Schicht noch schnell vorbei.",
+        "Im Kickboxen gibt es drei Level, da weiß jeder, was als Nächstes kommt. Und das Kindertrainer-Team trifft sich jede Woche und bespricht jedes einzelne Kind.",
+        "Ein Mitglied merkt nicht, dass du planst. Es merkt nur, dass es besser wird.",
+        "Frag heute deine Trainer, was sie in drei Wochen unterrichten. Und achte darauf, wie lange die Antwort dauert."
       ]
     },
     {
