@@ -1,6 +1,20 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-11-06",
   "scripts": [
+    {
+      "id": "t-eike",
+      "label": "T-Eike · Testimonial-FRAGEN für Daniel (So 08.11., Barmbek) · nicht für Eike",
+      "target": 0,
+      "paragraphs": [
+        "VORHER sagen: Bitte nimm die Frage in deine Antwort mit rein, zum Beispiel „Bevor wir Dojo Trust hatten …“. Keine Zahlen vorsagen. Nur über Dojo Trust, nicht über Werbung oder Website.",
+        "0 · Stell dich kurz vor: Wer bist du, welche Schule, seit wann, wie groß?",
+        "1 · Wie lief das mit Probetrainings und Anfragen, bevor ihr Dojo Trust hattet? Was hat genervt, was ist liegen geblieben?",
+        "2 · Was ist heute anders? Was musst du oder dein Team nicht mehr machen?",
+        "3 · Würdest du zurückwechseln? Ein Satz.",
+        "4 · Welchem Schulleiter würdest du Dojo Trust empfehlen?",
+        "SCHLUSS: 10 Sekunden in die Kamera lächeln. Danach per WhatsApp: „Ja, darf für Werbung genutzt werden.“"
+      ]
+    },
     {
       "id": "r66",
       "label": "R66 · Mein Mann kann das auch (Drehtag 7 · Fr 06.11. 13:00 · NEU 28.10.)",
@@ -68,6 +82,32 @@
         "Und keiner sagt: Ich würde vielleicht. Wir sagen: Ich empfehle dir.",
         "Klingt nach Kleinigkeiten. Aber der Gast hört nicht nur dein Angebot. Er hört deine Wörter. Und an denen merkt er, ob du selbst dahinterstehst.",
         "Schreib heute die fünf Sätze auf, die bei dir im Gespräch am häufigsten fallen. Und streich die, die nach Unsicherheit klingen."
+      ]
+    },
+    {
+      "id": "r72",
+      "label": "R72 · „Wir rufen dich an“ ist kein Ergebnis (NEU 06.11. · nur mit Eikes Ja · Vorschlag Mo 16.11.)",
+      "target": 62,
+      "paragraphs": [
+        "Ich habe mir sechs Wochen Probetrainings in einer Schule angesehen, mit der ich arbeite. Und eine Zahl lässt mich nicht mehr los.",
+        "Alle, die nicht direkt unterschrieben haben, haben eins von zwei Dingen bekommen. Entweder einen festen Termin vor Ort. Oder den Satz: Wir rufen dich an.",
+        "Von denen mit Termin vor Ort sind dreizehn von vierzehn Mitglied geworden. Von denen, die das Team per Rückruf erreicht hat: fünf von vierzehn. Und fünfundzwanzig hat es gar nicht erst erreicht.",
+        "Jetzt kann man sagen: Wer einen Termin annimmt, will eh schon. Stimmt. Genau das ist der Punkt. Der Termin zeigt dir, wer will. Der Rückruf versteckt es.",
+        "Ein Rückruf fühlt sich freundlich an. Für den Gast und fürs Team. In Wahrheit ist es ein Gespräch, das man verschiebt, weil es gerade unangenehm ist.",
+        "Deshalb gilt bei uns: Niemand geht nach dem Probetraining ohne Ergebnis. Mitglied, Termin vor Ort oder ein klares Nein mit Grund. „Wir rufen dich an“ ist kein Ergebnis."
+      ]
+    },
+    {
+      "id": "r73",
+      "label": "R73 · „Ich überleg's mir“ (NEU 06.11. · erst nach der Schulung Sa drehen · Vorschlag Di 17.11.)",
+      "target": 58,
+      "paragraphs": [
+        "„Ich überleg's mir noch.“ Diesen Satz hört jede Schule nach dem Probetraining. Und fast jedes Team macht dann dasselbe: Es sagt „Klar, kein Problem“ und lässt den Gast gehen.",
+        "Dabei überlegt da meistens keiner. Hinter dem Satz steckt fast immer etwas Konkretes. Der Preis. Die Zeit. Der Partner, der mitreden will. Oder die Angst, sich zu blamieren.",
+        "Also fragt man nach. Ganz ruhig: Was genau möchtest du dir noch überlegen? Und dann hört man zu.",
+        "Ist es die Zeit, schaut man zusammen auf den Kursplan. Ist es der Partner, bringt man ihn beim nächsten Mal einfach mit. Und dann macht man den Termin direkt fest. Jetzt, im Handy. Nicht irgendwann am Telefon.",
+        "Wer nach dem Grund fragt, bekommt eine Antwort. Wer nicht fragt, bekommt einen Rückruf, bei dem keiner rangeht.",
+        "Genau das habe ich dieses Wochenende mit einem Team geübt. Jeder zweimal, mit echten Fällen."
       ]
     },
     {
