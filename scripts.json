@@ -3,15 +3,19 @@
   "scripts": [
     {
       "id": "t-eike",
-      "label": "T-Eike · Testimonial-FRAGEN für Daniel (So 08.11., Barmbek) · nicht für Eike",
+      "label": "T-Eike · Interview-FRAGEN für Daniel (So 08.11., Barmbek, 25 Min.) · nicht für Eike",
       "target": 0,
       "paragraphs": [
-        "VORHER sagen: Bitte nimm die Frage in deine Antwort mit rein, zum Beispiel „Bevor wir Dojo Trust hatten …“. Keine Zahlen vorsagen. Nur über Dojo Trust, nicht über Werbung oder Website.",
-        "0 · Stell dich kurz vor: Wer bist du, welche Schule, seit wann, wie groß?",
-        "1 · Wie lief das mit Probetrainings und Anfragen, bevor ihr Dojo Trust hattet? Was hat genervt, was ist liegen geblieben?",
-        "2 · Was ist heute anders? Was musst du oder dein Team nicht mehr machen?",
-        "3 · Würdest du zurückwechseln? Ein Satz.",
-        "4 · Welchem Schulleiter würdest du Dojo Trust empfehlen?",
+        "VORHER sagen: Ich stell dir ein paar Fragen, du erzählst einfach. Nimm die Frage in deine Antwort mit rein, zum Beispiel „Bevor wir Dojo Trust hatten …“. Zahlen nur, wenn du sie sicher weißt. Du darfst über alles reden, auch Beratung, Website und Anzeigen. Ich schneide das später getrennt.",
+        "0 · Stell dich kurz vor: Wer bist du, welche Schule, seit wann, wie viele Mitglieder habt ihr heute?",
+        "1 · Wo stand die Schule, als wir vor fünf Jahren angefangen haben? Was war damals schwer?",
+        "2 · Wie lief das früher mit Probetrainings und Anfragen? Was hat dich und dein Team Zeit gekostet?",
+        "3 · Ihr habt das Probetraining erst kostenpflichtig gemacht und dann den Preis noch mal erhöht. Was hattest du befürchtet, und was ist wirklich passiert?",
+        "4 · Was ist heute anders, seit ihr Dojo Trust habt? Was musst du oder dein Team nicht mehr machen?",
+        "5 · Wie fühlt sich dein Alltag als Schulleiter heute an?",
+        "6 · Was kommt als Nächstes bei euch? (Zweiter Standort nur, wenn Eike vorher Ja gesagt hat.)",
+        "7 · Würdest du zurückwechseln? Ein Satz.",
+        "8 · Welchem Schulleiter würdest du das empfehlen?",
         "SCHLUSS: 10 Sekunden in die Kamera lächeln. Danach per WhatsApp: „Ja, darf für Werbung genutzt werden.“"
       ]
     },
