@@ -1,62 +1,58 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "scripts": [
     {
       "id": "r75",
-      "label": "R75 · S1 Solo-Walk: Diese Schule nimmt Geld fürs Probetraining (Sa 07.11. 08:00 · Ausweich So 08.11. 08:00 · Barmbek, leere Halle · STICHPUNKTE · Vorschlag Mi 18.11.)",
+      "label": "R75 · Bezahltes Probetraining (Sa 08:00, leere Halle, im Gehen)",
       "target": 50,
       "paragraphs": [
-        "SO DREHST DU: leere Halle, Handy in der Hand, Frontkamera, Ansteckmikro. Langsam gehen, zum Schluss stehen bleiben. Aufhänger und Schluss wörtlich, die Mitte frei nach den drei Punkten. Veröffentlicht wird nur mit Eikes Ja Nr. 4 (Zahlen) und Nr. 5 (Schule erkennbar).",
-        "AUFHÄNGER (wörtlich): „Diese Schule nimmt seit August Geld fürs Probetraining. Danach kamen die zwei stärksten Monate des Jahres.“",
-        "1 · Die Angst vorher: Wenn das Probetraining Geld kostet, kommt keiner mehr. Das denkt fast jeder Schulleiter.",
-        "2 · Was passiert ist: ab August zehn Euro. Im August sechzig neue Mitglieder, im September vierundsechzig. Davor im Schnitt einundfünfzig.",
-        "3 · Seit Oktober zwanzig Euro. Im ersten Monat kamen weniger Leute zum Probetraining. Mitglied geworden sind daraus genauso viele wie vorher.",
-        "SCHLUSS (wörtlich): „Ein kostenloses Probetraining fühlt sich großzügig an. Bezahlt wird es trotzdem. Mit der Zeit deines Teams.“",
-        "NICHT SAGEN: „wegen Dojo Trust“ oder „nur wegen des Preises“. Schulname und Stadt nur, wenn Eike das ausdrücklich will."
+        "Eins meiner ersten Gyms nimmt seit August Geld fürs Probetraining. Danach kamen die zwei stärksten Monate des Jahres.",
+        "Die Angst vorher kennt fast jeder Schulleiter: Wenn das Probetraining Geld kostet, kommt keiner mehr.",
+        "Ab August hat es zehn Euro gekostet. Im August kamen sechzig neue Mitglieder, im September vierundsechzig. Davor waren es im Schnitt einundfünfzig.",
+        "Seit Oktober kostet es zwanzig Euro. Im ersten Monat kamen weniger Leute zum Probetraining. Mitglied geworden sind daraus genauso viele wie vorher.",
+        "Ein kostenloses Probetraining fühlt sich großzügig an. Bezahlt wird es trotzdem. Mit der Zeit deines Teams."
       ]
     },
     {
       "id": "r73",
-      "label": "R73 · W1 Rausgeh-Reel: „Ich überleg's mir“ (So 08.11. 08:00 · Barmbek, leerer Schulungsraum → Halle · STICHPUNKTE · Vorschlag Di 17.11.)",
+      "label": "R73 · „Ich überleg's mir“ (Schulungsraum, dann raus in die Halle)",
       "target": 50,
       "paragraphs": [
-        "SO DREHST DU: Sonntag 08:00, Schulungsraum so lassen wie nach der Schulung (Mappen, Karten, Prüfbögen auf dem Tisch, Bildschirm ohne echte Namen). Du stehst am Tisch, Handy in der Hand, Frontkamera, Ansteckmikro. Aufhänger sagen, dann raus in die leere Halle und weiterreden. Zum Schluss stehen bleiben. Die Szene vom Samstag (Team von hinten) schneidet Claude als Einschub rein. Veröffentlicht wird nur mit Eikes Ja Nr. 5.",
-        "IM RAUM (wörtlich): „An diesem Tisch hat das Team gestern den teuersten Satz nach dem Probetraining geübt: Ich überleg's mir noch.“",
-        "1 · Fast jedes Team sagt dann: Klar, kein Problem. Und lässt den Gast gehen.",
-        "2 · Dabei überlegt da meistens keiner. Dahinter steckt was Konkretes: der Preis, die Zeit, der Partner, die Angst, sich zu blamieren.",
-        "3 · Also ruhig nachfragen: Was genau möchtest du dir noch überlegen? Zuhören. Ist es die Zeit, Kursplan zeigen. Ist es der Partner, beim nächsten Mal mitbringen. Den Termin direkt im Handy festmachen.",
-        "SCHLUSS (wörtlich): „Wer nach dem Grund fragt, bekommt eine Antwort. Wer nicht fragt, bekommt einen Rückruf, bei dem keiner rangeht.“"
+        "Ich habe mit dem Team eines Gyms, das ich berate, den teuersten Satz nach dem Probetraining geübt: Ich überleg's mir noch.",
+        "Fast jedes Team sagt dann: Klar, kein Problem. Und lässt den Gast gehen.",
+        "Dabei überlegt da meistens keiner. Dahinter steckt was Konkretes: der Preis, die Zeit, der Partner oder die Angst, sich zu blamieren.",
+        "Also frag ruhig nach: Was genau möchtest du dir noch überlegen? Und dann hör zu. Ist es die Zeit, zeig den Kursplan. Ist es der Partner, bring ihn beim nächsten Mal mit. Und mach den Termin direkt im Handy fest.",
+        "Wer nach dem Grund fragt, bekommt eine Antwort. Wer nicht fragt, bekommt einen Rückruf, bei dem keiner rangeht."
       ]
     },
     {
       "id": "r74",
-      "label": "R74 · W2 Rausgeh-Reel: Über tausend Mitglieder und trotzdem üben sie (So 08.11. 08:00 · Barmbek, leerer Schulungsraum → Halle · STICHPUNKTE · Vorschlag Mo 16.11.)",
+      "label": "R74 · Über tausend Mitglieder und trotzdem üben sie (Schulungsraum, dann raus in die Halle)",
       "target": 50,
       "paragraphs": [
-        "SO DREHST DU: Sonntag 08:00, gleicher Raum wie R73, Tische mit den Mappen im Bild. Aufhänger im Raum, dann raus in die leere Halle. Zum Schluss stehen bleiben, 2 Sekunden still in die Kamera. Die Übungs-Einschübe vom Samstag schneidet Claude rein. Veröffentlicht wird nur mit Eikes Ja Nr. 4 (Mitgliederzahl) und Nr. 5 (Schule erkennbar).",
-        "IM RAUM (wörtlich): „Diese Schule hat über tausend Mitglieder. Und gestern saß das Team trotzdem vier Stunden hier und hat Beratungsgespräche geübt.“",
-        "1 · Die meisten Schulleiter glauben, ihnen fehlen Anfragen. Meistens fehlt was anderes.",
-        "2 · Ob einer Mitglied wird, entscheidet sich im Gespräch nach dem Probetraining. Nicht in der Anzeige.",
-        "3 · Und genau dieses Gespräch übt fast keiner. Auf der Matte üben wir jede Technik hundertmal. Das Gespräch, von dem die Schule lebt, kein einziges Mal.",
-        "SCHLUSS (wörtlich): „Wann hat dein Team das letzte Mal ein Beratungsgespräch geübt? Nicht besprochen. Geübt.“"
+        "Ein Gym, das ich seit Jahren berate, hat über tausend Mitglieder. Und trotzdem hat das Team vier Stunden lang Beratungsgespräche geübt.",
+        "Die meisten Schulleiter glauben, ihnen fehlen Anfragen. Meistens fehlt was anderes.",
+        "Ob einer Mitglied wird, entscheidet sich im Gespräch nach dem Probetraining. Nicht in der Anzeige.",
+        "Und genau dieses Gespräch übt fast keiner. Auf der Matte üben wir jede Technik hundertmal. Das Gespräch, von dem das Gym lebt, kein einziges Mal.",
+        "Wann hat dein Team das letzte Mal ein Beratungsgespräch geübt? Nicht besprochen. Geübt."
       ]
     },
     {
       "id": "t-eike",
-      "label": "T-Eike · Interview-FRAGEN für Daniel (So 08.11., Barmbek, 25 Min.) · nicht für Eike",
+      "label": "T-Eike · Interview-Fragen (So 08.11., Barmbek)",
       "target": 0,
       "paragraphs": [
-        "VORHER sagen: Ich stell dir ein paar Fragen, du erzählst einfach. Nimm die Frage in deine Antwort mit rein, zum Beispiel „Bevor wir Dojo Trust hatten …“. Zahlen nur, wenn du sie sicher weißt. Du darfst über alles reden, auch Beratung, Website und Anzeigen. Ich schneide das später getrennt.",
-        "0 · Stell dich kurz vor: Wer bist du, welche Schule, seit wann, wie viele Mitglieder habt ihr heute?",
-        "1 · Wo stand die Schule, als wir vor fünf Jahren angefangen haben? Was war damals schwer?",
-        "2 · Wie lief das früher mit Probetrainings und Anfragen? Was hat dich und dein Team Zeit gekostet?",
-        "3 · Ihr habt das Probetraining erst kostenpflichtig gemacht und dann den Preis noch mal erhöht. Was hattest du befürchtet, und was ist wirklich passiert?",
-        "4 · Was ist heute anders, seit ihr Dojo Trust habt? Was musst du oder dein Team nicht mehr machen?",
-        "5 · Wie fühlt sich dein Alltag als Schulleiter heute an?",
-        "6 · Was kommt als Nächstes bei euch? (Zweiter Standort nur, wenn Eike vorher Ja gesagt hat.)",
-        "7 · Würdest du zurückwechseln? Ein Satz.",
-        "8 · Welchem Schulleiter würdest du das empfehlen?",
-        "SCHLUSS: 10 Sekunden in die Kamera lächeln. Danach per WhatsApp: „Ja, darf für Werbung genutzt werden.“"
+        "Ich stell dir ein paar Fragen, und du erzählst einfach. Nimm die Frage in deine Antwort mit rein, zum Beispiel: Bevor wir Dojo Trust hatten … Zahlen nur, wenn du sie sicher weißt. Du darfst über alles reden, auch über Beratung, Website und Anzeigen.",
+        "Stell dich kurz vor: Wer bist du, welche Schule, seit wann, und wie viele Mitglieder habt ihr heute?",
+        "Wo stand die Schule, als wir vor fünf Jahren angefangen haben? Was war damals schwer?",
+        "Wie lief das früher mit Probetrainings und Anfragen? Was hat dich und dein Team Zeit gekostet?",
+        "Ihr habt das Probetraining erst kostenpflichtig gemacht und dann den Preis noch mal erhöht. Was hattest du befürchtet, und was ist wirklich passiert?",
+        "Was ist heute anders, seit ihr Dojo Trust habt? Was musst du oder dein Team nicht mehr machen?",
+        "Wie fühlt sich dein Alltag als Schulleiter heute an?",
+        "Was kommt als Nächstes bei euch?",
+        "Würdest du zurückwechseln? Ein Satz.",
+        "Welchem Schulleiter würdest du das empfehlen?",
+        "Zum Schluss schau bitte noch zehn Sekunden in die Kamera und lächel einfach."
       ]
     },
     {
