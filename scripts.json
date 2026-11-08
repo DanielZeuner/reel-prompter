@@ -1,12 +1,36 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "scripts": [
     {
-      "id": "r75",
-      "label": "R75 · Bezahltes Probetraining (Sa 08:00, leere Halle, im Gehen)",
-      "target": 50,
+      "id": "r74",
+      "label": "R74 · Heute 1/4 · Über tausend Mitglieder und trotzdem üben sie (läuft Mo 16.11.)",
+      "target": 46,
       "paragraphs": [
-        "Eins meiner ersten Gyms nimmt seit August Geld fürs Probetraining. Danach kamen die zwei stärksten Monate des Jahres.",
+        "Seit fünf Jahren begleite ich eine Kampfsportschule. Von Anfang an und, ehrlich gesagt, mit Herzblut. Heute hat sie über tausend Mitglieder. Und trotzdem hat das Team vier Stunden lang Beratungsgespräche geübt.",
+        "Denn gerade wenn genug reinkommt, wird man betriebsblind. Der eine berät so, der andere so. Und keiner merkt, wer dabei wieder rausgeht.",
+        "Die meisten Schulleiter glauben, ihnen fehlen Anfragen. Meistens fehlt was anderes. Ob einer Mitglied wird, entscheidet sich im Gespräch nach dem Probetraining. Nicht in der Anzeige.",
+        "Auf der Matte üben wir jede Technik hundertmal. Das Gespräch, von dem die Schule lebt, kein einziges Mal.",
+        "Wann hat dein Team das letzte Mal ein Beratungsgespräch geübt? Nicht besprochen. Geübt."
+      ]
+    },
+    {
+      "id": "r73",
+      "label": "R73 · Heute 2/4 · „Ich überleg's mir“ (läuft Di 17.11.)",
+      "target": 53,
+      "paragraphs": [
+        "Mit dem Team einer Kampfsportschule, die ich seit Jahren betreue, habe ich den teuersten Satz nach dem Probetraining geübt: Ich überleg's mir noch.",
+        "Einer aus dem Team hat danach gesagt: Früher haben wir dann geantwortet: Alles gut, kein Druck. Sag uns, wann wir dich anrufen sollen.",
+        "Klingt freundlich. Aber da überlegt meistens keiner. Dahinter steckt was Konkretes: der Preis, die Zeit, der Partner oder die Angst, sich zu blamieren.",
+        "Also frag ruhig nach: Was genau möchtest du dir noch überlegen? Und dann hör zu. Ist es die Zeit, zeig den Kursplan. Ist es der Partner, bring ihn beim nächsten Mal mit. Und mach den Termin direkt im Handy fest.",
+        "Wer nach dem Grund fragt, bekommt eine Antwort. Wer nicht fragt, bekommt einen Rückruf, bei dem keiner rangeht."
+      ]
+    },
+    {
+      "id": "r75",
+      "label": "R75 · Heute 3/4 · Bezahltes Probetraining (läuft Mi 18.11.)",
+      "target": 41,
+      "paragraphs": [
+        "Eine meiner ersten Kampfsportschulen, die ich bis heute betreue, nimmt seit August Geld fürs Probetraining. Danach kamen die zwei stärksten Monate des Jahres.",
         "Die Angst vorher kennt fast jeder Schulleiter: Wenn das Probetraining Geld kostet, kommt keiner mehr.",
         "Ab August hat es zehn Euro gekostet. Im August kamen sechzig neue Mitglieder, im September vierundsechzig. Davor waren es im Schnitt einundfünfzig.",
         "Seit Oktober kostet es zwanzig Euro. Im ersten Monat kamen weniger Leute zum Probetraining. Mitglied geworden sind daraus genauso viele wie vorher.",
@@ -14,45 +38,41 @@
       ]
     },
     {
-      "id": "r73",
-      "label": "R73 · „Ich überleg's mir“ (Schulungsraum, dann raus in die Halle)",
-      "target": 50,
+      "id": "r76",
+      "label": "R76 · Heute 4/4 · Zehn Minuten gegen dreimal 1.800 Euro (läuft Do 19.11.)",
+      "target": 56,
       "paragraphs": [
-        "Ich habe mit dem Team eines Gyms, das ich berate, den teuersten Satz nach dem Probetraining geübt: Ich überleg's mir noch.",
-        "Fast jedes Team sagt dann: Klar, kein Problem. Und lässt den Gast gehen.",
-        "Dabei überlegt da meistens keiner. Dahinter steckt was Konkretes: der Preis, die Zeit, der Partner oder die Angst, sich zu blamieren.",
-        "Also frag ruhig nach: Was genau möchtest du dir noch überlegen? Und dann hör zu. Ist es die Zeit, zeig den Kursplan. Ist es der Partner, bring ihn beim nächsten Mal mit. Und mach den Termin direkt im Handy fest.",
-        "Wer nach dem Grund fragt, bekommt eine Antwort. Wer nicht fragt, bekommt einen Rückruf, bei dem keiner rangeht."
+        "Zehn Minuten Gespräch gegen dreimal achtzehnhundert Euro. Die Rechnung ist nicht von mir. Sie ist von einem Schulleiter, den ich seit Jahren betreue.",
+        "Er weiß selbst: Nicht jeder Gast hat nach dem Training Bock auf ein Beratungsgespräch. Gerade die Jungen nicht.",
+        "Aber er hat seinem Team vorgerechnet: Diese zehn Minuten Aufwand. Wenn wir von zehn Leuten drei mehr abschließen, sind das dreimal achtzehnhundert Euro.",
+        "Denn ein Mitglied ist nicht einen Monatsbeitrag wert. Es ist alles wert, was es in der ganzen Zeit bei dir zahlt. Er rechnet mit achtzehnhundert Euro.",
+        "Sein Ziel sind zwei Abschlüsse mehr im Monat. Übers Jahr sind das über vierzigtausend Euro. Aus zehn Minuten pro Gast.",
+        "Rechne heute aus, was ein Mitglied bei dir über die ganze Zeit wert ist. Und dann frag dich, ob dein Team dafür zehn Minuten hat."
       ]
     },
     {
-      "id": "r74",
-      "label": "R74 · Über tausend Mitglieder und trotzdem üben sie (Schulungsraum, dann raus in die Halle)",
-      "target": 50,
+      "id": "r77",
+      "label": "R77 · Reserve · Fünf Wochen E-Mails wegen 60 Euro",
+      "target": 55,
       "paragraphs": [
-        "Ein Gym, das ich seit Jahren berate, hat über tausend Mitglieder. Und trotzdem hat das Team vier Stunden lang Beratungsgespräche geübt.",
-        "Die meisten Schulleiter glauben, ihnen fehlen Anfragen. Meistens fehlt was anderes.",
-        "Ob einer Mitglied wird, entscheidet sich im Gespräch nach dem Probetraining. Nicht in der Anzeige.",
-        "Und genau dieses Gespräch übt fast keiner. Auf der Matte üben wir jede Technik hundertmal. Das Gespräch, von dem das Gym lebt, kein einziges Mal.",
-        "Wann hat dein Team das letzte Mal ein Beratungsgespräch geübt? Nicht besprochen. Geübt."
+        "Ein Vater hat fünf Wochen lang E-Mails geschrieben. Wegen sechzig Euro Aufnahmegebühr für seine Tochter.",
+        "Davon hat mir das Team einer Kampfsportschule erzählt, die ich betreue. Und einer hat gleich dazugesagt: Wer an sechzig Euro hängen bleibt, macht immer Probleme. Der sieht den Wert nicht.",
+        "Oft stimmt das. Aber solche Mails haben noch einen zweiten Grund. Wenn die Gebühr mal halbiert wird, mal wegfällt und mal voll bezahlt wird, je nachdem, wer gerade berät, dann lohnt sich Nachhaken. Für jeden.",
+        "Der Inhaber hat daraus eine klare Ansage gemacht: Wir legen eine Linie fest. Egal, wer da sitzt.",
+        "Ein Preis, über den man verhandeln kann, ist kein Preis. Er ist eine Einladung.",
+        "Schau heute nach, ob bei dir jeder die Aufnahmegebühr gleich behandelt. Oder ob es davon abhängt, wer gerade am Tresen steht."
       ]
     },
     {
-      "id": "t-eike",
-      "label": "T-Eike · Interview-Fragen (So 08.11., Barmbek)",
-      "target": 0,
+      "id": "r78",
+      "label": "R78 · Reserve · „Komm mal mit ins Büro“",
+      "target": 48,
       "paragraphs": [
-        "Ich stell dir ein paar Fragen, und du erzählst einfach. Nimm die Frage in deine Antwort mit rein, zum Beispiel: Bevor wir Dojo Trust hatten … Zahlen nur, wenn du sie sicher weißt. Du darfst über alles reden, auch über Beratung, Website und Anzeigen.",
-        "Stell dich kurz vor: Wer bist du, welche Schule, seit wann, und wie viele Mitglieder habt ihr heute?",
-        "Wo stand die Schule, als wir vor fünf Jahren angefangen haben? Was war damals schwer?",
-        "Wie lief das früher mit Probetrainings und Anfragen? Was hat dich und dein Team Zeit gekostet?",
-        "Ihr habt das Probetraining erst kostenpflichtig gemacht und dann den Preis noch mal erhöht. Was hattest du befürchtet, und was ist wirklich passiert?",
-        "Was ist heute anders, seit ihr Dojo Trust habt? Was musst du oder dein Team nicht mehr machen?",
-        "Wie fühlt sich dein Alltag als Schulleiter heute an?",
-        "Was kommt als Nächstes bei euch?",
-        "Würdest du zurückwechseln? Ein Satz.",
-        "Welchem Schulleiter würdest du das empfehlen?",
-        "Zum Schluss schau bitte noch zehn Sekunden in die Kamera und lächel einfach."
+        "Komm mal mit ins Büro. Dieser Satz kann dich Mitglieder kosten. Gerade bei Frauen.",
+        "Das hat mir ein Schulleiter gesagt, den ich seit Jahren betreue. Stell dir vor, du warst gerade zum ersten Mal im Training. Du kennst hier niemanden. Und dann sagt jemand, den du nicht kennst: Komm mal mit ins Büro. In einen kleinen Raum.",
+        "Und läuft das Gespräch endlich, platzt mittendrin ein Mitglied rein, weil es nur kurz was fragen will.",
+        "Der Platz fürs Gespräch entscheidet mit. Ruhig, aber nicht versteckt. Offen, aber ohne Störung.",
+        "Setz dich heute auf den Platz, an dem bei dir beraten wird. Und frag dich ehrlich, ob du dich da nach deinem ersten Training wohlfühlen würdest."
       ]
     },
     {
