@@ -1,9 +1,159 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-13",
   "scripts": [
     {
+      "id": "r80",
+      "label": "R80 · Dreh Do 26.11. Chiang Mai 1/9 · Bei uns redet beim Feedback der Chef als Letzter (Vorschlag Fr 27.11. 13:00)",
+      "target": 66,
+      "paragraphs": [
+        "Bei uns redet beim Feedback der Chef als Letzter. Also ich.",
+        "Wir üben Beratungsgespräche im Rollenspiel. Einer berät, einer spielt den Gast, einer schaut zu. Danach gibt es Feedback, und zwar in einer festen Reihenfolge.",
+        "Zuerst der Berater selbst: Was lief gut? Dann der, der zugeschaut hat. Dann der Gast, mit einer einzigen Frage: Wann warst du kurz davor, Ja zu sagen? Und erst ganz am Ende ich.",
+        "Wenn der Chef zuerst redet, sagen danach alle nur noch: Sehe ich genauso. Und der Berater denkt nicht mehr selbst nach.",
+        "Jeder sagt genau ein Lob und eine Sache fürs nächste Mal. Beschreiben, nicht bewerten. Ein Fehler im Rollenspiel kostet nichts. Am Empfang kostet er ein Mitglied.",
+        "Wenn du diese Woche mit deinem Team übst: Erst der Berater, dann der Zuschauer, dann der Gast. Und du sagst als Letzter was."
+      ]
+    },
+    {
+      "id": "r81",
+      "label": "R81 · Dreh Do 26.11. Chiang Mai 2/9 · Thailand 1: Was thailändische Gyms besser machen als wir · GERÜST, Wortlaut kommt nach Lanna 23.11. (Vorschlag Mo 30.11.)",
+      "target": 35,
+      "paragraphs": [
+        "Ich bin gerade in Thailand. Und ich schaue mir an, wie Kampfsportschulen am anderen Ende der Welt ihren Betrieb führen. Und was wir in Deutschland davon lernen können.",
+        "[GERÜST · Wortlaut nach Lanna 23.11.] Wo du warst, in einem Satz. Den Namen vom Gym nur, wenn sie es erlaubt haben.",
+        "[BEOBACHTUNG] Eine Sache, die dort besser läuft als bei uns. Ein Moment, den du selbst gesehen hast.",
+        "[WAS DAS HEISST] Ein Satz, was eine Schule in Deutschland davon morgen übernehmen kann.",
+        "Was ich hier noch sehe, zeige ich euch die nächsten Wochen. Und wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r82",
+      "label": "R82 · Dreh Do 26.11. Chiang Mai 3/9 · Bei uns redet nach der Abschlussfrage keiner mehr (Vorschlag Di 01.12.)",
+      "target": 56,
+      "paragraphs": [
+        "Bei uns redet nach der Abschlussfrage keiner mehr. Auch nicht der Berater.",
+        "Die Empfehlung ist ausgesprochen. Dann kommt die Frage: Wollen wir das machen? Und dann wird es still.",
+        "Genau in dieser Stille geht bei vielen das Gespräch kaputt. Der Berater hält sie nicht aus und redet weiter. Noch ein Satz zum Preis, noch eine Alternative. Bis er sich selbst aus dem Abschluss rausgeredet hat.",
+        "Deshalb üben wir genau das. Frage stellen, dann nichts mehr sagen, bis der Gast antwortet. Wer zuerst redet, verliert.",
+        "Eine Pause wirkt sicher. Ein Ähm wirkt unsicher.",
+        "Sprich deine Abschlussfrage heute fünfmal in dein Handy und hör sie dir an. Dann weißt du, wie sie klingt, bevor dein nächster Gast sie hört."
+      ]
+    },
+    {
+      "id": "r83",
+      "label": "R83 · Dreh Do 26.11. Chiang Mai 4/9 · Fünf neue Mitglieder, die im System noch Interessenten waren (Vorschlag Mi 02.12.)",
+      "target": 64,
+      "paragraphs": [
+        "Im September hatten wir fünf neue Mitglieder, die in unserem System immer noch Interessenten waren.",
+        "Der Vertrag war unterschrieben, in der Mitgliederverwaltung waren sie angelegt. Aber in der Liste, über die wir Interessenten nachfassen, hat sie keiner umgestellt.",
+        "Und ein Interessent bekommt andere Nachrichten als ein Mitglied. Statt der Willkommensnachricht kommen Nachrichten, die ihn zum Unterschreiben bringen sollen. Obwohl er längst unterschrieben hat.",
+        "Das war kein Systemfehler. Das war ein menschlicher Fehler. Aufgefallen ist er erst beim Abgleich der beiden Listen.",
+        "Seitdem gilt bei uns: Wer den Abschluss macht, trägt ihn selbst ein. Sofort. Auch wenn jemand vom Empfang danebensitzt. Und wenn etwas nicht klappt, sagt er Bescheid. Ein Fehler, den niemand meldet, sieht aus wie ein Systemfehler.",
+        "Leg heute deine Listen nebeneinander: Steht jeder, der diesen Monat unterschrieben hat, überall als Mitglied drin?"
+      ]
+    },
+    {
+      "id": "r84",
+      "label": "R84 · Dreh Do 26.11. Chiang Mai 5/9 · Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er etwas empfiehlt (Vorschlag Do 03.12.)",
+      "target": 59,
+      "paragraphs": [
+        "Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er dir irgendwas empfiehlt.",
+        "Was machst du beruflich? Wie sind deine Arbeitszeiten? An welchen Tagen kannst du? Das sind bei uns feste Fragen im Gespräch nach dem Probetraining.",
+        "Denn die beste Empfehlung bringt nichts, wenn sie nicht in dein Leben passt. Wer im Schichtdienst arbeitet, kann nicht jeden Dienstag um sieben. Wer von sieben bis vier arbeitet, plant ganz anders.",
+        "Wer nur gefragt wird, was er erreichen will, bekommt eine gute Empfehlung. Wer auch nach seinem Alltag gefragt wird, bekommt eine, die er durchhält.",
+        "Ein Vertrag, der nicht in den Alltag passt, ist eine Kündigung mit Anlauf.",
+        "Frag deinen nächsten Gast nach dem Probetraining: Wie sind deine Arbeitszeiten? Und an welchen Tagen kannst du wirklich?"
+      ]
+    },
+    {
+      "id": "r85",
+      "label": "R85 · Dreh Do 26.11. Chiang Mai 6/9 · Bei uns darf jeder Berater einen Spickzettel haben (Vorschlag Fr 04.12. 13:00)",
+      "target": 55,
+      "paragraphs": [
+        "Bei uns darf jeder Berater beim Gespräch einen Spickzettel vor sich liegen haben. Auch wenn der Gast gegenübersitzt.",
+        "Eine Seite. Die sieben Schritte für das Gespräch nach dem Probetraining, und bei jedem die Sätze, die wir sagen.",
+        "Erst wirkt das komisch. Ein Zettel auf dem Tisch, sieht das nicht unsicher aus? Unsicher wirkt, wer ohne Zettel den Faden verliert.",
+        "Profis haben auch einen Spickzettel.",
+        "Und wer vor dem Gespräch nervös ist, dem sagen wir zwei Sachen. Sprich langsamer als normal. Und: Wer rot wird, ist nicht schlechter. Er nimmt es ernst.",
+        "Wenn bei dir einer vor Beratungsgesprächen nervös ist: Gib ihm heute eine Seite mit den wichtigsten Sätzen. Und sag ihm, dass er sie benutzen darf."
+      ]
+    },
+    {
+      "id": "r86",
+      "label": "R86 · Dreh Do 26.11. Chiang Mai 7/9 · Thailand 2: Wie hier Mitglieder verwaltet werden · GERÜST, Wortlaut kommt nach Lanna 23.11. (Vorschlag Mo 07.12.)",
+      "target": 35,
+      "paragraphs": [
+        "[GERÜST · Wortlaut nach Lanna 23.11.] Ich habe hier in Thailand gefragt: Wie verwaltet ihr eure Mitglieder?",
+        "[ANTWORT] Was du wirklich gesehen hast: Zettel, Kladde, WhatsApp, eine App? Nur das, was da war.",
+        "[WO ES HAKT] Was sie dort selbst gesagt haben, wo es klemmt. Frage acht: Was läuft digital, was auf Papier?",
+        "[BRÜCKE] Ein Satz: dasselbe Problem wie bei uns, nur am anderen Ende der Welt. Kein Werbesprech.",
+        "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r87",
+      "label": "R87 · Dreh Do 26.11. Chiang Mai 8/9 · Bei uns endet das Gespräch mit drei Trainings im Kalender (Vorschlag Di 08.12.)",
+      "target": 63,
+      "paragraphs": [
+        "Bei uns endet das Beratungsgespräch nicht mit der Unterschrift. Sondern mit drei Trainings im Kalender.",
+        "Wer unterschreibt, hört bei uns nicht: Komm einfach vorbei, wann du Zeit hast. Wir richten mit ihm zusammen die App ein und buchen direkt die nächsten drei Trainings. Noch am Empfang.",
+        "Ob einer Mitglied wird, entscheidet sich in den zehn Minuten nach dem Probetraining. Ob er bleibt, entscheidet sich in den ersten dreißig Tagen.",
+        "Wer ohne Termin nach Hause geht, muss sich jede Woche neu aufraffen. Wer drei Termine im Kalender hat, muss nur noch hingehen.",
+        "Und wir buchen genau die Tage, die er uns im Gespräch genannt hat. Darum fragen wir vorher nach seinen Arbeitszeiten.",
+        "Wenn heute einer bei dir unterschreibt: Bleib noch kurz mit ihm am Empfang und buch die nächsten drei Trainings gleich mit."
+      ]
+    },
+    {
+      "id": "r88",
+      "label": "R88 · Dreh Do 26.11. Chiang Mai 9/9 · Thailand 3: Warum ich das hier selbst mitmache · GERÜST, Reserve (Reserve)",
+      "target": 35,
+      "paragraphs": [
+        "[GERÜST · Wortlaut nach Lanna 23.11.] Warum ich hier in Thailand selbst auf der Matte stehe.",
+        "[DEIN TRAINING] Was du hier trainierst, wie oft, und wie sich das anfühlt.",
+        "[DER GRUND] Warum ein Schulleiter selbst wieder Schüler sein sollte. In deinen Worten.",
+        "[WAS DU MITNIMMST] Ein Satz für deine eigene Schule.",
+        "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r89",
+      "label": "R89 · Dreh Mi 02.12. Bangkok 1/2 · Thailand 4: Chiang Mai gegen Bangkok · GERÜST, Wortlaut kommt nach Yokkao 01.12. (Reserve)",
+      "target": 35,
+      "paragraphs": [
+        "[GERÜST · Wortlaut nach Yokkao 01.12.] Kleines Gym in Chiang Mai gegen großen Betrieb in Bangkok.",
+        "[CHIANG MAI] Wie es dort läuft, ein Satz aus Lanna oder Santai.",
+        "[BANGKOK] Wie es in Bangkok läuft, ein Satz aus Yokkao.",
+        "[DER UNTERSCHIED] Was den großen Betrieb ausmacht, und was eine Schule in Deutschland davon übernehmen kann.",
+        "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r90",
+      "label": "R90 · Dreh Mi 02.12. Bangkok 2/2 · Thailand 5: Drei Dinge, die ich mitnehme · GERÜST, Abbinder der Serie (Vorschlag ab Mo 14.12.)",
+      "target": 40,
+      "paragraphs": [
+        "[GERÜST · Wortlaut nach den Gym-Terminen] Drei Dinge, die ich aus Thailand für meine Schule mitnehme.",
+        "[EINS] Eine konkrete Erkenntnis aus einem der Gyms. Kein Reisebild.",
+        "[ZWEI] Die zweite.",
+        "[DREI] Die dritte.",
+        "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r79",
+      "label": "R79 · Was ist Dojo Trust, was kostet der Test (Erfurt Mi 11.11. · Mo 23.11. 21:00 · gedreht)",
+      "target": 30,
+      "paragraphs": [
+        "Was ist Dojo Trust, und was kostet der Test?",
+        "Dojo Trust ist das System aus meiner eigenen Kampfsportschule. Es antwortet jedem Interessenten sofort, bucht das Probetraining und fasst nach. Du musst keinem mehr hinterhertelefonieren.",
+        "Bei uns waren das im ersten Monat vierzig neue Mitglieder. Bei gleichem Werbebudget.",
+        "Der Test kostet dich nichts. Vierzehn Tage kostenlos, keine Einrichtungsgebühr, in einer halben Stunde startklar, monatlich kündbar.",
+        "Ob es bei dir funktioniert: Link im Profil, dojotrust.de."
+      ]
+    },
+    {
       "id": "r70",
-      "label": "R70 · Heute 1/4 · Nach dem Kurs wischt bei uns keiner zuerst die Matte (Dreh Mo 09.11. Erfurt · läuft Do 12.11.)",
+      "label": "R70 · Nach dem Kurs wischt bei uns keiner zuerst die Matte (Erfurt Mi 11.11. · Di 24.11. 21:00 · gedreht)",
       "target": 65,
       "paragraphs": [
         "Nach dem Kurs wischt bei uns keiner zuerst die Matte.",
@@ -17,7 +167,7 @@
     },
     {
       "id": "r71",
-      "label": "R71 · Heute 2/4 · Bei uns sagt im Beratungsgespräch keiner das Wort Vertrag (Dreh Mo 09.11. Erfurt · läuft Fr 13.11. 13:00)",
+      "label": "R71 · Bei uns sagt im Beratungsgespräch keiner das Wort Vertrag (Erfurt Mi 11.11. · Mi 25.11. 21:00 · gedreht)",
       "target": 51,
       "paragraphs": [
         "Bei uns sagt im Beratungsgespräch keiner das Wort Vertrag.",
@@ -31,7 +181,7 @@
     },
     {
       "id": "r72",
-      "label": "R72 · Heute 3/4 · „Wir rufen dich an“ ist kein Ergebnis (Dreh Mo 09.11. Erfurt · anonym, kein Ja von Eike nötig · Vorschlag ab Di 24.11.)",
+      "label": "R72 · „Wir rufen dich an“ ist kein Ergebnis (Erfurt Mi 11.11. · Do 26.11. 21:00 · gedreht)",
       "target": 62,
       "paragraphs": [
         "Ich habe mir sechs Wochen Probetrainings in einer Schule angesehen, mit der ich arbeite. Und eine Zahl lässt mich nicht mehr los.",
@@ -40,18 +190,6 @@
         "Jetzt kann man sagen: Wer einen Termin annimmt, will eh schon. Stimmt. Genau das ist der Punkt. Der Termin zeigt dir, wer will. Der Rückruf versteckt es.",
         "Ein Rückruf fühlt sich freundlich an. Für den Gast und fürs Team. In Wahrheit ist es ein Gespräch, das man verschiebt, weil es gerade unangenehm ist.",
         "Deshalb gilt bei uns: Niemand geht nach dem Probetraining ohne Ergebnis. Mitglied, Termin vor Ort oder ein klares Nein mit Grund. „Wir rufen dich an“ ist kein Ergebnis."
-      ]
-    },
-    {
-      "id": "r79",
-      "label": "R79 · Heute 4/4 · Was ist Dojo Trust, was kostet der Test (Dreh Mo 09.11. Erfurt · Angebots-Reel zum Anheften · Vorschlag Mo 23.11.)",
-      "target": 30,
-      "paragraphs": [
-        "Was ist Dojo Trust, und was kostet der Test?",
-        "Dojo Trust ist das System aus meiner eigenen Kampfsportschule. Es antwortet jedem Interessenten sofort, bucht das Probetraining und fasst nach. Du musst keinem mehr hinterhertelefonieren.",
-        "Bei uns waren das im ersten Monat vierzig neue Mitglieder. Bei gleichem Werbebudget.",
-        "Der Test kostet dich nichts. Vierzehn Tage kostenlos, keine Einrichtungsgebühr, in einer halben Stunde startklar, monatlich kündbar.",
-        "Ob es bei dir funktioniert: Link im Profil, dojotrust.de."
       ]
     },
     {
