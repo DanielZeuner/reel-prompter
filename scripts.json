@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "scripts": [
     {
       "id": "r80",
@@ -117,7 +117,7 @@
     },
     {
       "id": "r89",
-      "label": "R89 · Zweiter Dreh 1/2 · Thailand 4: Kleines Gym gegen großen Betrieb · GERÜST, Reserve",
+      "label": "R89 · Zweiter Dreh 1/5 · Thailand 4: Kleines Gym gegen großen Betrieb · GERÜST, Reserve",
       "target": 35,
       "paragraphs": [
         "[GERÜST · Wortlaut nach dem Besuch im großen Gym] Kleines Gym gegen großen Betrieb.",
@@ -129,7 +129,7 @@
     },
     {
       "id": "r90",
-      "label": "R90 · Zweiter Dreh 2/2 · Thailand 5: Drei Dinge, die ich mitnehme · GERÜST, Abbinder der Serie",
+      "label": "R90 · Zweiter Dreh 2/5 · Thailand 5: Drei Dinge, die ich mitnehme · GERÜST, Abbinder der Serie",
       "target": 40,
       "paragraphs": [
         "[GERÜST · Wortlaut nach den Gym-Terminen] Drei Dinge, die ich aus Thailand für meine Schule mitnehme.",
@@ -137,6 +137,48 @@
         "[ZWEI] Die zweite.",
         "[DREI] Die dritte.",
         "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r91",
+      "label": "R91 · Zweiter Dreh 3/5 · Bei uns ist „fitter werden“ nie die ganze Antwort (Vorschlag Mi 09.12.)",
+      "target": 68,
+      "paragraphs": [
+        "Bei uns ist „fitter werden“ im Beratungsgespräch nie die ganze Antwort.",
+        "Fast jeder sagt nach dem Probetraining: Ich will einfach fitter werden. Das stimmt auch. Aber deshalb fängt keiner gerade jetzt an.",
+        "Darum fragen wir drei Ebenen tief. Was willst du hier erreichen? Was ist passiert, dass du gerade jetzt anfängst? Und was ist, wenn sich in einem Jahr nichts geändert hat?",
+        "Oft kommt erst bei der zweiten Frage der echte Grund. Vielleicht hat der Arzt etwas zum Blutdruck gesagt. Vielleicht will jemand nach einer Trennung endlich wieder etwas nur für sich.",
+        "In der Schulung üben wir das so lange, bis der Berater am Ende einen Grund kennt, den der Gast am Anfang nicht gesagt hat.",
+        "Denn auf „fitter werden“ passt jede Empfehlung. Auf den echten Grund passt genau eine.",
+        "Frag im nächsten Beratungsgespräch nach dem Ziel noch einmal nach: Warum gerade jetzt?"
+      ]
+    },
+    {
+      "id": "r92",
+      "label": "R92 · Zweiter Dreh 4/5 · Bei uns hört von unseren Erfolgen nur, wer kämpfen will (Vorschlag Do 10.12.)",
+      "target": 65,
+      "paragraphs": [
+        "Bei uns hört im Beratungsgespräch nur der von unseren Erfolgen, der selbst kämpfen will.",
+        "Für jemanden, der in den Ring will, sind Erfolge ein echter Grund. Dann erwähnen wir sie kurz.",
+        "Wer fitter werden will, den interessiert kein Titel. Den interessiert: Bin ich da allein?",
+        "Darum zeigen wir die Gemeinschaft. Bei uns trainierst du nicht allein mit Kopfhörern. Die Trainer stehen mit auf der Matte, egal ob Anfänger oder Fortgeschrittener. Und jeder trainiert mit jedem.",
+        "In unserem Leitfaden steht dazu ein Satz, den ich jedem Schulleiter mitgeben will: Erfolg holt die Leute. Community hält sie.",
+        "Ein Pokal im Regal bringt vielleicht einen Interessenten zum Probetraining. Ob er nach drei Monaten noch kommt, entscheiden die Leute neben ihm auf der Matte.",
+        "Erzähl im nächsten Beratungsgespräch weniger von deinen Titeln und mehr davon, mit wem er trainieren wird."
+      ]
+    },
+    {
+      "id": "r93",
+      "label": "R93 · Zweiter Dreh 5/5 · Bei uns erzählt der Berater, warum er selbst geblieben ist (Vorschlag Fr 11.12. 13:00)",
+      "target": 58,
+      "paragraphs": [
+        "Bei uns erzählt der Berater im Beratungsgespräch, warum er selbst geblieben ist.",
+        "Nach dem Probetraining hat der Gast schon viel gehört. Kurszeiten, Trainer, Mitgliedschaft. Das sind Fakten. Und Fakten stehen auch auf der Website.",
+        "Darum steht in unserem Leitfaden: Erzähl ruhig von dir. Wie bist du hergekommen, warum bist du geblieben?",
+        "Und darunter: Mit Leidenschaft erzählen, nicht runterrattern. Eine eigene Geschichte schlägt drei Fakten.",
+        "Dass das Training gut ist, hat der Gast gerade selbst gespürt. Was er noch nicht weiß: Halte ich das durch? Darauf antwortet keine Preisliste. Darauf antwortet jemand, der geblieben ist.",
+        "Die Geschichte muss nicht spektakulär sein. Ehrlich reicht.",
+        "Frag dein Team diese Woche, warum sie damals geblieben sind, und lass sie genau das im nächsten Gespräch erzählen."
       ]
     },
     {
