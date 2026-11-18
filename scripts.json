@@ -1,6 +1,86 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-18",
   "scripts": [
+    {
+      "id": "w1a",
+      "label": "Webinar 1/8 · Hook A kalt: Januar, Matte (3×)",
+      "target": 9,
+      "paragraphs": [
+        "Für alle mit Kampfsportschule: Im Januar wollen plötzlich alle anfangen.",
+        "Die Frage ist, wie viele davon bei dir auf der Matte landen."
+      ]
+    },
+    {
+      "id": "w1b",
+      "label": "Webinar 2/8 · Hook B kalt: in deinem Handy (3×)",
+      "target": 6,
+      "paragraphs": [
+        "Viele Januar-Anfragen gehen nicht an die Schule nebenan verloren.",
+        "Sondern in deinem Handy."
+      ]
+    },
+    {
+      "id": "w1c",
+      "label": "Webinar 3/8 · Hook C kalt: nachts um elf (3×)",
+      "target": 6,
+      "paragraphs": [
+        "Wenn du im Januar wieder nachts um elf WhatsApps beantwortest, hör kurz zu."
+      ]
+    },
+    {
+      "id": "w1d",
+      "label": "Webinar 4/8 · Hook D warm: kennt dich von Instagram (3×)",
+      "target": 9,
+      "paragraphs": [
+        "Du kennst mich wahrscheinlich schon von Instagram.",
+        "Am 16. Dezember bin ich live.",
+        "Das ist der einzige Termin vor dem Januar."
+      ]
+    },
+    {
+      "id": "w1m",
+      "label": "Webinar 5/8 · Mittelteil + Schluss, in einem Durchgang (2×)",
+      "target": 35,
+      "paragraphs": [
+        "Ich steh seit Jahren selbst auf der Matte und kenn den Januar.",
+        "Die Anfragen kommen über Instagram, WhatsApp, Telefon und Website.",
+        "Wer nicht am selben Tag eine Antwort kriegt, ist oft schon weg.",
+        "Und wer ein Probetraining bucht und danach nichts mehr hört, kommt oft gar nicht erst.",
+        "Am Mittwoch, 16. Dezember, zeig ich dir live, wie du das vor dem Januar sauber aufstellst.",
+        "Mit dem, was bei unseren Schulen heute schon läuft.",
+        "Live, kostenlos, eine Stunde. Klick auf „Mehr dazu“ und trag dich ein."
+      ]
+    },
+    {
+      "id": "w1mo",
+      "label": "Webinar 6/8 · Erinnerung: morgen bin ich live (2×)",
+      "target": 8,
+      "paragraphs": [
+        "Morgen bin ich live.",
+        "Wenn du dich eingetragen hast: Wir sehen uns.",
+        "Wenn nicht: Der Link ist unten."
+      ]
+    },
+    {
+      "id": "w1he",
+      "label": "Webinar 7/8 · Erinnerung: heute bin ich live (2×)",
+      "target": 7,
+      "paragraphs": [
+        "Heute bin ich live.",
+        "Wenn du noch überlegst: Der Link ist unten, es kostet nichts."
+      ]
+    },
+    {
+      "id": "w1k",
+      "label": "Webinar 8/8 · Freiwillig: kurzer Mittelteil + Schluss (2×)",
+      "target": 13,
+      "paragraphs": [
+        "Die Januar-Anfragen kommen über Instagram, WhatsApp, Telefon und Website.",
+        "Wer nicht am selben Tag Antwort kriegt, ist weg.",
+        "Am 16. Dezember zeig ich dir live, wie du das vor dem Januar aufstellst.",
+        "Live, kostenlos, eine Stunde. Klick auf „Mehr dazu“ und trag dich ein."
+      ]
+    },
     {
       "id": "r80",
       "label": "R80 · Nächster Dreh 1/9 · Bei uns redet beim Feedback der Chef als Letzter (Vorschlag Fr 27.11. 13:00)",
