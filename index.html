@@ -31,8 +31,27 @@ body{
 }
 .app{display:flex;flex-direction:column;height:100dvh;padding-top:var(--safe-t);padding-bottom:var(--safe-b)}
 
-#top{flex:0 0 auto;display:flex;gap:7px;align-items:center;padding:7px 10px;overflow-x:auto;scrollbar-width:none}
-#top::-webkit-scrollbar{display:none}
+#top{flex:0 0 auto;display:flex;gap:7px;align-items:center;padding:7px 10px}
+#pickBtn{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:1px;padding:7px 14px;
+  border-radius:14px;border:1px solid var(--line);background:var(--surface2);color:var(--text);cursor:pointer;text-align:left}
+#pickBtn small{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+#pickBtn span{font-size:14px;font-weight:650;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+#pickBtn span::after{content:" ▾";color:var(--muted)}
+.step{flex:0 0 auto;width:40px;height:44px;border-radius:12px;border:1px solid var(--line);background:var(--surface2);
+  color:var(--text);font-size:20px;cursor:pointer}
+.step:disabled{opacity:.3}
+#pickList details{border-top:1px solid var(--line)}
+#pickList summary{list-style:none;cursor:pointer;padding:14px 2px;display:flex;justify-content:space-between;
+  font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+#pickList summary::-webkit-details-marker{display:none}
+#pickList summary em{font-style:normal;color:var(--muted);font-weight:650}
+#pickList details[open] summary em::after{content:" ▴"}
+#pickList details:not([open]) summary em::after{content:" ▾"}
+.pitem{width:100%;display:flex;justify-content:space-between;gap:10px;padding:12px;margin-bottom:6px;border-radius:12px;
+  border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:15px;font-weight:600;text-align:left;cursor:pointer}
+.pitem b{flex:0 0 auto;font-size:12px;color:var(--muted);font-weight:650;font-variant-numeric:tabular-nums}
+.pitem[aria-current="true"]{border-color:var(--gold);background:var(--gold);color:var(--ground)}
+.pitem[aria-current="true"] b{color:var(--ground)}
 .chip{
   flex:0 0 auto;padding:7px 13px;border-radius:999px;border:1px solid var(--line);
   background:var(--surface2);color:var(--muted);font-size:13px;font-weight:650;cursor:pointer;white-space:nowrap;
@@ -234,6 +253,13 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
   <button class="btn primary" id="closeSet" type="button">Fertig</button>
 </div>
 
+<div class="sheet" id="picker">
+  <h1>Texte</h1>
+  <div id="pickList"></div>
+  <div class="grow"></div>
+  <button class="btn" id="closePick" type="button">Schließen</button>
+</div>
+
 <div class="sheet" id="review">
   <h1>Aufnahme <span id="revLen"></span></h1>
   <video id="revVid" playsinline controls></video>
@@ -299,21 +325,80 @@ function fetchScripts(){
     .then(function(j){save("data",j);return j})
     .catch(function(){return load("data",FALLBACK)});
 }
+/* Gruppe: aus scripts.json ("group"), sonst aus dem Titel abgeleitet. */
+function groupOf(s){
+  if(s.group)return s.group;
+  return /gedreht|entfallen|Backlog/.test(s.label||"")?"Archiv · schon gedreht":"Weitere";
+}
 function buildChips(){
+  var want=load("pick","");
+  if(want){for(var i=0;i<S.data.scripts.length;i++)if(S.data.scripts[i].id===want){S.idx=i;break}}
+  if(!(S.idx>=0&&S.idx<S.data.scripts.length))S.idx=0;
   top_.innerHTML="";
+  var prev=document.createElement("button");prev.className="step";prev.type="button";prev.id="pickPrev";
+  prev.textContent="‹";prev.setAttribute("aria-label","Vorheriger Text");
+  var btn=document.createElement("button");btn.id="pickBtn";btn.type="button";
+  btn.innerHTML="<small></small><span></span>";
+  var next=document.createElement("button");next.className="step";next.type="button";next.id="pickNext";
+  next.textContent="›";next.setAttribute("aria-label","Nächster Text");
+  prev.addEventListener("click",function(){step(-1)});
+  next.addEventListener("click",function(){step(1)});
+  btn.addEventListener("click",openPicker);
+  top_.appendChild(prev);top_.appendChild(btn);top_.appendChild(next);
+  showPick();
+}
+function showPick(){
+  var s=S.data.scripts[S.idx];if(!s)return;
+  var g=groupOf(s), list=S.data.scripts, n=0, k=0;
+  for(var i=0;i<list.length;i++)if(groupOf(list[i])===g){n++;if(i<=S.idx)k=n}
+  var b=$("pickBtn");
+  b.querySelector("small").textContent=g+" · "+k+"/"+n;
+  b.querySelector("span").textContent=s.label;
+  $("pickPrev").disabled=S.idx<=0;
+  $("pickNext").disabled=S.idx>=list.length-1;
+}
+/* ‹ › blättern innerhalb der Reihenfolge — beim Dreh Block für Block. */
+function step(d){var i=S.idx+d;if(i>=0&&i<S.data.scripts.length)pick(i)}
+function openPicker(){
+  if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
+  if(S.running||cd>0)stop();
+  var box=$("pickList");box.innerHTML="";
+  var order=[], groups={};
   S.data.scripts.forEach(function(s,i){
-    var b=document.createElement("button");
-    b.className="chip";b.type="button";b.textContent=s.label;
-    b.setAttribute("aria-pressed",i===S.idx?"true":"false");
-    b.addEventListener("click",function(){pick(i)});
-    top_.appendChild(b);
+    var g=groupOf(s);
+    if(!groups[g]){groups[g]=[];order.push(g)}
+    groups[g].push(i);
   });
+  var curG=groupOf(S.data.scripts[S.idx]), curEl=null;
+  order.forEach(function(g){
+    var d=document.createElement("details");
+    /* Archiv bleibt zu, außer der gewählte Text liegt drin. */
+    d.open=(g===curG)||!/^Archiv/.test(g);
+    var sm=document.createElement("summary");
+    sm.innerHTML="<span></span><em></em>";
+    sm.querySelector("span").textContent=g;
+    sm.querySelector("em").textContent=groups[g].length;
+    d.appendChild(sm);
+    groups[g].forEach(function(i){
+      var s=S.data.scripts[i], it=document.createElement("button");
+      it.className="pitem";it.type="button";
+      it.innerHTML="<span></span><b></b>";
+      it.querySelector("span").textContent=s.label;
+      it.querySelector("b").textContent=s.target?fmtT(s.target):"";
+      if(i===S.idx){it.setAttribute("aria-current","true");curEl=it}
+      it.addEventListener("click",function(){pick(i);$("picker").classList.remove("on")});
+      d.appendChild(it);
+    });
+    box.appendChild(d);
+  });
+  $("picker").classList.add("on");
+  if(curEl)curEl.scrollIntoView({block:"center"});
 }
 function pick(i){
   if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
-  S.idx=i;
-  var c=top_.querySelectorAll(".chip");
-  for(var k=0;k<c.length;k++)c[k].setAttribute("aria-pressed",k===i?"true":"false");
+  if(S.running||cd>0)stop();
+  S.idx=i;save("pick",S.data.scripts[i].id||"");
+  showPick();
   layout();
 }
 
@@ -716,6 +801,7 @@ view.addEventListener("click",function(){
 $("rehearse").addEventListener("click",toggleRun);
 shoot.addEventListener("click",function(){S.recording?stopRec():startRec()});
 $("openSet").addEventListener("click",function(){$("settings").classList.add("on")});
+$("closePick").addEventListener("click",function(){$("picker").classList.remove("on");ensureCam()});
 $("closeSet").addEventListener("click",function(){$("settings").classList.remove("on");ensureCam()});
 $("camdead").addEventListener("click",function(e){e.stopPropagation();camLast=0;startCam()});
 $("restartCam").addEventListener("click",function(){camLast=0;startCam().then(function(ok){if(ok)toast("Kamera läuft wieder")})});

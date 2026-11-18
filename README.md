@@ -31,10 +31,12 @@ ohne Kopieren, ohne Import.
 {
   "updated": "2026-08-13",
   "scripts": [
-    { "id": "r21", "label": "R21 · Titel", "target": 62, "paragraphs": ["Absatz eins.", "Absatz zwei."] }
+    { "id": "r21", "group": "DT-Reels · Nächster Dreh", "label": "R21 · Titel", "target": 62, "paragraphs": ["Absatz eins.", "Absatz zwei."] }
   ]
 }
 ```
+
+`group` ordnet den Text in der Auswahlliste ein (oben antippen öffnet die Liste, ‹ › blättert). Ohne `group` landet ein Text mit „gedreht“ im Titel im Archiv, sonst unter „Weitere“. Gruppen erscheinen in der Reihenfolge der Datei, das Archiv ist eingeklappt.
 
 `target` ist die angepeilte Länge in Sekunden. Weglassen oder auf `0` setzen, wenn
 es keine Vorgabe gibt.

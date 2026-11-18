@@ -3,6 +3,7 @@
   "scripts": [
     {
       "id": "w1a",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 1/8 · Hook A kalt: Januar, Matte (3×)",
       "target": 9,
       "paragraphs": [
@@ -12,6 +13,7 @@
     },
     {
       "id": "w1b",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 2/8 · Hook B kalt: in deinem Handy (3×)",
       "target": 6,
       "paragraphs": [
@@ -21,6 +23,7 @@
     },
     {
       "id": "w1c",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 3/8 · Hook C kalt: nachts um elf (3×)",
       "target": 6,
       "paragraphs": [
@@ -29,6 +32,7 @@
     },
     {
       "id": "w1d",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 4/8 · Hook D warm: kennt dich von Instagram (3×)",
       "target": 9,
       "paragraphs": [
@@ -39,6 +43,7 @@
     },
     {
       "id": "w1m",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 5/8 · Mittelteil + Schluss, in einem Durchgang (2×)",
       "target": 35,
       "paragraphs": [
@@ -53,6 +58,7 @@
     },
     {
       "id": "w1mo",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 6/8 · Erinnerung: morgen bin ich live (2×)",
       "target": 8,
       "paragraphs": [
@@ -63,6 +69,7 @@
     },
     {
       "id": "w1he",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 7/8 · Erinnerung: heute bin ich live (2×)",
       "target": 7,
       "paragraphs": [
@@ -72,6 +79,7 @@
     },
     {
       "id": "w1k",
+      "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 8/8 · Freiwillig: kurzer Mittelteil + Schluss (2×)",
       "target": 13,
       "paragraphs": [
@@ -83,6 +91,7 @@
     },
     {
       "id": "r80",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R80 · Nächster Dreh 1/9 · Bei uns redet beim Feedback der Chef als Letzter (Vorschlag Fr 27.11. 13:00)",
       "target": 66,
       "paragraphs": [
@@ -96,6 +105,7 @@
     },
     {
       "id": "r81",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R81 · Nächster Dreh 2/9 · Thailand 1: Ein Gym in Thailand rechnet ganz anders (Vorschlag Mo 30.11.)",
       "target": 65,
       "paragraphs": [
@@ -108,6 +118,7 @@
     },
     {
       "id": "r82",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R82 · Nächster Dreh 3/9 · Bei uns redet nach der Abschlussfrage keiner mehr (Vorschlag Di 01.12.)",
       "target": 56,
       "paragraphs": [
@@ -121,6 +132,7 @@
     },
     {
       "id": "r83",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R83 · Nächster Dreh 4/9 · Bei uns steht hinter jedem neuen Mitglied der Name des Beraters (Vorschlag Mi 02.12.)",
       "target": 69,
       "paragraphs": [
@@ -135,6 +147,7 @@
     },
     {
       "id": "r84",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R84 · Nächster Dreh 5/9 · Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er etwas empfiehlt (Vorschlag Do 03.12.)",
       "target": 59,
       "paragraphs": [
@@ -148,6 +161,7 @@
     },
     {
       "id": "r85",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R85 · Nächster Dreh 6/9 · Bei uns hat der Berater ein Klemmbrett mit klarem Leitfaden (Vorschlag Fr 04.12. 13:00)",
       "target": 58,
       "paragraphs": [
@@ -161,6 +175,7 @@
     },
     {
       "id": "r86",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R86 · Nächster Dreh 7/9 · Thailand 2: Ein Gym ohne Mitglieder, bezahlt wird bar (Vorschlag Mo 07.12.)",
       "target": 76,
       "paragraphs": [
@@ -175,6 +190,7 @@
     },
     {
       "id": "r87",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R87 · Nächster Dreh 8/9 · Bei uns endet das Gespräch nicht mit der Unterschrift (Vorschlag Di 08.12.)",
       "target": 70,
       "paragraphs": [
@@ -188,6 +204,7 @@
     },
     {
       "id": "r88",
+      "group": "DT-Reels · Nächster Dreh",
       "label": "R88 · Nächster Dreh 9/9 · Thailand 3: Warum ich das hier selbst mitmache · GERÜST, Reserve",
       "target": 35,
       "paragraphs": [
@@ -200,6 +217,7 @@
     },
     {
       "id": "r89",
+      "group": "DT-Reels · Zweiter Dreh",
       "label": "R89 · Zweiter Dreh 1/5 · Thailand 4: Kleines Gym gegen großen Betrieb · GERÜST, Reserve",
       "target": 35,
       "paragraphs": [
@@ -212,6 +230,7 @@
     },
     {
       "id": "r90",
+      "group": "DT-Reels · Zweiter Dreh",
       "label": "R90 · Zweiter Dreh 2/5 · Thailand 5: Drei Dinge, die ich mitnehme · GERÜST, Abbinder der Serie",
       "target": 40,
       "paragraphs": [
@@ -224,6 +243,7 @@
     },
     {
       "id": "r91",
+      "group": "DT-Reels · Zweiter Dreh",
       "label": "R91 · Zweiter Dreh 3/5 · Bei uns ist „fitter werden“ nie die ganze Antwort (Vorschlag Mi 09.12.)",
       "target": 61,
       "paragraphs": [
@@ -238,6 +258,7 @@
     },
     {
       "id": "r92",
+      "group": "DT-Reels · Zweiter Dreh",
       "label": "R92 · Zweiter Dreh 4/5 · Bei uns hört von unseren Erfolgen nur, wer kämpfen will (Vorschlag Do 10.12.)",
       "target": 66,
       "paragraphs": [
@@ -252,6 +273,7 @@
     },
     {
       "id": "r93",
+      "group": "DT-Reels · Zweiter Dreh",
       "label": "R93 · Zweiter Dreh 5/5 · Bei uns erzählt der Berater, warum er selbst geblieben ist (Vorschlag Fr 11.12. 13:00)",
       "target": 74,
       "paragraphs": [
@@ -266,6 +288,7 @@
     },
     {
       "id": "r79",
+      "group": "Archiv · schon gedreht",
       "label": "R79 · Was ist Dojo Trust, was kostet der Test (Erfurt Mi 11.11. · Mo 23.11. 21:00 · gedreht)",
       "target": 30,
       "paragraphs": [
@@ -278,6 +301,7 @@
     },
     {
       "id": "r70",
+      "group": "Archiv · schon gedreht",
       "label": "R70 · Nach dem Kurs wischt bei uns keiner zuerst die Matte (Erfurt Mi 11.11. · Di 24.11. 21:00 · gedreht)",
       "target": 65,
       "paragraphs": [
@@ -292,6 +316,7 @@
     },
     {
       "id": "r71",
+      "group": "Archiv · schon gedreht",
       "label": "R71 · Bei uns sagt im Beratungsgespräch keiner das Wort Vertrag (Erfurt Mi 11.11. · Mi 25.11. 21:00 · gedreht)",
       "target": 51,
       "paragraphs": [
@@ -306,6 +331,7 @@
     },
     {
       "id": "r72",
+      "group": "Archiv · schon gedreht",
       "label": "R72 · „Wir rufen dich an“ ist kein Ergebnis (Erfurt Mi 11.11. · Do 26.11. 21:00 · gedreht)",
       "target": 62,
       "paragraphs": [
@@ -319,6 +345,7 @@
     },
     {
       "id": "r68",
+      "group": "Archiv · schon gedreht",
       "label": "R68 · Bei uns bekommt keiner eine 10er-Karte, nur weil er sich nicht entscheiden kann (Barmbek So 08.11. · Di 10.11. 21:00 · gedreht)",
       "target": 67,
       "paragraphs": [
@@ -332,6 +359,7 @@
     },
     {
       "id": "r69",
+      "group": "Archiv · schon gedreht",
       "label": "R69 · Bei uns liegt im Beratungsgespräch keine Preisliste auf dem Tisch (Barmbek So 08.11. · Mi 11.11. 21:00 · gedreht)",
       "target": 66,
       "paragraphs": [
@@ -346,6 +374,7 @@
     },
     {
       "id": "r74",
+      "group": "Archiv · schon gedreht",
       "label": "R74 · Über tausend Mitglieder und trotzdem üben sie (Barmbek So 08.11. · Mo 16.11. 21:00 · gedreht)",
       "target": 46,
       "paragraphs": [
@@ -358,6 +387,7 @@
     },
     {
       "id": "r73",
+      "group": "Archiv · schon gedreht",
       "label": "R73 · „Ich überleg's mir“ (Barmbek So 08.11. · Di 17.11. 21:00 · gedreht)",
       "target": 53,
       "paragraphs": [
@@ -370,6 +400,7 @@
     },
     {
       "id": "r75",
+      "group": "Archiv · schon gedreht",
       "label": "R75 · Bezahltes Probetraining (Barmbek So 08.11. · Mi 18.11. 21:00 · gedreht)",
       "target": 41,
       "paragraphs": [
@@ -382,6 +413,7 @@
     },
     {
       "id": "r76",
+      "group": "Archiv · schon gedreht",
       "label": "R76 · Zehn Minuten gegen dreimal 1.800 Euro (Barmbek So 08.11. · Do 19.11. 21:00 · gedreht)",
       "target": 56,
       "paragraphs": [
@@ -395,6 +427,7 @@
     },
     {
       "id": "r77",
+      "group": "Archiv · schon gedreht",
       "label": "R77 · Fünf Wochen E-Mails wegen 60 Euro (Barmbek So 08.11. · Fr 20.11. 13:00 · gedreht)",
       "target": 55,
       "paragraphs": [
@@ -408,6 +441,7 @@
     },
     {
       "id": "r78",
+      "group": "Archiv · schon gedreht",
       "label": "R78 · „Komm mal mit ins Büro“ (Barmbek So 08.11. · ohne Termin · gedreht)",
       "target": 48,
       "paragraphs": [
@@ -420,6 +454,7 @@
     },
     {
       "id": "r66",
+      "group": "Archiv · schon gedreht",
       "label": "R66 · Mein Mann kann das auch (Drehtag 7 · Fr 06.11. 13:00 · gedreht)",
       "target": 62,
       "paragraphs": [
@@ -434,6 +469,7 @@
     },
     {
       "id": "r67",
+      "group": "Archiv · schon gedreht",
       "label": "R67 · Bei uns gibt es keinen Studentenrabatt (Drehtag 6 · Di 03.11. 21:00 · gedreht)",
       "target": 61,
       "paragraphs": [
@@ -448,6 +484,7 @@
     },
     {
       "id": "r65",
+      "group": "Archiv · schon gedreht",
       "label": "R65 · Bei uns zeigt keiner einfach auf den Vertrag, wenn einer kündigen muss (Drehtag 6 · Fr 30.10. 13:00 · gedreht)",
       "target": 70,
       "paragraphs": [
@@ -462,6 +499,7 @@
     },
     {
       "id": "r64",
+      "group": "Archiv · schon gedreht",
       "label": "R64 · Bei uns improvisiert kein Trainer sein Training (Drehtag 6 · Do 29.10. · gedreht)",
       "target": 63,
       "paragraphs": [
@@ -476,6 +514,7 @@
     },
     {
       "id": "r60",
+      "group": "Archiv · schon gedreht",
       "label": "R60 · Bei uns geht alle zwei Stunden einer mit dem Lappen durch (Drehtag 6 · Mi 28.10. · gedreht)",
       "paragraphs": [
         "Bei uns geht alle zwei Stunden einer mit dem Lappen durch die Schule. Umkleide, Toiletten, Theke.",
@@ -489,6 +528,7 @@
     },
     {
       "id": "r63",
+      "group": "Archiv · schon gedreht",
       "label": "R63 · Wir verschenken kein zweites Probetraining (Drehtag 5 · Di 27.10. · gedreht)",
       "target": 67,
       "paragraphs": [
@@ -503,6 +543,7 @@
     },
     {
       "id": "r61",
+      "group": "Archiv · schon gedreht",
       "label": "R61 · Ganz oben auf unserer Website steht nicht unser Sport (Drehtag 5 · Fr 23.10. 13:00 · gedreht)",
       "paragraphs": [
         "Ganz oben auf unserer Website steht nicht, welchen Sport wir machen. Sondern was du davon hast.",
@@ -516,6 +557,7 @@
     },
     {
       "id": "r62",
+      "group": "Archiv · schon gedreht",
       "label": "R62 · Bei uns geht keiner unter Druck aus dem Büro (Drehtag 5 · Mi 21.10. · gedreht)",
       "target": 86,
       "paragraphs": [
@@ -531,6 +573,7 @@
     },
     {
       "id": "r53",
+      "group": "Archiv · schon gedreht",
       "label": "R53 · Der Lehrling, der nachts nicht schläft (Drehtag 4 · Founder · Mo 12.10. · gedreht)",
       "target": 73,
       "paragraphs": [
@@ -545,6 +588,7 @@
     },
     {
       "id": "r54",
+      "group": "Archiv · schon gedreht",
       "label": "R54 · Bei uns darf nicht jeder Mitglied werden (Drehtag 4 · Di 13.10. · gedreht)",
       "paragraphs": [
         "Bei uns darf nicht jeder Mitglied werden. Manchmal sagen wir nach dem Rundgang: Ich glaube, das ist nichts für dich.",
@@ -558,6 +602,7 @@
     },
     {
       "id": "r55",
+      "group": "Archiv · schon gedreht",
       "label": "R55 · Bei uns kriegt 100 Euro, wer ein Mitglied bringt (Drehtag 4 · Mi 14.10. · gedreht)",
       "paragraphs": [
         "Bei uns kriegt jeder hundert Euro, der uns ein neues Mitglied bringt. Als Gutschrift auf den Beitrag oder im Shop.",
@@ -571,6 +616,7 @@
     },
     {
       "id": "r56",
+      "group": "Archiv · schon gedreht",
       "label": "R56 · Bei uns wird der Empfang trainiert wie die Matte (Drehtag 4 · Do 15.10. · gedreht)",
       "paragraphs": [
         "Bei uns wird der Empfang trainiert wie die Matte. Mit Ablauf, mit Wiederholung, mit Rollenspiel.",
@@ -584,6 +630,7 @@
     },
     {
       "id": "r57",
+      "group": "Archiv · schon gedreht",
       "label": "R57 · Den Willkommensbonus gibt es bei uns nur heute (Drehtag 4 · Fr 16.10. 13:00 · gedreht)",
       "paragraphs": [
         "Den Willkommensbonus gibt es bei uns nur heute. Wer morgen kommt, zahlt die Aufnahmegebühr.",
@@ -597,6 +644,7 @@
     },
     {
       "id": "r58",
+      "group": "Archiv · schon gedreht",
       "label": "R58 · Bevor wir mehr Geld in Werbung stecken, schauen wir uns die Beratungsgespräche an (Drehtag 4 · Di 20.10. · gedreht)",
       "paragraphs": [
         "Bevor wir mehr Geld in Werbung stecken, schauen wir uns unsere Beratungsgespräche an. Das ist der größte Hebel, den wir haben.",
@@ -610,6 +658,7 @@
     },
     {
       "id": "r59",
+      "group": "Archiv · schon gedreht",
       "label": "R59 · Unsere beste Werbung steht schon auf der Matte (verschoben, Backlog · nicht gedreht)",
       "paragraphs": [
         "Unsere beste Werbung steht schon auf der Matte. Wir müssen sie nur fragen.",
@@ -623,6 +672,7 @@
     },
     {
       "id": "r43",
+      "group": "Archiv · schon gedreht",
       "label": "R43 · Die Methode, die funktioniert — nur nicht bei dir (v2 22.09. · Drehtag 3 · Founder · Mo 28.09. · gedreht)",
       "target": 95,
       "paragraphs": [
@@ -640,6 +690,7 @@
     },
     {
       "id": "r44",
+      "group": "Archiv · schon gedreht",
       "label": "R44 · Wer nicht kommt, ist bei uns nicht erledigt (Drehtag 3 · Mi 23.09. · gedreht)",
       "target": 71,
       "paragraphs": [
@@ -654,6 +705,7 @@
     },
     {
       "id": "r45",
+      "group": "Archiv · schon gedreht",
       "label": "R45 · Wir sagen seinen Namen zuerst (Drehtag 3 · Do 24.09. · gedreht)",
       "target": 95,
       "paragraphs": [
@@ -668,6 +720,7 @@
     },
     {
       "id": "r46",
+      "group": "Archiv · schon gedreht",
       "label": "R46 · Bei uns kostet Pausieren Geld (Drehtag 3 · Fr 25.09. · gedreht)",
       "target": 70,
       "paragraphs": [
@@ -682,6 +735,7 @@
     },
     {
       "id": "r47",
+      "group": "Archiv · schon gedreht",
       "label": "R47 · Der 22-Uhr-Test (Drehtag 3 · Mi 30.09. · gedreht)",
       "target": 69,
       "paragraphs": [
@@ -696,6 +750,7 @@
     },
     {
       "id": "r48",
+      "group": "Archiv · schon gedreht",
       "label": "R48 · Bei uns unterschreibt nie ‚das Team‘ (Drehtag 3 · Do 01.10. · gedreht)",
       "target": 57,
       "paragraphs": [
@@ -709,6 +764,7 @@
     },
     {
       "id": "r49",
+      "group": "Archiv · schon gedreht",
       "label": "R49 · Level 2 kann man bei uns nicht buchen (Drehtag 3 · Di 06.10. · gedreht)",
       "target": 73,
       "paragraphs": [
@@ -723,6 +779,7 @@
     },
     {
       "id": "r50",
+      "group": "Archiv · schon gedreht",
       "label": "R50 · Zehn Kniebeugen (Drehtag 3 · Mi 07.10. · NEU 19.09. · gedreht)",
       "target": 62,
       "paragraphs": [
@@ -737,6 +794,7 @@
     },
     {
       "id": "r51",
+      "group": "Archiv · schon gedreht",
       "label": "R51 · Bei uns muss keiner fit sein, um anzufangen (Drehtag 3 · Do 08.10. · gedreht)",
       "target": 72,
       "paragraphs": [
@@ -750,6 +808,7 @@
     },
     {
       "id": "r52",
+      "group": "Archiv · schon gedreht",
       "label": "R52 · Wir sagen vorher, dass danach ein Gespräch kommt (Drehtag 3 · Fr 09.10. · gedreht)",
       "target": 68,
       "paragraphs": [
@@ -763,6 +822,7 @@
     },
     {
       "id": "r41",
+      "group": "Archiv · schon gedreht",
       "label": "R41 · Der Bund hat sich Dojo Trust angeschaut (Founder · gedreht, läuft Mo 21.09.)",
       "target": 67,
       "paragraphs": [
@@ -776,6 +836,7 @@
     },
     {
       "id": "k1",
+      "group": "Archiv · schon gedreht",
       "label": "K1 · KICK: Die Rechnung (für Fr 18.09., gedreht)",
       "target": 25,
       "paragraphs": [
@@ -787,6 +848,7 @@
     },
     {
       "id": "k2",
+      "group": "Archiv · schon gedreht",
       "label": "K2 · KICK: Live auf der Leinwand (für Di 22.09., gedreht)",
       "target": 26,
       "paragraphs": [
@@ -798,6 +860,7 @@
     },
     {
       "id": "k3",
+      "group": "Archiv · schon gedreht",
       "label": "K3 · KICK: Diesen Samstag (für Di 29.09., gedreht)",
       "target": 27,
       "paragraphs": [
@@ -809,6 +872,7 @@
     },
     {
       "id": "k4",
+      "group": "Archiv · schon gedreht",
       "label": "K4 · KICK: Morgen (Bonus für Fr 02.10., 10 s, gedreht)",
       "target": 10,
       "paragraphs": [
@@ -818,6 +882,7 @@
     },
     {
       "id": "r40",
+      "group": "Archiv · schon gedreht",
       "label": "R40 · Kinder kündigen nicht, weil das Training schlecht ist (gedreht)",
       "target": 74,
       "paragraphs": [
@@ -830,6 +895,7 @@
     },
     {
       "id": "r39",
+      "group": "Archiv · schon gedreht",
       "label": "R39 · Rückrufe ohne Post-its (gedreht)",
       "target": 84,
       "paragraphs": [
@@ -843,6 +909,7 @@
     },
     {
       "id": "r38",
+      "group": "Archiv · schon gedreht",
       "label": "R38 · „Wir fragen mal das Kind“ — und die Anmeldung ist weg (gedreht)",
       "target": 83,
       "paragraphs": [
@@ -855,6 +922,7 @@
     },
     {
       "id": "r37",
+      "group": "Archiv · schon gedreht",
       "label": "R37 · Warum wir keine Anmeldung mit nach Hause geben (gedreht)",
       "target": 70,
       "paragraphs": [
@@ -867,6 +935,7 @@
     },
     {
       "id": "r36",
+      "group": "Archiv · schon gedreht",
       "label": "R36 · Der Satz, der den Schalter umlegt (gedreht)",
       "target": 86,
       "paragraphs": [
@@ -880,6 +949,7 @@
     },
     {
       "id": "r35",
+      "group": "Archiv · schon gedreht",
       "label": "R35 · Keiner geht bei uns ohne Termin raus (gedreht)",
       "target": 84,
       "paragraphs": [
@@ -893,6 +963,7 @@
     },
     {
       "id": "r34",
+      "group": "Archiv · schon gedreht",
       "label": "R34 · Warum wir spontane Probetrainings ablehnen (gedreht)",
       "target": 82,
       "paragraphs": [
@@ -907,6 +978,7 @@
     },
     {
       "id": "r33",
+      "group": "Archiv · schon gedreht",
       "label": "R33 · Bei uns kostet das Probetraining zehn Euro (gedreht)",
       "target": 88,
       "paragraphs": [
@@ -921,6 +993,7 @@
     },
     {
       "id": "r32",
+      "group": "Archiv · schon gedreht",
       "label": "R32 · Beim Kinder-Probetraining entscheidet die Mutter am Fenster (gedreht)",
       "target": 78,
       "paragraphs": [
@@ -935,6 +1008,7 @@
     },
     {
       "id": "r31",
+      "group": "Archiv · schon gedreht",
       "label": "R31 · Der Einwand, der keiner ist (gedreht)",
       "target": 98,
       "paragraphs": [
@@ -949,6 +1023,7 @@
     },
     {
       "id": "r30",
+      "group": "Archiv · schon gedreht",
       "label": "R30 · 30 Abgänge in einem Monat — und ich schlaf trotzdem ruhig (gedreht)",
       "target": 82,
       "paragraphs": [
@@ -963,6 +1038,7 @@
     },
     {
       "id": "r29",
+      "group": "Archiv · schon gedreht",
       "label": "R29 · Wer bei mir in vier Wochen buchen will, kann das nicht (gedreht)",
       "target": 78,
       "paragraphs": [
@@ -977,6 +1053,7 @@
     },
     {
       "id": "r28",
+      "group": "Archiv · schon gedreht",
       "label": "R28 · Der Satz, an dem ich die Anmeldung erkenne (gedreht)",
       "target": 80,
       "paragraphs": [
@@ -992,6 +1069,7 @@
     },
     {
       "id": "r27",
+      "group": "Archiv · schon gedreht",
       "label": "R27 · Der Anruf am Tag davor (gedreht)",
       "target": 85,
       "paragraphs": [
@@ -1006,6 +1084,7 @@
     },
     {
       "id": "r26",
+      "group": "Archiv · schon gedreht",
       "label": "R26 · Woche zwei entscheidet",
       "target": 120,
       "paragraphs": [
@@ -1024,6 +1103,7 @@
     },
     {
       "id": "r25",
+      "group": "Archiv · schon gedreht",
       "label": "R25 · Die 3 Fragen nach dem Probetraining",
       "target": 72,
       "paragraphs": [
@@ -1040,6 +1120,7 @@
     },
     {
       "id": "r24",
+      "group": "Archiv · schon gedreht",
       "label": "R24 · Urlaub, und die Schule läuft",
       "target": 70,
       "paragraphs": [
@@ -1055,6 +1136,7 @@
     },
     {
       "id": "r23",
+      "group": "Archiv · schon gedreht",
       "label": "R23 · So läuft ein Probetraining",
       "target": 78,
       "paragraphs": [
@@ -1071,6 +1153,7 @@
     },
     {
       "id": "r22",
+      "group": "Archiv · schon gedreht",
       "label": "R22 · Jörg & Inis (+30 %)",
       "target": 66,
       "paragraphs": [
@@ -1085,6 +1168,7 @@
     },
     {
       "id": "r21",
+      "group": "Archiv · schon gedreht",
       "label": "R21 · Samstag halb elf (gedreht)",
       "target": 62,
       "paragraphs": [
@@ -1100,6 +1184,7 @@
     },
     {
       "id": "r20",
+      "group": "Archiv · schon gedreht",
       "label": "R20 · Origin-Story (gedreht)",
       "target": 68,
       "paragraphs": [
@@ -1113,6 +1198,7 @@
     },
     {
       "id": "kn",
+      "group": "Archiv · schon gedreht",
       "label": "KICK-Nachbericht · Samstag in Nürtingen (Founder · Sa/So 10./11.10. · entfallen, ohne Dreh gebaut)",
       "target": 70,
       "paragraphs": [
