@@ -1,6 +1,75 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-20",
   "scripts": [
+    {
+      "id": "web-start",
+      "group": "Website danielzeuner.com · Dreh (Hochformat)",
+      "label": "Web 1/5 · Startseite: Wer ich bin",
+      "target": 60,
+      "paragraphs": [
+        "Ich bin Daniel Zeuner. Ich habe selbst gekämpft, als K1-Europameister und in der Box-Bundesliga. 2011 habe ich mit meinem Team La Familia Fightclub in Erfurt gegründet.",
+        "Heute helfe ich Kampfsportschulen, aus Anfragen Mitglieder zu machen. Mit Dojo Trust, mit meinem Umsetzungsprogramm oder mit dem kompletten Marketing aus einer Hand.",
+        "Was mich unterscheidet? Ich arbeite ohne Druck. Kein Überreden, keine Verkäufer-Show. Wer bei dir anfragt, ist ein Mensch und will auch so behandelt werden.",
+        "Wenn die Leute dir vertrauen, kommen sie zum Probetraining. Und sie bleiben. Das macht die Arbeit leichter, für dich und für dein Team.",
+        "Ich verstehe Kampfsport und Kampfkunst, weil ich selbst als Trainer auf der Matte stehe. Ich rede mit dir wie einer von euch.",
+        "Willst du wissen, wo deine Schule gerade Anfragen verliert? Buch dir 20 Minuten mit mir. Kostenlos."
+      ]
+    },
+    {
+      "id": "web-programm",
+      "group": "Website danielzeuner.com · Dreh (Hochformat)",
+      "label": "Web 2/5 · Umsetzungsprogramm",
+      "target": 70,
+      "paragraphs": [
+        "Du weißt eigentlich, was zu tun ist. Aber zwischen Training, Team und Alltag bleibt es liegen. Dafür gibt es das Umsetzungsprogramm.",
+        "Wir starten mit einer Bestandsanalyse. Wo steht deine Schule, wo liegt das meiste Potenzial? Daraus machen wir Ziele und zerlegen sie in Meilensteine und Maßnahmen.",
+        "Dann setzen wir um. Woche für Woche. Jeden Mittwoch live in der Runde, einmal im Monat schauen wir zu zweit auf deine Zahlen. Und wenn es klemmt, schickst du mir deine Frage per Video.",
+        "Ich bin dabei wie dein Trainer in der Ecke. Ich sehe, was passiert, ich sage dir, was als Nächstes kommt, und wir geben uns klare Deadlines. So verlierst du den Fokus nicht.",
+        "Dojo Trust ist mit drin. Die Software erledigt, was wir uns vornehmen: Antwort in Sekunden, Erinnerungen, Nachfassen.",
+        "Bis zum 31. Dezember gilt der Pilotpreis von 697 Euro im Monat, ab Januar kostet das Programm 997. Buch dir ein Gespräch, dann schauen wir, ob es zu deiner Schule passt."
+      ]
+    },
+    {
+      "id": "web-funnel",
+      "group": "Website danielzeuner.com · Dreh (Hochformat)",
+      "label": "Web 3/5 · Full-Funnel",
+      "target": 70,
+      "paragraphs": [
+        "Stell dir vor, du hast jemanden im Team, der sich nur um dein Marketing kümmert. Genau so arbeiten wir beim Full-Funnel.",
+        "Wir bauen deine neue Website und eigene Seiten für jeden Kurs. Schnell, bei Google und in KI-Suchen gut zu finden, jederzeit änderbar.",
+        "Wir schalten deine Anzeigen bei Meta und Google. Und Dojo Trust sorgt dafür, dass jede Anfrage in Sekunden eine Antwort bekommt.",
+        "Wir messen bis zur Mitgliedschaft. Du siehst, wer über welche Anzeige kam und wer am Ende Mitglied wurde.",
+        "Dein Teil: gutes Training und ein gutes Probetraining. Für die Beratung bekommt dein Team einen Leitfaden von uns. Den Rest machen wir. Nur deinen Instagram-Content machst du selbst.",
+        "Bei Fatih Yilmaz mit vier Standorten lagen zwischen dem ersten Zoom-Call und dem Start sieben, acht Tage. Im ersten vollen Monat kamen 20 neue Mitglieder dazu.",
+        "Du bekommst Gebietsschutz für zwölf Monate. Ist deine Region noch frei? Buch dir ein Gespräch."
+      ]
+    },
+    {
+      "id": "web-vorlagen",
+      "group": "Website danielzeuner.com · Dreh (Hochformat)",
+      "label": "Web 4/5 · Vorlagen",
+      "target": 30,
+      "paragraphs": [
+        "Du musst nicht alles selbst erfinden. Hier findest du Vorlagen, die in echten Schulen laufen. Auch in meiner eigenen.",
+        "Drei davon bekommst du geschenkt: den Probetrainings-Report, meine WhatsApp-Vorlagen und mein Beratungsskript für das Gespräch nach dem Probetraining.",
+        "Dazu ein kurzes Video von mir: worauf es bei der Website deiner Schule ankommt.",
+        "Trag dich ein, und alles kommt direkt in dein Postfach."
+      ]
+    },
+    {
+      "id": "web-ueber",
+      "group": "Website danielzeuner.com · Dreh (Hochformat)",
+      "label": "Web 5/5 · Über mich (mit B-Roll Kämpfer + Unternehmer)",
+      "target": 60,
+      "paragraphs": [
+        "Ich komme von der Matte, nicht aus dem Marketing. Ich war K1-Europameister und habe in der Box-Bundesliga gekämpft.",
+        "2011 habe ich mit meinem Team La Familia in Erfurt gegründet. Am Anfang war das ein schönes Hobby. Ein Geschäft wurde erst daraus, als Marketing und Abläufe gestimmt haben.",
+        "Für meine Schule habe ich gebaut, was ich nirgends kaufen konnte. Daraus ist Dojo Trust geworden. Heute arbeiten 16 Schulen damit.",
+        "Ich sehe eine Kampfsportschule wie ein Uhrwerk. Werbung, Nachfassen, Beratung, Probetraining, der Empfang. Wenn alle Zahnräder greifen, läuft die Schule.",
+        "Wie im Wettkampf: Wenn Trainer, Co-Trainer und Kämpfer sich zusammen gut vorbereiten, liefern sie ab. Nicht einmal, sondern immer wieder.",
+        "Und das ohne Druck. Du sollst dich nicht wie ein Vertreter fühlen. Wenn die Leute dir vertrauen, ist der Rest gutes Training."
+      ]
+    },
     {
       "id": "w1a",
       "group": "Webinar 16.12. · Einladungen",
