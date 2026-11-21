@@ -1,6 +1,175 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "scripts": [
+    {
+      "id": "ff-h1",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Hook 1/6 · Ab 300 Mitgliedern (3×)",
+      "target": 5,
+      "paragraphs": [
+        "Du hast eine Kampfsportschule mit 300 Mitgliedern oder mehr? Dann ist das hier für dich."
+      ]
+    },
+    {
+      "id": "ff-h2",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Hook 2/6 · Trainer, nicht Marketing-Abteilung (3×)",
+      "target": 7,
+      "paragraphs": [
+        "Du bist Trainer geworden, nicht Marketing-Abteilung. Und trotzdem sitzt du abends noch an Anzeigen und an deiner Website."
+      ]
+    },
+    {
+      "id": "ff-h3",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Hook 3/6 · Agentur bezahlt, nichts gewusst (3×)",
+      "target": 7,
+      "paragraphs": [
+        "Du hast schon mal eine Agentur bezahlt und wusstest am Ende nicht, wie viele Mitglieder dabei rausgekommen sind? Dann hör kurz zu."
+      ]
+    },
+    {
+      "id": "ff-h4",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Hook 4/6 · Einer im Team nur fürs Marketing (3×)",
+      "target": 7,
+      "paragraphs": [
+        "Stell dir vor, du hast jemanden im Team, der sich nur um dein Marketing kümmert. Und der selbst auf der Matte steht."
+      ]
+    },
+    {
+      "id": "ff-h5",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Hook 5/6 · Zahlen-Frage (3×)",
+      "target": 7,
+      "paragraphs": [
+        "Wie viele deiner neuen Mitglieder kamen letzten Monat über Werbung? Wenn du das nicht sofort weißt, ist das hier für dich."
+      ]
+    },
+    {
+      "id": "ff-h6",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Hook 6/6 · Zwei Plätze im Januar (3×)",
+      "target": 6,
+      "paragraphs": [
+        "Im Januar nehme ich zwei neue Kampfsportschulen. Pro Gebiet nur eine."
+      ]
+    },
+    {
+      "id": "ff-m1",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Mitte 1/4 · Was du bekommst (2×)",
+      "target": 30,
+      "paragraphs": [
+        "Ich übernehme dein komplettes Marketing. Wie ein eigener Mitarbeiter, nur ohne dass du jemanden einstellen musst.",
+        "Neue Website, eine eigene Seite für jeden Kurs. Anzeigen bei Meta und Google, die Videos dafür. Und Dojo Trust dahinter, damit jede Anfrage in Sekunden eine Antwort bekommt.",
+        "Jede Woche schauen wir zusammen auf deine Zahlen. Dein Teil: gutes Training und ein gutes Probetraining. Den Rest mache ich."
+      ]
+    },
+    {
+      "id": "ff-m2",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Mitte 2/4 · Warum ich (2×)",
+      "target": 30,
+      "paragraphs": [
+        "Ich bin Daniel. Ich war K1-Europameister und habe in der Box-Bundesliga gekämpft. Meine eigene Schule hat heute über 700 Mitglieder.",
+        "Alles, was ich für dich mache, habe ich vorher bei mir selbst ausprobiert. Daraus ist Dojo Trust entstanden. Damit beantworten heute Kampfsportschulen von Kiel bis an den Bodensee ihre Anfragen.",
+        "Ich rede mit dir nicht wie eine Agentur. Ich rede mit dir wie einer, der weiß, wie es ist, wenn die Matte nicht voll wird."
+      ]
+    },
+    {
+      "id": "ff-m3",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Mitte 3/4 · So läuft es ab (2×)",
+      "target": 30,
+      "paragraphs": [
+        "Erst reden wir. Ich schaue mir deine Schule an und sage dir ehrlich, ob es passt.",
+        "Wenn ja, schickst du mir dein Material. 14 Tage später steht alles: Website, Kursseiten, Anzeigen und Dojo Trust.",
+        "Ab dann sehen wir uns einmal die Woche. Du siehst, welche Anzeige wie viele Anfragen gebracht hat und wer am Ende Mitglied geworden ist."
+      ]
+    },
+    {
+      "id": "ff-m4",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Mitte 4/4 · Messen bis zur Unterschrift (2×)",
+      "target": 25,
+      "paragraphs": [
+        "Viele Schulinhaber wissen, was ihre Werbung kostet. Aber nicht, was sie bringt.",
+        "Bei mir zählt nicht der Klick und nicht die Anfrage. Ich messe bis zur Unterschrift.",
+        "Du siehst jede Woche schwarz auf weiß: so viel ausgegeben, so viele neue Mitglieder. Ohne Schönrechnen."
+      ]
+    },
+    {
+      "id": "ff-b1",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Brücke · Danach kommt die Kundenstimme (2×)",
+      "target": 4,
+      "paragraphs": [
+        "Aber hör nicht auf mich. Hör, was meine Kunden sagen."
+      ]
+    },
+    {
+      "id": "ff-s1",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Schluss 1/2 · Zwei Plätze, Preise offen (2×)",
+      "target": 12,
+      "paragraphs": [
+        "Im Januar nehme ich zwei neue Schulen. Pro Gebiet nur eine, mit Gebietsschutz für zwölf Monate. Die Preise stehen offen auf meiner Seite. Schau rein und buch dir ein Gespräch."
+      ]
+    },
+    {
+      "id": "ff-s2",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Schluss 2/2 · Ist deine Region frei? (2×)",
+      "target": 8,
+      "paragraphs": [
+        "Ist deine Region noch frei? Unten auf den Link und Gespräch buchen. Dann sage ich dir ehrlich, ob es passt."
+      ]
+    },
+    {
+      "id": "ff-k1",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Komplett 1/2 · Mitarbeiter fürs Marketing, ein Durchgang (2×)",
+      "target": 42,
+      "paragraphs": [
+        "Wenn deine Schule 300 Mitglieder oder mehr hat, ist das hier für dich.",
+        "Ich bin Daniel. Ich habe selbst eine Schule mit über 700 Mitgliedern und habe Dojo Trust gebaut.",
+        "Ich übernehme dein komplettes Marketing, wie ein eigener Mitarbeiter: Website, eine Seite für jeden Kurs, Anzeigen bei Meta und Google, die Videos dafür und Dojo Trust dahinter, damit keine Anfrage liegen bleibt.",
+        "Jede Woche schauen wir zusammen auf deine Zahlen. Du stehst auf der Matte, den Rest mache ich.",
+        "Im Januar nehme ich zwei neue Schulen. Alles Weitere, auch die Preise, steht auf meiner Seite."
+      ]
+    },
+    {
+      "id": "ff-k2",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF Komplett 2/2 · Agentur bezahlt, nichts gewusst, ein Durchgang (2×)",
+      "target": 40,
+      "paragraphs": [
+        "Du hast schon mal eine Agentur bezahlt und wusstest am Ende nicht, wie viele Mitglieder dabei rausgekommen sind?",
+        "Ich bin Daniel, ich habe selbst eine Kampfsportschule. Bei mir zählt nicht der Klick und nicht die Anfrage. Ich messe bis zur Unterschrift.",
+        "Website, Kursseiten, Anzeigen und Dojo Trust kommen aus einer Hand. Und jede Woche siehst du schwarz auf weiß: so viel ausgegeben, so viele neue Mitglieder.",
+        "Im Januar nehme ich zwei neue Schulen, pro Gebiet nur eine. Ist deine Region noch frei? Unten auf den Link."
+      ]
+    },
+    {
+      "id": "ff-broll",
+      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
+      "label": "FF B-Roll-Liste · NICHT SPRECHEN, nur abhaken",
+      "target": 0,
+      "paragraphs": [
+        "Je 5 bis 8 Sekunden, hochkant, Handy ruhig halten, kein Ton nötig. Fremde Gesichter nur, wenn die Leute Ja gesagt haben.",
+        "1 · Hände bandagieren, ganz nah.",
+        "2 · Du trainierst oder hältst Pratzen. Einmal von weit, einmal nah.",
+        "3 · Du gehst von hinten durch die Halle auf die Kamera zu.",
+        "4 · Laptop am Mattenrand, du tippst. Bildschirm von der Kamera weg, den Inhalt setzen wir später ein.",
+        "5 · Handy in der Hand, du liest eine Nachricht und nickst.",
+        "6 · Du sitzt im Video-Call, nickst und lachst. Bildschirm von der Kamera weg.",
+        "7 · Handschlag mit einem Trainer, nah an den Händen.",
+        "8 · Zehn Sekunden ruhig in die Kamera schauen, ohne zu reden. Darüber kommen später Kundenzitate.",
+        "9 · Leere Halle, Matte, Licht. Zehn Sekunden Stimmung.",
+        "10 · Du schreibst Zahlen auf einen Block oder ein Whiteboard."
+      ]
+    },
     {
       "id": "web-start",
       "group": "Website danielzeuner.com · Dreh (Hochformat)",
