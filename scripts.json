@@ -1,6 +1,33 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "scripts": [
+    {
+      "id": "r94",
+      "group": "Thailand-Serie · Neu",
+      "label": "R94 · Thailand-Serie · Trailer: Darum mache ich diese Serie",
+      "target": 38,
+      "paragraphs": [
+        "Ich bin gerade in Thailand. Und ich mache hier etwas, das ich so noch nirgends gesehen habe.",
+        "Ich vergleiche, wie eine Kampfsportschule in Deutschland läuft und wie ein Gym in Thailand läuft. Nicht das Training. Das Geschäft dahinter.",
+        "Dafür rede ich mit Trainern und mit Gym-Inhabern. Wer kommt hierher? Warum kommen die Leute wieder, obwohl keiner einen Vertrag hat? Und wovon lebt so ein Gym?",
+        "Am Ende sage ich euch, was eine Schule in Deutschland davon übernehmen kann. Und was nicht.",
+        "Folg mir, damit du keine Folge verpasst."
+      ]
+    },
+    {
+      "id": "r95",
+      "group": "Thailand-Serie · Neu",
+      "label": "R95 · Thailand-Serie · Folge 2: Hier ist Muay Thai mehr als Fußball",
+      "target": 66,
+      "paragraphs": [
+        "Hier in Thailand ist Muay Thai mehr als Fußball.",
+        "Überall gibt es Stadien, überall wird trainiert. Und Menschen aus der ganzen Welt fliegen hierher, nur wegen des Kampfsports.",
+        "Dazu kommt das ganze Drumherum. Das Essen, die Leute, die gut drauf sind. Der Sport gehört hier einfach zum Leben.",
+        "Aber die Leute gehen nicht in irgendein Gym. Sie kommen immer wieder dahin, wo man sie gut auffängt. Wo die Trainer nett sind, wo die Community passt und wo man jemanden hat, an den man sich wenden kann. Viele Deutsche suchen sich hier gezielt ein Gym, in dem jemand Deutsch spricht.",
+        "Und genau das ist bei uns in Deutschland nicht anders. Ein guter Trainer allein reicht nicht. Wenn du gut trainierst, nett zu den Leuten bist, den Spirit rüberbringst und das Ganze auch gut verkaufst, dann hast du ein Produkt, das auch in Deutschland funktioniert.",
+        "Und wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
     {
       "id": "ff-h1",
       "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
