@@ -242,6 +242,11 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
     <div id="qualNote" class="note">Wähle, was du willst — was dein iPhone im Browser hergibt, steht oben.</div>
   </div>
 
+  <div class="field">
+    <button class="pill" id="tRaw" type="button" style="width:100%">Rohaufnahme (volle Bildrate)</button>
+    <div class="note" id="rawNote">An: Das Handy nimmt das ganze Kamerabild direkt auf, mit 30 Bildern pro Sekunde und ungefiltertem Ton. Den Zuschnitt macht der Schnitt. Aus: Aufnahme genau im Rahmen oben, aber oft nur 10–20 Bilder pro Sekunde.</div>
+  </div>
+
   <div class="pair">
     <button class="pill" id="tFlip" type="button" style="width:100%">Vorschau spiegeln</button>
     <button class="pill" id="tFacing" type="button" style="width:100%">Kamera wechseln</button>
@@ -302,7 +307,7 @@ var QUAL=[
 ];
 
 var S={data:FALLBACK,idx:0,fmt:"9:16",zoom:1,pan:0,wpm:175,fs:78,top:34,scrim:45,
-       flip:true,facing:"user",qual:"auto",
+       flip:true,facing:"user",qual:"auto",raw:true,
        running:false,recording:false,offset:0,span:0,words:0,last:0,elapsed:0,
        lines:[],lineH:0,got:null};
 
@@ -312,7 +317,7 @@ var placed=false;             /* in der Vorschau von Hand gesetzte Textstelle */
 
 function load(k,d){try{var v=localStorage.getItem("rp4_"+k);return v===null?d:JSON.parse(v)}catch(e){return d}}
 function save(k,v){try{localStorage.setItem("rp4_"+k,JSON.stringify(v))}catch(e){}}
-["fmt","zoom","pan","wpm","fs","top","scrim","flip","facing","qual"].forEach(function(k){S[k]=load(k,S[k])});
+["fmt","zoom","pan","wpm","fs","top","scrim","flip","facing","qual","raw"].forEach(function(k){S[k]=load(k,S[k])});
 
 var tId=0;
 function toast(m){var t=$("toast");t.textContent=m;t.classList.add("on");clearTimeout(tId);tId=setTimeout(function(){t.classList.remove("on")},2600)}
@@ -468,7 +473,7 @@ function armStart(){
 }
 
 /* ── Kamerabild in den Rahmen ───────────────────────────── */
-function paintCam(g){
+function paintCam(g,mir){
   g.fillStyle="#000";g.fillRect(0,0,W,H);
   if(!src.videoWidth)return;
   var vw=src.videoWidth, vh=src.videoHeight;
@@ -480,7 +485,7 @@ function paintCam(g){
     var bs=cover*1.25, bw=vw*bs, bh=vh*bs;
     g.save();
     try{g.filter="blur(38px)"}catch(e){}
-    g.translate(W/2,H/2); if(S.flip)g.scale(-1,1);
+    g.translate(W/2,H/2); if(mir)g.scale(-1,1);
     g.drawImage(src,-bw/2,-bh/2,bw,bh);
     g.restore();
     g.fillStyle="rgba(10,11,13,.35)";g.fillRect(0,0,W,H);
@@ -489,14 +494,14 @@ function paintCam(g){
   var sc=cover*S.zoom, dw=vw*sc, dh=vh*sc;
   g.save();
   g.translate(W/2, H/2 + (S.pan/100)*H);
-  if(S.flip)g.scale(-1,1);
+  if(mir)g.scale(-1,1);
   g.drawImage(src,-dw/2,-dh/2,dw,dh);
   g.restore();
 }
 
 var cd=0, raf=0;
 function draw(){
-  paintCam(vctx);
+  paintCam(vctx,S.flip);
 
   if(S.scrim>0){vctx.fillStyle="rgba(10,11,13,"+(S.scrim/100).toFixed(2)+")";vctx.fillRect(0,0,W,H)}
 
@@ -523,8 +528,9 @@ function draw(){
     vctx.fillText(String(cd),W/2,H/2);
   }
 
-  /* Die Aufnahme bekommt dieselbe Bildführung — nur ohne Text und Marken. */
-  if(S.recording)paintCam(octx);
+  /* Rahmen-Aufnahme: dieselbe Bildführung, ohne Text und Marken, immer seitenrichtig.
+     Bei der Rohaufnahme läuft das Kamerabild direkt in die Datei — hier nichts zu malen. */
+  if(S.recording&&!recRaw)paintCam(octx,false);
 }
 
 function loop(now){
@@ -604,7 +610,9 @@ function startCam(){
             height:{ideal:q.s},
             frameRate:{ideal:30}};
   return navigator.mediaDevices.getUserMedia({
-    video:want, audio:{echoCancellation:true,noiseSuppression:true,sampleRate:48000}
+    /* Ton ungefiltert: Echo- und Rauschunterdrückung schalten auf dem iPhone eine
+       Sprach-Verarbeitung ein, die leise Silben und Wortenden wegschneidet. */
+    video:want, audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:false,sampleRate:48000}
   }).then(function(st){
     stream=st;src.srcObject=st;src.play().catch(function(){});
     /* Safari beendet den Strom beim Zurückblättern oder Wegschalten still.
@@ -679,10 +687,20 @@ function buildQual(){
 }
 
 /* ── Aufnahme: der zugeschnittene Rahmen, ohne Text ─────── */
-var mr=null, chunks=[], blob=null, startedAt=0;
-function canRecord(){return !!(window.MediaRecorder && out.captureStream && stream)}
-function pickMime(){
-  var c=["video/mp4;codecs=avc1.42E01E,mp4a.40.2","video/mp4","video/webm;codecs=vp9,opus","video/webm;codecs=vp8,opus","video/webm"];
+var mr=null, chunks=[], blob=null, startedAt=0, recRaw=false;
+function canRecord(){return !!(window.MediaRecorder && stream && (S.raw || out.captureStream))}
+/* Rohaufnahme: Bitrate nach dem, was die Kamera wirklich liefert. */
+function rawBitrate(){
+  var g=S.got||{}, px=(g.w||0)*(g.h||0);
+  if(px>=3840*2160)return 24000000;
+  if(px>=2560*1440)return 16000000;
+  if(px>=1920*1080)return 12000000;
+  return 8000000;
+}
+function pickMime(raw){
+  /* 42E01E taugt nur bis 720p. Für das volle Kamerabild (bis 4K) ein Profil ohne diese Grenze. */
+  var c=raw?["video/mp4;codecs=avc1.640033,mp4a.40.2","video/mp4;codecs=avc1,mp4a.40.2","video/mp4","video/webm;codecs=vp9,opus","video/webm;codecs=vp8,opus","video/webm"]
+           :["video/mp4;codecs=avc1.42E01E,mp4a.40.2","video/mp4","video/webm;codecs=vp9,opus","video/webm;codecs=vp8,opus","video/webm"];
   for(var i=0;i<c.length;i++){try{if(MediaRecorder.isTypeSupported(c[i]))return c[i]}catch(e){}}
   return "";
 }
@@ -697,15 +715,24 @@ function bitrate(){
 function startRec(){
   if(!canRecord()){toast("Aufnahme hier nicht möglich");return}
   if(S.running||cd>0)stop();
-  paintCam(octx);
-  var cs;
-  try{ cs=out.captureStream(30) }catch(e){ toast("Aufnahme wird hier nicht unterstützt");return }
-  stream.getAudioTracks().forEach(function(t){cs.addTrack(t)});
-  var mime=pickMime();
-  try{ mr=mime?new MediaRecorder(cs,{mimeType:mime,videoBitsPerSecond:bitrate(),audioBitsPerSecond:128000}):new MediaRecorder(cs) }
+  var cs, vbr;
+  recRaw=!!S.raw;
+  if(recRaw){
+    /* Kamera und Mikrofon direkt — jedes Kamerabild landet in der Datei. */
+    cs=new MediaStream(stream.getTracks());
+    vbr=rawBitrate();
+  } else {
+    paintCam(octx,false);
+    try{ cs=out.captureStream(30) }catch(e){ toast("Aufnahme wird hier nicht unterstützt");return }
+    stream.getAudioTracks().forEach(function(t){cs.addTrack(t)});
+    vbr=bitrate();
+  }
+  var mime=pickMime(recRaw);
+  try{ mr=mime?new MediaRecorder(cs,{mimeType:mime,videoBitsPerSecond:vbr,audioBitsPerSecond:192000}):new MediaRecorder(cs) }
   catch(e){ try{mr=new MediaRecorder(cs)}catch(e2){toast("Der Browser lehnt die Aufnahme ab");return} }
   chunks=[];blob=null;
   mr.ondataavailable=function(e){if(e.data&&e.data.size)chunks.push(e.data)};
+  mr.onerror=function(e){toast("Aufnahme-Fehler: "+((e&&e.error&&e.error.name)||"unbekannt"))};
   mr.onstop=function(){
     blob=new Blob(chunks,{type:(mr.mimeType||"video/mp4").split(";")[0]});
     if(blob.size>0)showReview(); else toast("Aufnahme war leer");
@@ -728,10 +755,13 @@ function stopRec(){
 }
 function showReview(){
   var sec=(Date.now()-startedAt)/1000, mb=blob.size/1048576;
-  $("revLen").textContent="· "+fmtT(sec)+" · "+W+"×"+H+" · "+mb.toFixed(1)+" MB"
-    +(sec>0?" · "+Math.round(blob.size*8/sec/1e6)+" Mbit/s":"");
+  var tail=" · "+mb.toFixed(1)+" MB"+(sec>0?" · "+Math.round(blob.size*8/sec/1e6)+" Mbit/s":"");
+  $("revLen").textContent="· "+fmtT(sec)+" · "+(recRaw?"Roh":W+"×"+H)+tail;
   var v=$("revVid");
   if(v.src)URL.revokeObjectURL(v.src);
+  v.onloadedmetadata=function(){
+    if(recRaw&&v.videoWidth)$("revLen").textContent="· "+fmtT(sec)+" · Roh "+v.videoWidth+"×"+v.videoHeight+tail;
+  };
   v.src=URL.createObjectURL(blob);
   $("review").classList.add("on");
 }
@@ -744,7 +774,7 @@ function closeReview(){
 function saveTake(){
   if(!blob)return;
   var ext=blob.type.indexOf("mp4")!==-1?"mp4":"webm";
-  var name=(S.data.scripts[S.idx].id||"reel")+"-"+S.fmt.replace(":","x")+"."+ext;
+  var name=(S.data.scripts[S.idx].id||"reel")+"-"+(recRaw?"roh":S.fmt.replace(":","x"))+"."+ext;
   var file=new File([blob],name,{type:blob.type});
   if(navigator.canShare&&navigator.canShare({files:[file]})){
     navigator.share({files:[file],title:name}).then(function(){
@@ -824,6 +854,12 @@ bind("sFs","fs",function(v){return v},layout);
 bind("sTop","top",function(v){return v},function(){if(!S.running)reset()});
 bind("sScrim","scrim",function(v){return v});
 
+$("tRaw").addEventListener("click",function(){
+  if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
+  S.raw=!S.raw;save("raw",S.raw);this.classList.toggle("on",S.raw);
+  this.textContent=S.raw?"Rohaufnahme an (volle Bildrate)":"Rohaufnahme aus (Rahmen)";
+  shoot.disabled=!canRecord();
+});
 $("tFlip").addEventListener("click",function(){
   S.flip=!S.flip;save("flip",S.flip);this.classList.toggle("on",S.flip);
 });
@@ -851,6 +887,8 @@ window.addEventListener("resize",function(){setTimeout(layout,120)});
 function boot(withCam){
   $("gate").classList.remove("on");
   $("tFlip").classList.toggle("on",S.flip);
+  $("tRaw").classList.toggle("on",S.raw);
+  $("tRaw").textContent=S.raw?"Rohaufnahme an (volle Bildrate)":"Rohaufnahme aus (Rahmen)";
   buildFmt();buildQual();buildChips();
   setFormat(S.fmt,true);
   raf=requestAnimationFrame(loop);
