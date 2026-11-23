@@ -2,20 +2,6 @@
   "updated": "2026-11-23",
   "scripts": [
     {
-      "id": "web-ueber",
-      "label": "Web 5/5 · Über mich (Nachdreh, Videos 1–4 sind fertig)",
-      "target": 60,
-      "paragraphs": [
-        "Ich komme von der Matte, nicht aus dem Marketing. Ich war K1-Europameister und habe in der Box-Bundesliga gekämpft.",
-        "2011 habe ich mit meinem Partner zusammen den La Familia Fightclub in Erfurt gegründet. Am Anfang war das ein schönes Hobby. Ein Geschäft wurde erst daraus, als Marketing und Abläufe gestimmt haben.",
-        "Für meine Schule habe ich gebaut, was ich nirgends kaufen konnte. Daraus ist Dojo Trust geworden. Heute arbeiten 17 Schulen damit.",
-        "Ich sehe eine Kampfsportschule wie ein Uhrwerk. Werbung, Nachfassen, Beratung, Probetraining, der Empfang. Wenn alle Zahnräder greifen, läuft die Schule.",
-        "Wie im Wettkampf: Wenn Trainer, Co-Trainer und Kämpfer sich zusammen gut vorbereiten, liefern sie ab. Nicht einmal, sondern immer wieder.",
-        "Und das ohne Druck. Du sollst dich nicht wie ein Vertreter fühlen. Wenn die Leute dir vertrauen, ist der Rest gutes Training."
-      ],
-      "group": "Website danielzeuner.com · Nachdreh"
-    },
-    {
       "id": "r94",
       "group": "Thailand-Serie · Neu",
       "label": "R94 · Thailand-Serie · Trailer: Darum mache ich diese Serie",
@@ -1487,6 +1473,19 @@
         "Zwei davon bekommst du geschenkt: den Probetraining-Report und mein Beratungsskript für das Gespräch nach dem Probetraining.",
         "Dazu ein kurzes Video von mir: worauf es bei der Website deiner Schule ankommt.",
         "Trag dich ein, und alles kommt direkt in dein Postfach."
+      ]
+    },
+    {
+      "id": "web-ueber",
+      "label": "Web 5/5 · Über mich (gedreht 23.11., live)",
+      "target": 60,
+      "paragraphs": [
+        "Ich komme von der Matte, nicht aus dem Marketing. Ich war K1-Europameister und habe in der Box-Bundesliga gekämpft.",
+        "2011 habe ich mit meinem Partner zusammen den La Familia Fightclub in Erfurt gegründet. Am Anfang war das ein schönes Hobby. Ein Geschäft wurde erst daraus, als Marketing und Abläufe gestimmt haben.",
+        "Für meine Schule habe ich gebaut, was ich nirgends kaufen konnte. Daraus ist Dojo Trust geworden. Heute arbeiten 17 Schulen damit.",
+        "Ich sehe eine Kampfsportschule wie ein Uhrwerk. Werbung, Nachfassen, Beratung, Probetraining, der Empfang. Wenn alle Zahnräder greifen, läuft die Schule.",
+        "Wie im Wettkampf: Wenn Trainer, Co-Trainer und Kämpfer sich zusammen gut vorbereiten, liefern sie ab. Nicht einmal, sondern immer wieder.",
+        "Und das ohne Druck. Du sollst dich nicht wie ein Vertreter fühlen. Wenn die Leute dir vertrauen, ist der Rest gutes Training."
       ]
     },
     {
