@@ -199,6 +199,7 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
   <div class="grow"></div>
   <button class="btn primary" id="goCam" type="button">Kamera und Mikrofon einschalten</button>
   <button class="btn" id="goPlain" type="button">Nur Text, ohne Kamera</button>
+  <button class="btn" id="goLast" type="button" style="display:none">Letzte Aufnahme öffnen</button>
   <div id="stand"></div>
 </div>
 
@@ -252,6 +253,7 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
     <button class="pill" id="tFacing" type="button" style="width:100%">Kamera wechseln</button>
   </div>
   <button class="pill" id="restartCam" type="button" style="width:100%">Kamera neu starten</button>
+  <button class="pill" id="setLast" type="button" style="width:100%;display:none">Letzte Aufnahme öffnen</button>
   <p style="font-size:12px">Das Spiegeln gilt nur für deine Vorschau. Die Aufnahme bleibt seitenrichtig, sonst stünde die Schrift auf deinem Shirt verkehrt herum.</p>
 
   <div class="grow"></div>
@@ -735,7 +737,9 @@ function startRec(){
   mr.onerror=function(e){toast("Aufnahme-Fehler: "+((e&&e.error&&e.error.name)||"unbekannt"))};
   mr.onstop=function(){
     blob=new Blob(chunks,{type:(mr.mimeType||"video/mp4").split(";")[0]});
-    if(blob.size>0)showReview(); else toast("Aufnahme war leer");
+    takeSec=(Date.now()-startedAt)/1000;
+    takeName=(S.data.scripts[S.idx].id||"reel")+"-"+(recRaw?"roh":S.fmt.replace(":","x"));
+    if(blob.size>0){showReview();backupPut()} else toast("Aufnahme war leer");
   };
   S.recording=true;
   shoot.classList.add("rec");shoot.setAttribute("aria-label","Aufnahme stoppen");
@@ -753,8 +757,52 @@ function stopRec(){
   if(mr&&mr.state!=="inactive"){try{mr.stop()}catch(e){}}
   else toast("Vor dem Start abgebrochen");
 }
+/* ── Sicherheitskopie: die letzte Aufnahme bleibt auf dem Handy, bis die nächste fertig ist.
+      Übersteht Verwerfen, Neuladen und einen Absturz von Safari. ── */
+var takeSec=0, takeName="reel", saved=false;
+function idb(){return new Promise(function(res,rej){
+  try{var r=indexedDB.open("rp-takes",1);
+    r.onupgradeneeded=function(){r.result.createObjectStore("t")};
+    r.onsuccess=function(){res(r.result)};r.onerror=function(){rej(r.error)};
+  }catch(e){rej(e)}
+})}
+function backupPut(){
+  if(!blob||blob.size>700*1048576)return;
+  var rec={blob:blob,name:takeName,sec:takeSec,raw:recRaw,w:W,h:H,at:Date.now()};
+  idb().then(function(db){
+    var tx=db.transaction("t","readwrite");tx.objectStore("t").put(rec,"last");
+    tx.oncomplete=function(){db.close();offerLast()};tx.onerror=tx.onabort=function(){db.close()};
+  }).catch(function(){});
+}
+function backupGet(){
+  return idb().then(function(db){return new Promise(function(res){
+    var q=db.transaction("t","readonly").objectStore("t").get("last");
+    q.onsuccess=function(){db.close();res(q.result||null)};q.onerror=function(){db.close();res(null)};
+  })}).catch(function(){return null});
+}
+function offerLast(){
+  backupGet().then(function(rec){
+    ["goLast","setLast"].forEach(function(id){
+      var b=$(id);if(!rec||!rec.blob||!rec.blob.size){b.style.display="none";return}
+      var d=new Date(rec.at);
+      b.textContent="Letzte Aufnahme öffnen · "+fmtT(rec.sec)+" · "+Math.round(rec.blob.size/1048576)+" MB · "
+        +String(d.getHours()).padStart(2,"0")+":"+String(d.getMinutes()).padStart(2,"0");
+      b.style.display="";
+      b.onclick=function(){
+        if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
+        blob=rec.blob;takeSec=rec.sec;takeName=rec.name;recRaw=rec.raw;showReview();
+      };
+    });
+  });
+}
+function dropTake(){
+  if(blob&&!saved&&!confirm("Diese Aufnahme ist noch nicht gesichert. Wirklich verwerfen?\n(Eine Kopie bleibt bis zur nächsten Aufnahme unter „Letzte Aufnahme öffnen“.)"))return false;
+  closeReview();return true;
+}
+
 function showReview(){
-  var sec=(Date.now()-startedAt)/1000, mb=blob.size/1048576;
+  saved=false;$("revDrop").textContent="Verwerfen";
+  var sec=takeSec, mb=blob.size/1048576;
   var tail=" · "+mb.toFixed(1)+" MB"+(sec>0?" · "+Math.round(blob.size*8/sec/1e6)+" Mbit/s":"");
   $("revLen").textContent="· "+fmtT(sec)+" · "+(recRaw?"Roh":W+"×"+H)+tail;
   var v=$("revVid");
@@ -774,17 +822,21 @@ function closeReview(){
 function saveTake(){
   if(!blob)return;
   var ext=blob.type.indexOf("mp4")!==-1?"mp4":"webm";
-  var name=(S.data.scripts[S.idx].id||"reel")+"-"+(recRaw?"roh":S.fmt.replace(":","x"))+"."+ext;
+  var name=takeName+"."+ext;
   var file=new File([blob],name,{type:blob.type});
   if(navigator.canShare&&navigator.canShare({files:[file]})){
+    /* Nicht mehr sofort schließen: Ob „Video sichern“ wirklich geklappt hat, sieht nur Fotos.
+       Die Aufnahme bleibt offen, bis du selbst „Schließen“ tippst. */
     navigator.share({files:[file],title:name}).then(function(){
-      toast("Im Teilen-Blatt auf 'Video sichern' — dann liegt es in Fotos");closeReview();
+      saved=true;$("revDrop").textContent="Schließen";
+      toast("Geteilt. Kurz in Fotos nachsehen, dann hier „Schließen“");
     }).catch(function(){});
   } else {
     var a=document.createElement("a"), u=URL.createObjectURL(blob);
     a.href=u;a.download=name;document.body.appendChild(a);a.click();a.remove();
     setTimeout(function(){URL.revokeObjectURL(u)},5000);
-    toast("Datei geladen — in Fotos oder Dateien sichern");closeReview();
+    saved=true;$("revDrop").textContent="Schließen";
+    toast("Datei geladen — in Fotos oder Dateien sichern");
   }
 }
 
@@ -835,8 +887,9 @@ $("closePick").addEventListener("click",function(){$("picker").classList.remove(
 $("closeSet").addEventListener("click",function(){$("settings").classList.remove("on");ensureCam()});
 $("camdead").addEventListener("click",function(e){e.stopPropagation();camLast=0;startCam()});
 $("restartCam").addEventListener("click",function(){camLast=0;startCam().then(function(ok){if(ok)toast("Kamera läuft wieder")})});
-$("revDrop").addEventListener("click",closeReview);
-$("revAgain").addEventListener("click",function(){closeReview();setTimeout(startRec,300)});
+$("revDrop").addEventListener("click",dropTake);
+$("revAgain").addEventListener("click",function(){if(dropTake())setTimeout(startRec,300)});
+offerLast();
 $("revSave").addEventListener("click",saveTake);
 
 function bind(id,key,show,after){
