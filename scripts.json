@@ -1,6 +1,22 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "scripts": [
+    {
+      "id": "web-nachdreh",
+      "group": "Jetzt drehen · Nachdreh Website",
+      "label": "Web Nachdreh · 4 Sätze für Video 3 und 5 (jeder Satz zweimal)",
+      "target": 45,
+      "paragraphs": [
+        "Im ersten vollen Monat kamen 20 neue Mitglieder dazu.",
+        "Im ersten vollen Monat kamen 20 neue Mitglieder dazu.",
+        "Bei unseren vier Full-Funnel-Schulen sind seit dem Start mit Dojo Trust 418 neue Mitglieder dazugekommen. Gezählt, nicht geschätzt.",
+        "Bei unseren vier Full-Funnel-Schulen sind seit dem Start mit Dojo Trust 418 neue Mitglieder dazugekommen. Gezählt, nicht geschätzt.",
+        "Daraus ist Dojo Trust geworden. Heute arbeiten 17 Schulen damit.",
+        "Daraus ist Dojo Trust geworden. Heute arbeiten 17 Schulen damit.",
+        "2011 habe ich mit meinem Partner zusammen den La Familia Fightclub in Erfurt gegründet.",
+        "2011 habe ich mit meinem Partner zusammen den La Familia Fightclub in Erfurt gegründet."
+      ]
+    },
     {
       "id": "r94",
       "group": "Thailand-Serie · Neu",
