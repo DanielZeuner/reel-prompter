@@ -1,33 +1,6 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "scripts": [
-    {
-      "id": "r94",
-      "group": "Thailand-Serie · Neu",
-      "label": "R94 · Thailand-Serie · Trailer: Darum mache ich diese Serie",
-      "target": 38,
-      "paragraphs": [
-        "Ich bin gerade in Thailand. Und ich mache hier etwas, das ich so noch nirgends gesehen habe.",
-        "Ich vergleiche, wie eine Kampfsportschule in Deutschland läuft und wie ein Gym in Thailand läuft. Nicht das Training. Das Geschäft dahinter.",
-        "Dafür rede ich mit Trainern und mit Gym-Inhabern. Wer kommt hierher? Warum kommen die Leute wieder, obwohl keiner einen Vertrag hat? Und wovon lebt so ein Gym?",
-        "Am Ende sage ich euch, was eine Schule in Deutschland davon übernehmen kann. Und was nicht.",
-        "Folg mir, damit du keine Folge verpasst."
-      ]
-    },
-    {
-      "id": "r95",
-      "group": "Thailand-Serie · Neu",
-      "label": "R95 · Thailand-Serie · Folge 2: Hier ist Muay Thai mehr als Fußball",
-      "target": 66,
-      "paragraphs": [
-        "Hier in Thailand ist Muay Thai mehr als Fußball.",
-        "Überall gibt es Stadien, überall wird trainiert. Und Menschen aus der ganzen Welt fliegen hierher, nur wegen des Kampfsports.",
-        "Dazu kommt das ganze Drumherum. Das Essen, die Leute, die gut drauf sind. Der Sport gehört hier einfach zum Leben.",
-        "Aber die Leute gehen nicht in irgendein Gym. Sie kommen immer wieder dahin, wo man sie gut auffängt. Wo die Trainer nett sind, wo die Community passt und wo man jemanden hat, an den man sich wenden kann. Viele Deutsche suchen sich hier gezielt ein Gym, in dem jemand Deutsch spricht.",
-        "Und genau das ist bei uns in Deutschland nicht anders. Ein guter Trainer allein reicht nicht. Wenn du gut trainierst, nett zu den Leuten bist, den Spirit rüberbringst und das Ganze auch gut verkaufst, dann hast du ein Produkt, das auch in Deutschland funktioniert.",
-        "Und wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
-      ]
-    },
     {
       "id": "ff-h1",
       "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
@@ -198,6 +171,136 @@
       ]
     },
     {
+      "id": "r80",
+      "group": "DT-Reels · Nächster Dreh",
+      "label": "R80 · Nächster Dreh 1/9 · Bei uns redet beim Feedback der Chef als Letzter (Vorschlag Fr 27.11. 13:00)",
+      "target": 66,
+      "paragraphs": [
+        "Bei uns redet beim Feedback der Chef als Letzter. Also ich.",
+        "Wir üben Beratungsgespräche im Rollenspiel. Einer berät, einer spielt den Gast, einer schaut zu. Danach gibt es Feedback, und zwar in einer festen Reihenfolge.",
+        "Zuerst der Berater selbst: Was lief gut? Dann der Gast, mit einer einzigen Frage: Wann warst du kurz davor, Ja zu sagen? Dann der, der zugeschaut hat. Und erst ganz am Ende ich.",
+        "Wenn der Chef zuerst redet, sagen danach alle nur noch: Sehe ich genauso. Und der Berater denkt nicht mehr selbst nach.",
+        "Jeder sagt genau ein Lob und eine Sache fürs nächste Mal. Beschreiben, nicht bewerten. Ein Fehler im Rollenspiel kostet nichts. Am Empfang kostet er ein Mitglied.",
+        "Wenn du diese Woche mit deinem Team übst: Erst der Berater, dann der Gast, dann der Zuschauer. Und du sagst als Letzter was."
+      ]
+    },
+    {
+      "id": "r82",
+      "group": "DT-Reels · Nächster Dreh",
+      "label": "R82 · Nächster Dreh 3/9 · Bei uns redet nach der Abschlussfrage keiner mehr (Vorschlag Di 01.12.)",
+      "target": 56,
+      "paragraphs": [
+        "Bei uns redet nach der Abschlussfrage keiner mehr. Auch nicht der Berater.",
+        "Die Empfehlung ist ausgesprochen. Dann kommt die Frage: Wollen wir das machen? Und dann wird es still.",
+        "Genau in dieser Stille geht bei vielen das Gespräch kaputt. Der Berater hält sie nicht aus und redet weiter. Noch ein Satz zum Preis, noch eine Alternative. Bis er sich selbst aus dem Abschluss rausgeredet hat.",
+        "Deshalb üben wir genau das. Frage stellen, dann nichts mehr sagen, bis der Gast antwortet. Wer zuerst redet, verliert.",
+        "Eine Pause wirkt sicher. Ein Ähm wirkt unsicher.",
+        "Sprich deine Abschlussfrage heute fünfmal in dein Handy und hör sie dir an. Dann weißt du, wie sie klingt, bevor dein nächster Gast sie hört."
+      ]
+    },
+    {
+      "id": "r83",
+      "group": "DT-Reels · Nächster Dreh",
+      "label": "R83 · Nächster Dreh 4/9 · Bei uns steht hinter jedem neuen Mitglied der Name des Beraters (Vorschlag Mi 02.12.)",
+      "target": 69,
+      "paragraphs": [
+        "Bei uns steht hinter jedem neuen Mitglied der Name dessen, der beraten hat.",
+        "Im Oktober hatten wir achtunddreißig Abschlüsse. Und bei jedem steht dabei, wer das Gespräch geführt hat.",
+        "Das läuft nicht über eine Strichliste am Empfang. Wenn wir in Dojo Trust auf Mitglied gewonnen klicken, fragt das System: Wer hat beraten? Ohne Namen geht es nicht weiter.",
+        "Jeder Berater sieht in der App seine eigenen Abschlüsse. Diesen Monat, letzten Monat und wie weit es noch bis zur nächsten Stufe ist. Die Zahlen der Kollegen sieht er nicht.",
+        "Und am Monatsersten liegt die Liste fertig da. Ich prüfe sie, gebe sie frei, und sie geht für die Provisionen an unser Steuerbüro.",
+        "Wer berät, soll sehen, was er bewirkt. Und über eine Zahl, die das System zählt, muss am Monatsende keiner streiten.",
+        "Wie das bei dir aussehen kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r84",
+      "group": "DT-Reels · Nächster Dreh",
+      "label": "R84 · Nächster Dreh 5/9 · Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er etwas empfiehlt (Vorschlag Do 03.12.)",
+      "target": 59,
+      "paragraphs": [
+        "Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er dir irgendwas empfiehlt.",
+        "Was machst du beruflich? Wie sind deine Arbeitszeiten? An welchen Tagen kannst du? Das sind bei uns feste Fragen im Gespräch nach dem Probetraining.",
+        "Denn die beste Empfehlung bringt nichts, wenn sie nicht in dein Leben passt. Wer im Schichtdienst arbeitet, kann nicht jeden Dienstag um sieben. Wer von sieben bis vier arbeitet, plant ganz anders.",
+        "Wer nur gefragt wird, was er erreichen will, bekommt eine gute Empfehlung. Wer auch nach seinem Alltag gefragt wird, bekommt eine, die er durchhält.",
+        "Ein Vertrag, der nicht in den Alltag passt, ist eine Kündigung mit Anlauf.",
+        "Frag deinen nächsten Gast nach dem Probetraining: Wie sind deine Arbeitszeiten? Und an welchen Tagen kannst du wirklich?"
+      ]
+    },
+    {
+      "id": "r85",
+      "group": "DT-Reels · Nächster Dreh",
+      "label": "R85 · Nächster Dreh 6/9 · Bei uns hat der Berater ein Klemmbrett mit klarem Leitfaden (Vorschlag Fr 04.12. 13:00)",
+      "target": 58,
+      "paragraphs": [
+        "Bei uns hat der Berater im Gespräch ein Klemmbrett mit einem ganz klaren Leitfaden vor sich.",
+        "Das hilft wirklich, nichts zu vergessen. Denn da stehen viele Infos drin, über die gesprochen werden muss. Vor und nach dem Ausfüllen der Mitgliedschaft.",
+        "Und das wirkt nicht unsicher. Das wirkt professionell.",
+        "Wir gehen sogar einen Schritt weiter: Wir haben das Ganze auch digital, als Präsentation. Denn was man sieht, wirkt stärker als das, was man nur hört.",
+        "Der Gast sieht seine Ziele direkt vor sich. Und er liest alles noch mal mit, statt es nur zu hören. Denn Gehörtes geht oft unter.",
+        "Wenn du noch gar nichts hast: Erarbeite dir zuerst einen Leitfaden. Damit nicht nur dein Training professionell läuft, sondern auch die Beratung danach."
+      ]
+    },
+    {
+      "id": "r87",
+      "group": "DT-Reels · Nächster Dreh",
+      "label": "R87 · Nächster Dreh 8/9 · Bei uns endet das Gespräch nicht mit der Unterschrift (Vorschlag Di 08.12.)",
+      "target": 70,
+      "paragraphs": [
+        "Bei uns endet das Beratungsgespräch nicht mit der Unterschrift.",
+        "Wir erklären dem neuen Mitglied, wie es weitergeht. Das nächste Training wird direkt gebucht. Wir erklären, was es noch braucht, zum Beispiel das Starterpaket. Und wie es läuft, wenn man mal eine Ruhepause braucht.",
+        "Das alles läuft über die App. Digitalisierung ist in einer Kampfsportschule wirklich wichtig. Vor allem, wenn du eine Mitglieder-App hast und darüber mit deinen Mitgliedern sprichst. So bekommen wir das neue Mitglied direkt wieder auf die Matte.",
+        "Denn was wollen wir? Einen schnellen Vertrag, und nach drei Wochen kommt keiner mehr? Oder ein Mitglied, das sieht, wie es seine Ziele umsetzt, und in den ersten Wochen dranbleibt?",
+        "Die ersten drei, vier Wochen sind die schwierigsten. Wer die schafft, gehört fest zum Team und trainiert die nächsten ein, zwei Jahre durch.",
+        "Wenn heute einer bei dir unterschreibt: Buch mit ihm direkt sein nächstes Training."
+      ]
+    },
+    {
+      "id": "r91",
+      "group": "DT-Reels · Zweiter Dreh",
+      "label": "R91 · Zweiter Dreh 3/5 · Bei uns ist „fitter werden“ nie die ganze Antwort (Vorschlag Mi 09.12.)",
+      "target": 61,
+      "paragraphs": [
+        "Bei uns ist „fitter werden“ im Beratungsgespräch nie die ganze Antwort.",
+        "Fast jeder sagt nach dem Probetraining: Ich will einfach fitter werden. Das stimmt auch. Aber damit weißt du noch gar nichts.",
+        "Darum fragen wir weiter. Warum willst du fitter werden? Wie bist du auf uns aufmerksam geworden? Hast du schon mal woanders trainiert, oder was machst du sonst sportlich?",
+        "Meistens kommt dann schon was. Jemand hat im Fitnessstudio trainiert, und irgendwas hat ihm da nicht gepasst. Er erzählt, was er ändern will und wo er hinwill.",
+        "Allein aus diesen Fragen findet man schon viel heraus. Und mit jeder Antwort geht die Kette tiefer.",
+        "Denn auf „fitter werden“ passt jede Empfehlung. Auf den echten Grund passt genau eine.",
+        "Frag im nächsten Beratungsgespräch nach dem ersten Ziel einmal mehr: Warum?"
+      ]
+    },
+    {
+      "id": "r92",
+      "group": "DT-Reels · Zweiter Dreh",
+      "label": "R92 · Zweiter Dreh 4/5 · Bei uns hört von unseren Erfolgen nur, wer kämpfen will (Vorschlag Do 10.12.)",
+      "target": 66,
+      "paragraphs": [
+        "Bei uns hört im Beratungsgespräch nur der von unseren Erfolgen, der selbst kämpfen will.",
+        "Für jemanden, der in den Ring will, sind Erfolge ein echter Grund. Dann erwähnen wir sie kurz.",
+        "Wer fitter werden will, den interessiert kein Titel. Den interessiert: Bin ich da allein?",
+        "Darum zeigen wir die Gemeinschaft. Bei uns steht der Trainer direkt neben dir. Meistens achtet sogar ein zweiter Trainer auf die Probetrainings. Jeder trainiert mit jedem, und wir unterstützen uns gegenseitig. Nicht nur der Trainer, das ganze Team.",
+        "Der große Gamechanger war bei uns Level eins, zwei und drei. Einsteiger, Fortgeschrittene, Wettkämpfer. Damit trainiert jeder auf seinem Stand und kann sich bestmöglich entwickeln.",
+        "In unserem Leitfaden steht dazu ein Satz: Erfolg holt die Leute. Community hält sie.",
+        "Erzähl im nächsten Beratungsgespräch weniger von deinen Titeln und mehr davon, mit wem er trainieren wird."
+      ]
+    },
+    {
+      "id": "r93",
+      "group": "DT-Reels · Zweiter Dreh",
+      "label": "R93 · Zweiter Dreh 5/5 · Bei uns erzählt der Berater, warum er selbst geblieben ist (Vorschlag Fr 11.12. 13:00)",
+      "target": 74,
+      "paragraphs": [
+        "Bei uns erzählt der Berater im Beratungsgespräch, warum er selbst geblieben ist.",
+        "Nach dem Probetraining hat der Gast schon viele Fakten gehört. Und Fakten stehen auch auf der Website.",
+        "Darum steht in unserem Leitfaden: Erzähl ruhig von dir. Wie bist du hergekommen, warum bist du geblieben? Eine eigene Geschichte schlägt drei Fakten.",
+        "Bei uns berät zum Beispiel einer, der mit zehn Jahren hier angefangen hat. Heute hat er seine Ausbildung zum Sport- und Fitnesskaufmann abgeschlossen, arbeitet fest bei uns und ist mehrfacher deutscher Meister. Und er hat hier Werte fürs Leben mitbekommen.",
+        "Ein anderer konnte kaum Deutsch, als er zu uns kam. Wir haben ihn aufgenommen, heute arbeitet er fest bei uns. So familiär ist es hier.",
+        "Was der Gast noch nicht weiß: Werde ich hier aufgenommen? Darauf antwortet keine Preisliste. Darauf antwortet so eine Geschichte.",
+        "Frag dein Team diese Woche, warum sie damals geblieben sind, und lass sie genau das im nächsten Gespräch erzählen."
+      ]
+    },
+    {
       "id": "w1a",
       "group": "Webinar 16.12. · Einladungen",
       "label": "Webinar 1/8 · Hook A kalt: Januar, Matte (3×)",
@@ -286,22 +389,35 @@
       ]
     },
     {
-      "id": "r80",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R80 · Nächster Dreh 1/9 · Bei uns redet beim Feedback der Chef als Letzter (Vorschlag Fr 27.11. 13:00)",
+      "id": "r94",
+      "group": "Geparkt · Thailand-Serie",
+      "label": "R94 · Thailand-Serie · Trailer: Darum mache ich diese Serie",
+      "target": 38,
+      "paragraphs": [
+        "Ich bin gerade in Thailand. Und ich mache hier etwas, das ich so noch nirgends gesehen habe.",
+        "Ich vergleiche, wie eine Kampfsportschule in Deutschland läuft und wie ein Gym in Thailand läuft. Nicht das Training. Das Geschäft dahinter.",
+        "Dafür rede ich mit Trainern und mit Gym-Inhabern. Wer kommt hierher? Warum kommen die Leute wieder, obwohl keiner einen Vertrag hat? Und wovon lebt so ein Gym?",
+        "Am Ende sage ich euch, was eine Schule in Deutschland davon übernehmen kann. Und was nicht.",
+        "Folg mir, damit du keine Folge verpasst."
+      ]
+    },
+    {
+      "id": "r95",
+      "group": "Geparkt · Thailand-Serie",
+      "label": "R95 · Thailand-Serie · Folge 2: Hier ist Muay Thai mehr als Fußball",
       "target": 66,
       "paragraphs": [
-        "Bei uns redet beim Feedback der Chef als Letzter. Also ich.",
-        "Wir üben Beratungsgespräche im Rollenspiel. Einer berät, einer spielt den Gast, einer schaut zu. Danach gibt es Feedback, und zwar in einer festen Reihenfolge.",
-        "Zuerst der Berater selbst: Was lief gut? Dann der Gast, mit einer einzigen Frage: Wann warst du kurz davor, Ja zu sagen? Dann der, der zugeschaut hat. Und erst ganz am Ende ich.",
-        "Wenn der Chef zuerst redet, sagen danach alle nur noch: Sehe ich genauso. Und der Berater denkt nicht mehr selbst nach.",
-        "Jeder sagt genau ein Lob und eine Sache fürs nächste Mal. Beschreiben, nicht bewerten. Ein Fehler im Rollenspiel kostet nichts. Am Empfang kostet er ein Mitglied.",
-        "Wenn du diese Woche mit deinem Team übst: Erst der Berater, dann der Gast, dann der Zuschauer. Und du sagst als Letzter was."
+        "Hier in Thailand ist Muay Thai mehr als Fußball.",
+        "Überall gibt es Stadien, überall wird trainiert. Und Menschen aus der ganzen Welt fliegen hierher, nur wegen des Kampfsports.",
+        "Dazu kommt das ganze Drumherum. Das Essen, die Leute, die gut drauf sind. Der Sport gehört hier einfach zum Leben.",
+        "Aber die Leute gehen nicht in irgendein Gym. Sie kommen immer wieder dahin, wo man sie gut auffängt. Wo die Trainer nett sind, wo die Community passt und wo man jemanden hat, an den man sich wenden kann. Viele Deutsche suchen sich hier gezielt ein Gym, in dem jemand Deutsch spricht.",
+        "Und genau das ist bei uns in Deutschland nicht anders. Ein guter Trainer allein reicht nicht. Wenn du gut trainierst, nett zu den Leuten bist, den Spirit rüberbringst und das Ganze auch gut verkaufst, dann hast du ein Produkt, das auch in Deutschland funktioniert.",
+        "Und wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
       ]
     },
     {
       "id": "r81",
-      "group": "DT-Reels · Nächster Dreh",
+      "group": "Geparkt · Thailand-Serie",
       "label": "R81 · Nächster Dreh 2/9 · Thailand 1: Ein Gym in Thailand rechnet ganz anders (Vorschlag Mo 30.11.)",
       "target": 65,
       "paragraphs": [
@@ -313,65 +429,8 @@
       ]
     },
     {
-      "id": "r82",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R82 · Nächster Dreh 3/9 · Bei uns redet nach der Abschlussfrage keiner mehr (Vorschlag Di 01.12.)",
-      "target": 56,
-      "paragraphs": [
-        "Bei uns redet nach der Abschlussfrage keiner mehr. Auch nicht der Berater.",
-        "Die Empfehlung ist ausgesprochen. Dann kommt die Frage: Wollen wir das machen? Und dann wird es still.",
-        "Genau in dieser Stille geht bei vielen das Gespräch kaputt. Der Berater hält sie nicht aus und redet weiter. Noch ein Satz zum Preis, noch eine Alternative. Bis er sich selbst aus dem Abschluss rausgeredet hat.",
-        "Deshalb üben wir genau das. Frage stellen, dann nichts mehr sagen, bis der Gast antwortet. Wer zuerst redet, verliert.",
-        "Eine Pause wirkt sicher. Ein Ähm wirkt unsicher.",
-        "Sprich deine Abschlussfrage heute fünfmal in dein Handy und hör sie dir an. Dann weißt du, wie sie klingt, bevor dein nächster Gast sie hört."
-      ]
-    },
-    {
-      "id": "r83",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R83 · Nächster Dreh 4/9 · Bei uns steht hinter jedem neuen Mitglied der Name des Beraters (Vorschlag Mi 02.12.)",
-      "target": 69,
-      "paragraphs": [
-        "Bei uns steht hinter jedem neuen Mitglied der Name dessen, der beraten hat.",
-        "Im Oktober hatten wir achtunddreißig Abschlüsse. Und bei jedem steht dabei, wer das Gespräch geführt hat.",
-        "Das läuft nicht über eine Strichliste am Empfang. Wenn wir in Dojo Trust auf Mitglied gewonnen klicken, fragt das System: Wer hat beraten? Ohne Namen geht es nicht weiter.",
-        "Jeder Berater sieht in der App seine eigenen Abschlüsse. Diesen Monat, letzten Monat und wie weit es noch bis zur nächsten Stufe ist. Die Zahlen der Kollegen sieht er nicht.",
-        "Und am Monatsersten liegt die Liste fertig da. Ich prüfe sie, gebe sie frei, und sie geht für die Provisionen an unser Steuerbüro.",
-        "Wer berät, soll sehen, was er bewirkt. Und über eine Zahl, die das System zählt, muss am Monatsende keiner streiten.",
-        "Wie das bei dir aussehen kann: Geh auf dojotrust.de und überzeug dich selbst."
-      ]
-    },
-    {
-      "id": "r84",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R84 · Nächster Dreh 5/9 · Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er etwas empfiehlt (Vorschlag Do 03.12.)",
-      "target": 59,
-      "paragraphs": [
-        "Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er dir irgendwas empfiehlt.",
-        "Was machst du beruflich? Wie sind deine Arbeitszeiten? An welchen Tagen kannst du? Das sind bei uns feste Fragen im Gespräch nach dem Probetraining.",
-        "Denn die beste Empfehlung bringt nichts, wenn sie nicht in dein Leben passt. Wer im Schichtdienst arbeitet, kann nicht jeden Dienstag um sieben. Wer von sieben bis vier arbeitet, plant ganz anders.",
-        "Wer nur gefragt wird, was er erreichen will, bekommt eine gute Empfehlung. Wer auch nach seinem Alltag gefragt wird, bekommt eine, die er durchhält.",
-        "Ein Vertrag, der nicht in den Alltag passt, ist eine Kündigung mit Anlauf.",
-        "Frag deinen nächsten Gast nach dem Probetraining: Wie sind deine Arbeitszeiten? Und an welchen Tagen kannst du wirklich?"
-      ]
-    },
-    {
-      "id": "r85",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R85 · Nächster Dreh 6/9 · Bei uns hat der Berater ein Klemmbrett mit klarem Leitfaden (Vorschlag Fr 04.12. 13:00)",
-      "target": 58,
-      "paragraphs": [
-        "Bei uns hat der Berater im Gespräch ein Klemmbrett mit einem ganz klaren Leitfaden vor sich.",
-        "Das hilft wirklich, nichts zu vergessen. Denn da stehen viele Infos drin, über die gesprochen werden muss. Vor und nach dem Ausfüllen der Mitgliedschaft.",
-        "Und das wirkt nicht unsicher. Das wirkt professionell.",
-        "Wir gehen sogar einen Schritt weiter: Wir haben das Ganze auch digital, als Präsentation. Denn was man sieht, wirkt stärker als das, was man nur hört.",
-        "Der Gast sieht seine Ziele direkt vor sich. Und er liest alles noch mal mit, statt es nur zu hören. Denn Gehörtes geht oft unter.",
-        "Wenn du noch gar nichts hast: Erarbeite dir zuerst einen Leitfaden. Damit nicht nur dein Training professionell läuft, sondern auch die Beratung danach."
-      ]
-    },
-    {
       "id": "r86",
-      "group": "DT-Reels · Nächster Dreh",
+      "group": "Geparkt · Thailand-Serie",
       "label": "R86 · Nächster Dreh 7/9 · Thailand 2: Ein Gym ohne Mitglieder, bezahlt wird bar (Vorschlag Mo 07.12.)",
       "target": 76,
       "paragraphs": [
@@ -385,22 +444,8 @@
       ]
     },
     {
-      "id": "r87",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R87 · Nächster Dreh 8/9 · Bei uns endet das Gespräch nicht mit der Unterschrift (Vorschlag Di 08.12.)",
-      "target": 70,
-      "paragraphs": [
-        "Bei uns endet das Beratungsgespräch nicht mit der Unterschrift.",
-        "Wir erklären dem neuen Mitglied, wie es weitergeht. Das nächste Training wird direkt gebucht. Wir erklären, was es noch braucht, zum Beispiel das Starterpaket. Und wie es läuft, wenn man mal eine Ruhepause braucht.",
-        "Das alles läuft über die App. Digitalisierung ist in einer Kampfsportschule wirklich wichtig. Vor allem, wenn du eine Mitglieder-App hast und darüber mit deinen Mitgliedern sprichst. So bekommen wir das neue Mitglied direkt wieder auf die Matte.",
-        "Denn was wollen wir? Einen schnellen Vertrag, und nach drei Wochen kommt keiner mehr? Oder ein Mitglied, das sieht, wie es seine Ziele umsetzt, und in den ersten Wochen dranbleibt?",
-        "Die ersten drei, vier Wochen sind die schwierigsten. Wer die schafft, gehört fest zum Team und trainiert die nächsten ein, zwei Jahre durch.",
-        "Wenn heute einer bei dir unterschreibt: Buch mit ihm direkt sein nächstes Training."
-      ]
-    },
-    {
       "id": "r88",
-      "group": "DT-Reels · Nächster Dreh",
+      "group": "Geparkt · Thailand-Serie",
       "label": "R88 · Nächster Dreh 9/9 · Thailand 3: Warum ich das hier selbst mitmache · GERÜST, Reserve",
       "target": 35,
       "paragraphs": [
@@ -413,7 +458,7 @@
     },
     {
       "id": "r89",
-      "group": "DT-Reels · Zweiter Dreh",
+      "group": "Geparkt · Thailand-Serie",
       "label": "R89 · Zweiter Dreh 1/5 · Thailand 4: Kleines Gym gegen großen Betrieb · GERÜST, Reserve",
       "target": 35,
       "paragraphs": [
@@ -426,7 +471,7 @@
     },
     {
       "id": "r90",
-      "group": "DT-Reels · Zweiter Dreh",
+      "group": "Geparkt · Thailand-Serie",
       "label": "R90 · Zweiter Dreh 2/5 · Thailand 5: Drei Dinge, die ich mitnehme · GERÜST, Abbinder der Serie",
       "target": 40,
       "paragraphs": [
@@ -435,51 +480,6 @@
         "[ZWEI] Die zweite.",
         "[DREI] Die dritte.",
         "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
-      ]
-    },
-    {
-      "id": "r91",
-      "group": "DT-Reels · Zweiter Dreh",
-      "label": "R91 · Zweiter Dreh 3/5 · Bei uns ist „fitter werden“ nie die ganze Antwort (Vorschlag Mi 09.12.)",
-      "target": 61,
-      "paragraphs": [
-        "Bei uns ist „fitter werden“ im Beratungsgespräch nie die ganze Antwort.",
-        "Fast jeder sagt nach dem Probetraining: Ich will einfach fitter werden. Das stimmt auch. Aber damit weißt du noch gar nichts.",
-        "Darum fragen wir weiter. Warum willst du fitter werden? Wie bist du auf uns aufmerksam geworden? Hast du schon mal woanders trainiert, oder was machst du sonst sportlich?",
-        "Meistens kommt dann schon was. Jemand hat im Fitnessstudio trainiert, und irgendwas hat ihm da nicht gepasst. Er erzählt, was er ändern will und wo er hinwill.",
-        "Allein aus diesen Fragen findet man schon viel heraus. Und mit jeder Antwort geht die Kette tiefer.",
-        "Denn auf „fitter werden“ passt jede Empfehlung. Auf den echten Grund passt genau eine.",
-        "Frag im nächsten Beratungsgespräch nach dem ersten Ziel einmal mehr: Warum?"
-      ]
-    },
-    {
-      "id": "r92",
-      "group": "DT-Reels · Zweiter Dreh",
-      "label": "R92 · Zweiter Dreh 4/5 · Bei uns hört von unseren Erfolgen nur, wer kämpfen will (Vorschlag Do 10.12.)",
-      "target": 66,
-      "paragraphs": [
-        "Bei uns hört im Beratungsgespräch nur der von unseren Erfolgen, der selbst kämpfen will.",
-        "Für jemanden, der in den Ring will, sind Erfolge ein echter Grund. Dann erwähnen wir sie kurz.",
-        "Wer fitter werden will, den interessiert kein Titel. Den interessiert: Bin ich da allein?",
-        "Darum zeigen wir die Gemeinschaft. Bei uns steht der Trainer direkt neben dir. Meistens achtet sogar ein zweiter Trainer auf die Probetrainings. Jeder trainiert mit jedem, und wir unterstützen uns gegenseitig. Nicht nur der Trainer, das ganze Team.",
-        "Der große Gamechanger war bei uns Level eins, zwei und drei. Einsteiger, Fortgeschrittene, Wettkämpfer. Damit trainiert jeder auf seinem Stand und kann sich bestmöglich entwickeln.",
-        "In unserem Leitfaden steht dazu ein Satz: Erfolg holt die Leute. Community hält sie.",
-        "Erzähl im nächsten Beratungsgespräch weniger von deinen Titeln und mehr davon, mit wem er trainieren wird."
-      ]
-    },
-    {
-      "id": "r93",
-      "group": "DT-Reels · Zweiter Dreh",
-      "label": "R93 · Zweiter Dreh 5/5 · Bei uns erzählt der Berater, warum er selbst geblieben ist (Vorschlag Fr 11.12. 13:00)",
-      "target": 74,
-      "paragraphs": [
-        "Bei uns erzählt der Berater im Beratungsgespräch, warum er selbst geblieben ist.",
-        "Nach dem Probetraining hat der Gast schon viele Fakten gehört. Und Fakten stehen auch auf der Website.",
-        "Darum steht in unserem Leitfaden: Erzähl ruhig von dir. Wie bist du hergekommen, warum bist du geblieben? Eine eigene Geschichte schlägt drei Fakten.",
-        "Bei uns berät zum Beispiel einer, der mit zehn Jahren hier angefangen hat. Heute hat er seine Ausbildung zum Sport- und Fitnesskaufmann abgeschlossen, arbeitet fest bei uns und ist mehrfacher deutscher Meister. Und er hat hier Werte fürs Leben mitbekommen.",
-        "Ein anderer konnte kaum Deutsch, als er zu uns kam. Wir haben ihn aufgenommen, heute arbeitet er fest bei uns. So familiär ist es hier.",
-        "Was der Gast noch nicht weiß: Werde ich hier aufgenommen? Darauf antwortet keine Preisliste. Darauf antwortet so eine Geschichte.",
-        "Frag dein Team diese Woche, warum sie damals geblieben sind, und lass sie genau das im nächsten Gespräch erzählen."
       ]
     },
     {
