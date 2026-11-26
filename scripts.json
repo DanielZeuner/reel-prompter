@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-26",
   "scripts": [
     {
       "id": "ff-h1",
@@ -168,91 +168,6 @@
         "8 · Zehn Sekunden ruhig in die Kamera schauen, ohne zu reden. Darüber kommen später Kundenzitate.",
         "9 · Leere Halle, Matte, Licht. Zehn Sekunden Stimmung.",
         "10 · Du schreibst Zahlen auf einen Block oder ein Whiteboard."
-      ]
-    },
-    {
-      "id": "r80",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R80 · Nächster Dreh 1/9 · Bei uns redet beim Feedback der Chef als Letzter (Vorschlag Fr 27.11. 13:00)",
-      "target": 66,
-      "paragraphs": [
-        "Bei uns redet beim Feedback der Chef als Letzter. Also ich.",
-        "Wir üben Beratungsgespräche im Rollenspiel. Einer berät, einer spielt den Gast, einer schaut zu. Danach gibt es Feedback, und zwar in einer festen Reihenfolge.",
-        "Zuerst der Berater selbst: Was lief gut? Dann der Gast, mit einer einzigen Frage: Wann warst du kurz davor, Ja zu sagen? Dann der, der zugeschaut hat. Und erst ganz am Ende ich.",
-        "Wenn der Chef zuerst redet, sagen danach alle nur noch: Sehe ich genauso. Und der Berater denkt nicht mehr selbst nach.",
-        "Jeder sagt genau ein Lob und eine Sache fürs nächste Mal. Beschreiben, nicht bewerten. Ein Fehler im Rollenspiel kostet nichts. Am Empfang kostet er ein Mitglied.",
-        "Wenn du diese Woche mit deinem Team übst: Erst der Berater, dann der Gast, dann der Zuschauer. Und du sagst als Letzter was."
-      ]
-    },
-    {
-      "id": "r82",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R82 · Nächster Dreh 3/9 · Bei uns redet nach der Abschlussfrage keiner mehr (Vorschlag Di 01.12.)",
-      "target": 56,
-      "paragraphs": [
-        "Bei uns redet nach der Abschlussfrage keiner mehr. Auch nicht der Berater.",
-        "Die Empfehlung ist ausgesprochen. Dann kommt die Frage: Wollen wir das machen? Und dann wird es still.",
-        "Genau in dieser Stille geht bei vielen das Gespräch kaputt. Der Berater hält sie nicht aus und redet weiter. Noch ein Satz zum Preis, noch eine Alternative. Bis er sich selbst aus dem Abschluss rausgeredet hat.",
-        "Deshalb üben wir genau das. Frage stellen, dann nichts mehr sagen, bis der Gast antwortet. Wer zuerst redet, verliert.",
-        "Eine Pause wirkt sicher. Ein Ähm wirkt unsicher.",
-        "Sprich deine Abschlussfrage heute fünfmal in dein Handy und hör sie dir an. Dann weißt du, wie sie klingt, bevor dein nächster Gast sie hört."
-      ]
-    },
-    {
-      "id": "r83",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R83 · Nächster Dreh 4/9 · Bei uns steht hinter jedem neuen Mitglied der Name des Beraters (Vorschlag Mi 02.12.)",
-      "target": 69,
-      "paragraphs": [
-        "Bei uns steht hinter jedem neuen Mitglied der Name dessen, der beraten hat.",
-        "Im Oktober hatten wir achtunddreißig Abschlüsse. Und bei jedem steht dabei, wer das Gespräch geführt hat.",
-        "Das läuft nicht über eine Strichliste am Empfang. Wenn wir in Dojo Trust auf Mitglied gewonnen klicken, fragt das System: Wer hat beraten? Ohne Namen geht es nicht weiter.",
-        "Jeder Berater sieht in der App seine eigenen Abschlüsse. Diesen Monat, letzten Monat und wie weit es noch bis zur nächsten Stufe ist. Die Zahlen der Kollegen sieht er nicht.",
-        "Und am Monatsersten liegt die Liste fertig da. Ich prüfe sie, gebe sie frei, und sie geht für die Provisionen an unser Steuerbüro.",
-        "Wer berät, soll sehen, was er bewirkt. Und über eine Zahl, die das System zählt, muss am Monatsende keiner streiten.",
-        "Wie das bei dir aussehen kann: Geh auf dojotrust.de und überzeug dich selbst."
-      ]
-    },
-    {
-      "id": "r84",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R84 · Nächster Dreh 5/9 · Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er etwas empfiehlt (Vorschlag Do 03.12.)",
-      "target": 59,
-      "paragraphs": [
-        "Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er dir irgendwas empfiehlt.",
-        "Was machst du beruflich? Wie sind deine Arbeitszeiten? An welchen Tagen kannst du? Das sind bei uns feste Fragen im Gespräch nach dem Probetraining.",
-        "Denn die beste Empfehlung bringt nichts, wenn sie nicht in dein Leben passt. Wer im Schichtdienst arbeitet, kann nicht jeden Dienstag um sieben. Wer von sieben bis vier arbeitet, plant ganz anders.",
-        "Wer nur gefragt wird, was er erreichen will, bekommt eine gute Empfehlung. Wer auch nach seinem Alltag gefragt wird, bekommt eine, die er durchhält.",
-        "Ein Vertrag, der nicht in den Alltag passt, ist eine Kündigung mit Anlauf.",
-        "Frag deinen nächsten Gast nach dem Probetraining: Wie sind deine Arbeitszeiten? Und an welchen Tagen kannst du wirklich?"
-      ]
-    },
-    {
-      "id": "r85",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R85 · Nächster Dreh 6/9 · Bei uns hat der Berater ein Klemmbrett mit klarem Leitfaden (Vorschlag Fr 04.12. 13:00)",
-      "target": 58,
-      "paragraphs": [
-        "Bei uns hat der Berater im Gespräch ein Klemmbrett mit einem ganz klaren Leitfaden vor sich.",
-        "Das hilft wirklich, nichts zu vergessen. Denn da stehen viele Infos drin, über die gesprochen werden muss. Vor und nach dem Ausfüllen der Mitgliedschaft.",
-        "Und das wirkt nicht unsicher. Das wirkt professionell.",
-        "Wir gehen sogar einen Schritt weiter: Wir haben das Ganze auch digital, als Präsentation. Denn was man sieht, wirkt stärker als das, was man nur hört.",
-        "Der Gast sieht seine Ziele direkt vor sich. Und er liest alles noch mal mit, statt es nur zu hören. Denn Gehörtes geht oft unter.",
-        "Wenn du noch gar nichts hast: Erarbeite dir zuerst einen Leitfaden. Damit nicht nur dein Training professionell läuft, sondern auch die Beratung danach."
-      ]
-    },
-    {
-      "id": "r87",
-      "group": "DT-Reels · Nächster Dreh",
-      "label": "R87 · Nächster Dreh 8/9 · Bei uns endet das Gespräch nicht mit der Unterschrift (Vorschlag Di 08.12.)",
-      "target": 70,
-      "paragraphs": [
-        "Bei uns endet das Beratungsgespräch nicht mit der Unterschrift.",
-        "Wir erklären dem neuen Mitglied, wie es weitergeht. Das nächste Training wird direkt gebucht. Wir erklären, was es noch braucht, zum Beispiel das Starterpaket. Und wie es läuft, wenn man mal eine Ruhepause braucht.",
-        "Das alles läuft über die App. Digitalisierung ist in einer Kampfsportschule wirklich wichtig. Vor allem, wenn du eine Mitglieder-App hast und darüber mit deinen Mitgliedern sprichst. So bekommen wir das neue Mitglied direkt wieder auf die Matte.",
-        "Denn was wollen wir? Einen schnellen Vertrag, und nach drei Wochen kommt keiner mehr? Oder ein Mitglied, das sieht, wie es seine Ziele umsetzt, und in den ersten Wochen dranbleibt?",
-        "Die ersten drei, vier Wochen sind die schwierigsten. Wer die schafft, gehört fest zum Team und trainiert die nächsten ein, zwei Jahre durch.",
-        "Wenn heute einer bei dir unterschreibt: Buch mit ihm direkt sein nächstes Training."
       ]
     },
     {
@@ -480,6 +395,91 @@
         "[ZWEI] Die zweite.",
         "[DREI] Die dritte.",
         "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r80",
+      "group": "Archiv · schon gedreht",
+      "label": "R80 · Bei uns redet beim Feedback der Chef als Letzter (Dreh Do 26.11. · Fr 27.11. 13:00 · gedreht)",
+      "target": 66,
+      "paragraphs": [
+        "Bei uns redet beim Feedback der Chef als Letzter. Also ich.",
+        "Wir üben Beratungsgespräche im Rollenspiel. Einer berät, einer spielt den Gast, einer schaut zu. Danach gibt es Feedback, und zwar in einer festen Reihenfolge.",
+        "Zuerst der Berater selbst: Was lief gut? Dann der Gast, mit einer einzigen Frage: Wann warst du kurz davor, Ja zu sagen? Dann der, der zugeschaut hat. Und erst ganz am Ende ich.",
+        "Wenn der Chef zuerst redet, sagen danach alle nur noch: Sehe ich genauso. Und der Berater denkt nicht mehr selbst nach.",
+        "Jeder sagt genau ein Lob und eine Sache fürs nächste Mal. Beschreiben, nicht bewerten. Ein Fehler im Rollenspiel kostet nichts. Am Empfang kostet er ein Mitglied.",
+        "Wenn du diese Woche mit deinem Team übst: Erst der Berater, dann der Gast, dann der Zuschauer. Und du sagst als Letzter was."
+      ]
+    },
+    {
+      "id": "r82",
+      "group": "Archiv · schon gedreht",
+      "label": "R82 · Bei uns redet nach der Abschlussfrage keiner mehr (Dreh Do 26.11. · Di 01.12. 21:00 · gedreht)",
+      "target": 56,
+      "paragraphs": [
+        "Bei uns redet nach der Abschlussfrage keiner mehr. Auch nicht der Berater.",
+        "Die Empfehlung ist ausgesprochen. Dann kommt die Frage: Wollen wir das machen? Und dann wird es still.",
+        "Genau in dieser Stille geht bei vielen das Gespräch kaputt. Der Berater hält sie nicht aus und redet weiter. Noch ein Satz zum Preis, noch eine Alternative. Bis er sich selbst aus dem Abschluss rausgeredet hat.",
+        "Deshalb üben wir genau das. Frage stellen, dann nichts mehr sagen, bis der Gast antwortet. Wer zuerst redet, verliert.",
+        "Eine Pause wirkt sicher. Ein Ähm wirkt unsicher.",
+        "Sprich deine Abschlussfrage heute fünfmal in dein Handy und hör sie dir an. Dann weißt du, wie sie klingt, bevor dein nächster Gast sie hört."
+      ]
+    },
+    {
+      "id": "r83",
+      "group": "Archiv · schon gedreht",
+      "label": "R83 · Bei uns steht hinter jedem neuen Mitglied der Name des Beraters (Dreh Do 26.11. · Mi 02.12. 21:00 · gedreht)",
+      "target": 69,
+      "paragraphs": [
+        "Bei uns steht hinter jedem neuen Mitglied der Name dessen, der beraten hat.",
+        "Im Oktober hatten wir achtunddreißig Abschlüsse. Und bei jedem steht dabei, wer das Gespräch geführt hat.",
+        "Das läuft nicht über eine Strichliste am Empfang. Wenn wir in Dojo Trust auf Mitglied gewonnen klicken, fragt das System: Wer hat beraten? Ohne Namen geht es nicht weiter.",
+        "Jeder Berater sieht in der App seine eigenen Abschlüsse. Diesen Monat, letzten Monat und wie weit es noch bis zur nächsten Stufe ist. Die Zahlen der Kollegen sieht er nicht.",
+        "Und am Monatsersten liegt die Liste fertig da. Ich prüfe sie, gebe sie frei, und sie geht für die Provisionen an unser Steuerbüro.",
+        "Wer berät, soll sehen, was er bewirkt. Und über eine Zahl, die das System zählt, muss am Monatsende keiner streiten.",
+        "Wie das bei dir aussehen kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "r84",
+      "group": "Archiv · schon gedreht",
+      "label": "R84 · Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er etwas empfiehlt (Dreh Do 26.11. · Do 03.12. 21:00 · gedreht)",
+      "target": 59,
+      "paragraphs": [
+        "Bei uns fragt der Berater nach deinen Arbeitszeiten, bevor er dir irgendwas empfiehlt.",
+        "Was machst du beruflich? Wie sind deine Arbeitszeiten? An welchen Tagen kannst du? Das sind bei uns feste Fragen im Gespräch nach dem Probetraining.",
+        "Denn die beste Empfehlung bringt nichts, wenn sie nicht in dein Leben passt. Wer im Schichtdienst arbeitet, kann nicht jeden Dienstag um sieben. Wer von sieben bis vier arbeitet, plant ganz anders.",
+        "Wer nur gefragt wird, was er erreichen will, bekommt eine gute Empfehlung. Wer auch nach seinem Alltag gefragt wird, bekommt eine, die er durchhält.",
+        "Ein Vertrag, der nicht in den Alltag passt, ist eine Kündigung mit Anlauf.",
+        "Frag deinen nächsten Gast nach dem Probetraining: Wie sind deine Arbeitszeiten? Und an welchen Tagen kannst du wirklich?"
+      ]
+    },
+    {
+      "id": "r85",
+      "group": "Archiv · schon gedreht",
+      "label": "R85 · Bei uns hat der Berater ein Klemmbrett mit klarem Leitfaden (Dreh Do 26.11. · Fr 04.12. 13:00 · gedreht)",
+      "target": 58,
+      "paragraphs": [
+        "Bei uns hat der Berater im Gespräch ein Klemmbrett mit einem ganz klaren Leitfaden vor sich.",
+        "Das hilft wirklich, nichts zu vergessen. Denn da stehen viele Infos drin, über die gesprochen werden muss. Vor und nach dem Ausfüllen der Mitgliedschaft.",
+        "Und das wirkt nicht unsicher. Das wirkt professionell.",
+        "Wir gehen sogar einen Schritt weiter: Wir haben das Ganze auch digital, als Präsentation. Denn was man sieht, wirkt stärker als das, was man nur hört.",
+        "Der Gast sieht seine Ziele direkt vor sich. Und er liest alles noch mal mit, statt es nur zu hören. Denn Gehörtes geht oft unter.",
+        "Wenn du noch gar nichts hast: Erarbeite dir zuerst einen Leitfaden. Damit nicht nur dein Training professionell läuft, sondern auch die Beratung danach."
+      ]
+    },
+    {
+      "id": "r87",
+      "group": "Archiv · schon gedreht",
+      "label": "R87 · Bei uns endet das Gespräch nicht mit der Unterschrift (Dreh Do 26.11. · Di 08.12. 21:00 · gedreht)",
+      "target": 70,
+      "paragraphs": [
+        "Bei uns endet das Beratungsgespräch nicht mit der Unterschrift.",
+        "Wir erklären dem neuen Mitglied, wie es weitergeht. Das nächste Training wird direkt gebucht. Wir erklären, was es noch braucht, zum Beispiel das Starterpaket. Und wie es läuft, wenn man mal eine Ruhepause braucht.",
+        "Das alles läuft über die App. Digitalisierung ist in einer Kampfsportschule wirklich wichtig. Vor allem, wenn du eine Mitglieder-App hast und darüber mit deinen Mitgliedern sprichst. So bekommen wir das neue Mitglied direkt wieder auf die Matte.",
+        "Denn was wollen wir? Einen schnellen Vertrag, und nach drei Wochen kommt keiner mehr? Oder ein Mitglied, das sieht, wie es seine Ziele umsetzt, und in den ersten Wochen dranbleibt?",
+        "Die ersten drei, vier Wochen sind die schwierigsten. Wer die schafft, gehört fest zum Team und trainiert die nächsten ein, zwei Jahre durch.",
+        "Wenn heute einer bei dir unterschreibt: Buch mit ihm direkt sein nächstes Training."
       ]
     },
     {
