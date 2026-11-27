@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "scripts": [
     {
       "id": "r81",
@@ -57,175 +57,6 @@
       ]
     },
     {
-      "id": "ff-h1",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Hook 1/6 · Ab 300 Mitgliedern (3×)",
-      "target": 5,
-      "paragraphs": [
-        "Du hast eine Kampfsportschule mit 300 Mitgliedern oder mehr? Dann ist das hier für dich."
-      ]
-    },
-    {
-      "id": "ff-h2",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Hook 2/6 · Trainer, nicht Marketing-Abteilung (3×)",
-      "target": 7,
-      "paragraphs": [
-        "Du bist Trainer geworden, nicht Marketing-Abteilung. Und trotzdem sitzt du abends noch an Anzeigen und an deiner Website."
-      ]
-    },
-    {
-      "id": "ff-h3",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Hook 3/6 · Agentur bezahlt, nichts gewusst (3×)",
-      "target": 7,
-      "paragraphs": [
-        "Du hast schon mal eine Agentur bezahlt und wusstest am Ende nicht, wie viele Mitglieder dabei rausgekommen sind? Dann hör kurz zu."
-      ]
-    },
-    {
-      "id": "ff-h4",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Hook 4/6 · Einer im Team nur fürs Marketing (3×)",
-      "target": 7,
-      "paragraphs": [
-        "Stell dir vor, du hast jemanden im Team, der sich nur um dein Marketing kümmert. Und der selbst auf der Matte steht."
-      ]
-    },
-    {
-      "id": "ff-h5",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Hook 5/6 · Zahlen-Frage (3×)",
-      "target": 7,
-      "paragraphs": [
-        "Wie viele deiner neuen Mitglieder kamen letzten Monat über Werbung? Wenn du das nicht sofort weißt, ist das hier für dich."
-      ]
-    },
-    {
-      "id": "ff-h6",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Hook 6/6 · Zwei Plätze im Januar (3×)",
-      "target": 6,
-      "paragraphs": [
-        "Im Januar nehme ich zwei neue Kampfsportschulen. Pro Gebiet nur eine."
-      ]
-    },
-    {
-      "id": "ff-m1",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Mitte 1/4 · Was du bekommst (2×)",
-      "target": 22,
-      "paragraphs": [
-        "Ich übernehme dein komplettes Marketing. Wie ein eigener Mitarbeiter, nur ohne dass du jemanden einstellen musst.",
-        "Neue Website, eine eigene Seite für jeden Kurs. Anzeigen bei Meta und Google, die Videos dafür. Und Dojo Trust dahinter, damit jede Anfrage in Sekunden eine Antwort bekommt.",
-        "Jede Woche schauen wir zusammen auf deine Zahlen. Dein Teil: gutes Training und ein gutes Probetraining. Den Rest mache ich."
-      ]
-    },
-    {
-      "id": "ff-m2",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Mitte 2/4 · Warum ich (2×)",
-      "target": 30,
-      "paragraphs": [
-        "Ich bin Daniel. Ich war K1-Europameister und habe in der Box-Bundesliga gekämpft. Meine eigene Schule hat heute über 700 Mitglieder.",
-        "Alles, was ich für dich mache, habe ich vorher bei mir selbst ausprobiert. Daraus ist Dojo Trust entstanden. Damit beantworten heute Kampfsportschulen von Kiel bis an den Bodensee ihre Anfragen.",
-        "Ich rede mit dir nicht wie eine Agentur. Ich rede mit dir wie einer, der weiß, wie es ist, wenn die Matte nicht voll wird."
-      ]
-    },
-    {
-      "id": "ff-m3",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Mitte 3/4 · So läuft es ab (2×)",
-      "target": 20,
-      "paragraphs": [
-        "Erst reden wir. Ich schaue mir deine Schule an und sage dir ehrlich, ob es passt.",
-        "Wenn ja, schickst du mir dein Material. 14 Tage später steht alles: Website, Kursseiten, Anzeigen und Dojo Trust.",
-        "Ab dann sehen wir uns einmal die Woche. Du siehst, welche Anzeige wie viele Anfragen gebracht hat und wer am Ende Mitglied geworden ist."
-      ]
-    },
-    {
-      "id": "ff-m4",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Mitte 4/4 · Messen bis zur Unterschrift (2×)",
-      "target": 15,
-      "paragraphs": [
-        "Viele Schulinhaber wissen, was ihre Werbung kostet. Aber nicht, was sie bringt.",
-        "Bei mir zählt nicht der Klick und nicht die Anfrage. Ich messe bis zur Unterschrift.",
-        "Du siehst jede Woche schwarz auf weiß: so viel ausgegeben, so viele neue Mitglieder. Ohne Schönrechnen."
-      ]
-    },
-    {
-      "id": "ff-b1",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Brücke · Danach kommt die Kundenstimme (2×)",
-      "target": 4,
-      "paragraphs": [
-        "Aber hör nicht auf mich. Hör, was meine Kunden sagen."
-      ]
-    },
-    {
-      "id": "ff-s1",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Schluss 1/2 · Zwei Plätze, Preise offen (2×)",
-      "target": 12,
-      "paragraphs": [
-        "Im Januar nehme ich zwei neue Schulen. Pro Gebiet nur eine, mit Gebietsschutz für zwölf Monate. Die Preise stehen offen auf meiner Seite. Schau rein und buch dir ein Gespräch."
-      ]
-    },
-    {
-      "id": "ff-s2",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Schluss 2/2 · Ist deine Region frei? (2×)",
-      "target": 8,
-      "paragraphs": [
-        "Ist deine Region noch frei? Unten auf den Link und Gespräch buchen. Dann sage ich dir ehrlich, ob es passt."
-      ]
-    },
-    {
-      "id": "ff-k1",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Komplett 1/2 · Mitarbeiter fürs Marketing, ein Durchgang (2×)",
-      "target": 33,
-      "paragraphs": [
-        "Wenn deine Schule 300 Mitglieder oder mehr hat, ist das hier für dich.",
-        "Ich bin Daniel. Ich habe selbst eine Schule mit über 700 Mitgliedern und habe Dojo Trust gebaut.",
-        "Ich übernehme dein komplettes Marketing, wie ein eigener Mitarbeiter: Website, eine Seite für jeden Kurs, Anzeigen bei Meta und Google, die Videos dafür und Dojo Trust dahinter, damit keine Anfrage liegen bleibt.",
-        "Jede Woche schauen wir zusammen auf deine Zahlen. Du stehst auf der Matte, den Rest mache ich.",
-        "Im Januar nehme ich zwei neue Schulen. Alles Weitere, auch die Preise, steht auf meiner Seite."
-      ]
-    },
-    {
-      "id": "ff-k2",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF Komplett 2/2 · Agentur bezahlt, nichts gewusst, ein Durchgang (2×)",
-      "target": 29,
-      "paragraphs": [
-        "Du hast schon mal eine Agentur bezahlt und wusstest am Ende nicht, wie viele Mitglieder dabei rausgekommen sind?",
-        "Ich bin Daniel, ich habe selbst eine Kampfsportschule. Bei mir zählt nicht der Klick und nicht die Anfrage. Ich messe bis zur Unterschrift.",
-        "Website, Kursseiten, Anzeigen und Dojo Trust kommen aus einer Hand. Und jede Woche siehst du schwarz auf weiß: so viel ausgegeben, so viele neue Mitglieder.",
-        "Im Januar nehme ich zwei neue Schulen, pro Gebiet nur eine. Ist deine Region noch frei? Unten auf den Link."
-      ]
-    },
-    {
-      "id": "ff-broll",
-      "group": "Full-Funnel-Anzeigen · Dreh (Hochformat)",
-      "label": "FF B-Roll-Liste · NICHT SPRECHEN, nur abhaken",
-      "target": 0,
-      "paragraphs": [
-        "Je 5 bis 8 Sekunden, hochkant, Handy ruhig halten, kein Ton nötig. Fremde Gesichter nur, wenn die Leute Ja gesagt haben.",
-        "1 · Hände bandagieren, ganz nah.",
-        "2 · Du trainierst oder hältst Pratzen. Einmal von weit, einmal nah.",
-        "3 · Du gehst von hinten durch die Halle auf die Kamera zu.",
-        "4 · Laptop am Mattenrand, du tippst. Bildschirm von der Kamera weg, den Inhalt setzen wir später ein.",
-        "5 · Handy in der Hand, du liest eine Nachricht und nickst.",
-        "6 · Du sitzt im Video-Call, nickst und lachst. Bildschirm von der Kamera weg.",
-        "7 · Handschlag mit einem Trainer, nah an den Händen.",
-        "8 · Zehn Sekunden ruhig in die Kamera schauen, ohne zu reden. Darüber kommen später Kundenzitate.",
-        "9 · Leere Halle, Matte, Licht. Zehn Sekunden Stimmung.",
-        "10 · Du schreibst Zahlen auf einen Block oder ein Whiteboard."
-      ]
-    },
-    {
       "id": "r91",
       "group": "DT-Reels · Zweiter Dreh",
       "label": "R91 · Zweiter Dreh 3/5 · Bei uns ist „fitter werden“ nie die ganze Antwort (Vorschlag Mi 09.12.)",
@@ -271,94 +102,6 @@
       ]
     },
     {
-      "id": "w1a",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 1/8 · Hook A kalt: Januar, Matte (3×)",
-      "target": 9,
-      "paragraphs": [
-        "Für alle mit Kampfsportschule: Im Januar wollen plötzlich alle anfangen.",
-        "Die Frage ist, wie viele davon bei dir auf der Matte landen."
-      ]
-    },
-    {
-      "id": "w1b",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 2/8 · Hook B kalt: in deinem Handy (3×)",
-      "target": 6,
-      "paragraphs": [
-        "Viele Januar-Anfragen gehen nicht an die Schule nebenan verloren.",
-        "Sondern in deinem Handy."
-      ]
-    },
-    {
-      "id": "w1c",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 3/8 · Hook C kalt: nachts um elf (3×)",
-      "target": 6,
-      "paragraphs": [
-        "Wenn du im Januar wieder nachts um elf WhatsApps beantwortest, hör kurz zu."
-      ]
-    },
-    {
-      "id": "w1d",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 4/8 · Hook D warm: kennt dich von Instagram (3×)",
-      "target": 9,
-      "paragraphs": [
-        "Du kennst mich wahrscheinlich schon von Instagram.",
-        "Am 16. Dezember bin ich live.",
-        "Das ist der einzige Termin vor dem Januar."
-      ]
-    },
-    {
-      "id": "w1m",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 5/8 · Mittelteil + Schluss, in einem Durchgang (2×)",
-      "target": 35,
-      "paragraphs": [
-        "Ich steh seit Jahren selbst auf der Matte und kenn den Januar.",
-        "Die Anfragen kommen über Instagram, WhatsApp, Telefon und Website.",
-        "Wer nicht am selben Tag eine Antwort kriegt, ist oft schon weg.",
-        "Und wer ein Probetraining bucht und danach nichts mehr hört, kommt oft gar nicht erst.",
-        "Am Mittwoch, 16. Dezember, zeig ich dir live, wie du das vor dem Januar sauber aufstellst.",
-        "Mit dem, was bei unseren Schulen heute schon läuft.",
-        "Live, kostenlos, eine Stunde. Klick auf „Mehr dazu“ und trag dich ein."
-      ]
-    },
-    {
-      "id": "w1mo",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 6/8 · Erinnerung: morgen bin ich live (2×)",
-      "target": 8,
-      "paragraphs": [
-        "Morgen bin ich live.",
-        "Wenn du dich eingetragen hast: Wir sehen uns.",
-        "Wenn nicht: Der Link ist unten."
-      ]
-    },
-    {
-      "id": "w1he",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 7/8 · Erinnerung: heute bin ich live (2×)",
-      "target": 7,
-      "paragraphs": [
-        "Heute bin ich live.",
-        "Wenn du noch überlegst: Der Link ist unten, es kostet nichts."
-      ]
-    },
-    {
-      "id": "w1k",
-      "group": "Webinar 16.12. · Einladungen",
-      "label": "Webinar 8/8 · Freiwillig: kurzer Mittelteil + Schluss (2×)",
-      "target": 13,
-      "paragraphs": [
-        "Die Januar-Anfragen kommen über Instagram, WhatsApp, Telefon und Website.",
-        "Wer nicht am selben Tag Antwort kriegt, ist weg.",
-        "Am 16. Dezember zeig ich dir live, wie du das vor dem Januar aufstellst.",
-        "Live, kostenlos, eine Stunde. Klick auf „Mehr dazu“ und trag dich ein."
-      ]
-    },
-    {
       "id": "r88",
       "group": "Geparkt · Thailand-Serie",
       "label": "R88 · Nächster Dreh 9/9 · Thailand 3: Warum ich das hier selbst mitmache · GERÜST, Reserve",
@@ -395,6 +138,25 @@
         "[ZWEI] Die zweite.",
         "[DREI] Die dritte.",
         "Wie das System aus meiner eigenen Schule bei dir funktionieren kann: Geh auf dojotrust.de und überzeug dich selbst."
+      ]
+    },
+    {
+      "id": "ff-broll",
+      "group": "Geparkt · B-Roll Full-Funnel",
+      "label": "FF B-Roll-Liste · NICHT SPRECHEN, nur abhaken (nicht gedreht, Anzeigen sind ohne fertig, nur bei Gelegenheit)",
+      "target": 0,
+      "paragraphs": [
+        "Je 5 bis 8 Sekunden, hochkant, Handy ruhig halten, kein Ton nötig. Fremde Gesichter nur, wenn die Leute Ja gesagt haben.",
+        "1 · Hände bandagieren, ganz nah.",
+        "2 · Du trainierst oder hältst Pratzen. Einmal von weit, einmal nah.",
+        "3 · Du gehst von hinten durch die Halle auf die Kamera zu.",
+        "4 · Laptop am Mattenrand, du tippst. Bildschirm von der Kamera weg, den Inhalt setzen wir später ein.",
+        "5 · Handy in der Hand, du liest eine Nachricht und nickst.",
+        "6 · Du sitzt im Video-Call, nickst und lachst. Bildschirm von der Kamera weg.",
+        "7 · Handschlag mit einem Trainer, nah an den Händen.",
+        "8 · Zehn Sekunden ruhig in die Kamera schauen, ohne zu reden. Darüber kommen später Kundenzitate.",
+        "9 · Leere Halle, Matte, Licht. Zehn Sekunden Stimmung.",
+        "10 · Du schreibst Zahlen auf einen Block oder ein Whiteboard."
       ]
     },
     {
@@ -480,6 +242,244 @@
         "Denn was wollen wir? Einen schnellen Vertrag, und nach drei Wochen kommt keiner mehr? Oder ein Mitglied, das sieht, wie es seine Ziele umsetzt, und in den ersten Wochen dranbleibt?",
         "Die ersten drei, vier Wochen sind die schwierigsten. Wer die schafft, gehört fest zum Team und trainiert die nächsten ein, zwei Jahre durch.",
         "Wenn heute einer bei dir unterschreibt: Buch mit ihm direkt sein nächstes Training."
+      ]
+    },
+    {
+      "id": "ff-h1",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Hook 1/6 · Ab 300 Mitgliedern (3×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 5,
+      "paragraphs": [
+        "Du hast eine Kampfsportschule mit 300 Mitgliedern oder mehr? Dann ist das hier für dich."
+      ]
+    },
+    {
+      "id": "ff-h2",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Hook 2/6 · Trainer, nicht Marketing-Abteilung (3×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 7,
+      "paragraphs": [
+        "Du bist Trainer geworden, nicht Marketing-Abteilung. Und trotzdem sitzt du abends noch an Anzeigen und an deiner Website."
+      ]
+    },
+    {
+      "id": "ff-h3",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Hook 3/6 · Agentur bezahlt, nichts gewusst (3×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 7,
+      "paragraphs": [
+        "Du hast schon mal eine Agentur bezahlt und wusstest am Ende nicht, wie viele Mitglieder dabei rausgekommen sind? Dann hör kurz zu."
+      ]
+    },
+    {
+      "id": "ff-h4",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Hook 4/6 · Einer im Team nur fürs Marketing (3×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 7,
+      "paragraphs": [
+        "Stell dir vor, du hast jemanden im Team, der sich nur um dein Marketing kümmert. Und der selbst auf der Matte steht."
+      ]
+    },
+    {
+      "id": "ff-h5",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Hook 5/6 · Zahlen-Frage (3×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 7,
+      "paragraphs": [
+        "Wie viele deiner neuen Mitglieder kamen letzten Monat über Werbung? Wenn du das nicht sofort weißt, ist das hier für dich."
+      ]
+    },
+    {
+      "id": "ff-h6",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Hook 6/6 · Zwei Plätze im Januar (3×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 6,
+      "paragraphs": [
+        "Im Januar nehme ich zwei neue Kampfsportschulen. Pro Gebiet nur eine."
+      ]
+    },
+    {
+      "id": "ff-m1",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Mitte 1/4 · Was du bekommst (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 22,
+      "paragraphs": [
+        "Ich übernehme dein komplettes Marketing. Wie ein eigener Mitarbeiter, nur ohne dass du jemanden einstellen musst.",
+        "Neue Website, eine eigene Seite für jeden Kurs. Anzeigen bei Meta und Google, die Videos dafür. Und Dojo Trust dahinter, damit jede Anfrage in Sekunden eine Antwort bekommt.",
+        "Jede Woche schauen wir zusammen auf deine Zahlen. Dein Teil: gutes Training und ein gutes Probetraining. Den Rest mache ich."
+      ]
+    },
+    {
+      "id": "ff-m2",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Mitte 2/4 · Warum ich (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 30,
+      "paragraphs": [
+        "Ich bin Daniel. Ich war K1-Europameister und habe in der Box-Bundesliga gekämpft. Meine eigene Schule hat heute über 700 Mitglieder.",
+        "Alles, was ich für dich mache, habe ich vorher bei mir selbst ausprobiert. Daraus ist Dojo Trust entstanden. Damit beantworten heute Kampfsportschulen von Kiel bis an den Bodensee ihre Anfragen.",
+        "Ich rede mit dir nicht wie eine Agentur. Ich rede mit dir wie einer, der weiß, wie es ist, wenn die Matte nicht voll wird."
+      ]
+    },
+    {
+      "id": "ff-m3",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Mitte 3/4 · So läuft es ab (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 20,
+      "paragraphs": [
+        "Erst reden wir. Ich schaue mir deine Schule an und sage dir ehrlich, ob es passt.",
+        "Wenn ja, schickst du mir dein Material. 14 Tage später steht alles: Website, Kursseiten, Anzeigen und Dojo Trust.",
+        "Ab dann sehen wir uns einmal die Woche. Du siehst, welche Anzeige wie viele Anfragen gebracht hat und wer am Ende Mitglied geworden ist."
+      ]
+    },
+    {
+      "id": "ff-m4",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Mitte 4/4 · Messen bis zur Unterschrift (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 15,
+      "paragraphs": [
+        "Viele Schulinhaber wissen, was ihre Werbung kostet. Aber nicht, was sie bringt.",
+        "Bei mir zählt nicht der Klick und nicht die Anfrage. Ich messe bis zur Unterschrift.",
+        "Du siehst jede Woche schwarz auf weiß: so viel ausgegeben, so viele neue Mitglieder. Ohne Schönrechnen."
+      ]
+    },
+    {
+      "id": "ff-b1",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Brücke · Danach kommt die Kundenstimme (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 4,
+      "paragraphs": [
+        "Aber hör nicht auf mich. Hör, was meine Kunden sagen."
+      ]
+    },
+    {
+      "id": "ff-s1",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Schluss 1/2 · Zwei Plätze, Preise offen (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 12,
+      "paragraphs": [
+        "Im Januar nehme ich zwei neue Schulen. Pro Gebiet nur eine, mit Gebietsschutz für zwölf Monate. Die Preise stehen offen auf meiner Seite. Schau rein und buch dir ein Gespräch."
+      ]
+    },
+    {
+      "id": "ff-s2",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Schluss 2/2 · Ist deine Region frei? (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 8,
+      "paragraphs": [
+        "Ist deine Region noch frei? Unten auf den Link und Gespräch buchen. Dann sage ich dir ehrlich, ob es passt."
+      ]
+    },
+    {
+      "id": "ff-k1",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Komplett 1/2 · Mitarbeiter fürs Marketing, ein Durchgang (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 33,
+      "paragraphs": [
+        "Wenn deine Schule 300 Mitglieder oder mehr hat, ist das hier für dich.",
+        "Ich bin Daniel. Ich habe selbst eine Schule mit über 700 Mitgliedern und habe Dojo Trust gebaut.",
+        "Ich übernehme dein komplettes Marketing, wie ein eigener Mitarbeiter: Website, eine Seite für jeden Kurs, Anzeigen bei Meta und Google, die Videos dafür und Dojo Trust dahinter, damit keine Anfrage liegen bleibt.",
+        "Jede Woche schauen wir zusammen auf deine Zahlen. Du stehst auf der Matte, den Rest mache ich.",
+        "Im Januar nehme ich zwei neue Schulen. Alles Weitere, auch die Preise, steht auf meiner Seite."
+      ]
+    },
+    {
+      "id": "ff-k2",
+      "group": "Archiv · schon gedreht",
+      "label": "FF Komplett 2/2 · Agentur bezahlt, nichts gewusst, ein Durchgang (2×) (gedreht 26.11., Anzeigen V1–V5b fertig)",
+      "target": 29,
+      "paragraphs": [
+        "Du hast schon mal eine Agentur bezahlt und wusstest am Ende nicht, wie viele Mitglieder dabei rausgekommen sind?",
+        "Ich bin Daniel, ich habe selbst eine Kampfsportschule. Bei mir zählt nicht der Klick und nicht die Anfrage. Ich messe bis zur Unterschrift.",
+        "Website, Kursseiten, Anzeigen und Dojo Trust kommen aus einer Hand. Und jede Woche siehst du schwarz auf weiß: so viel ausgegeben, so viele neue Mitglieder.",
+        "Im Januar nehme ich zwei neue Schulen, pro Gebiet nur eine. Ist deine Region noch frei? Unten auf den Link."
+      ]
+    },
+    {
+      "id": "w1a",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 1/8 · Hook A kalt: Januar, Matte (3×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 9,
+      "paragraphs": [
+        "Für alle mit Kampfsportschule: Im Januar wollen plötzlich alle anfangen.",
+        "Die Frage ist, wie viele davon bei dir auf der Matte landen."
+      ]
+    },
+    {
+      "id": "w1b",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 2/8 · Hook B kalt: in deinem Handy (3×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 6,
+      "paragraphs": [
+        "Viele Januar-Anfragen gehen nicht an die Schule nebenan verloren.",
+        "Sondern in deinem Handy."
+      ]
+    },
+    {
+      "id": "w1c",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 3/8 · Hook C kalt: nachts um elf (3×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 6,
+      "paragraphs": [
+        "Wenn du im Januar wieder nachts um elf WhatsApps beantwortest, hör kurz zu."
+      ]
+    },
+    {
+      "id": "w1d",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 4/8 · Hook D warm: kennt dich von Instagram (3×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 9,
+      "paragraphs": [
+        "Du kennst mich wahrscheinlich schon von Instagram.",
+        "Am 16. Dezember bin ich live.",
+        "Das ist der einzige Termin vor dem Januar."
+      ]
+    },
+    {
+      "id": "w1m",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 5/8 · Mittelteil + Schluss, in einem Durchgang (2×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 35,
+      "paragraphs": [
+        "Ich steh seit Jahren selbst auf der Matte und kenn den Januar.",
+        "Die Anfragen kommen über Instagram, WhatsApp, Telefon und Website.",
+        "Wer nicht am selben Tag eine Antwort kriegt, ist oft schon weg.",
+        "Und wer ein Probetraining bucht und danach nichts mehr hört, kommt oft gar nicht erst.",
+        "Am Mittwoch, 16. Dezember, zeig ich dir live, wie du das vor dem Januar sauber aufstellst.",
+        "Mit dem, was bei unseren Schulen heute schon läuft.",
+        "Live, kostenlos, eine Stunde. Klick auf „Mehr dazu“ und trag dich ein."
+      ]
+    },
+    {
+      "id": "w1mo",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 6/8 · Erinnerung: morgen bin ich live (2×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 8,
+      "paragraphs": [
+        "Morgen bin ich live.",
+        "Wenn du dich eingetragen hast: Wir sehen uns.",
+        "Wenn nicht: Der Link ist unten."
+      ]
+    },
+    {
+      "id": "w1he",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 7/8 · Erinnerung: heute bin ich live (2×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 7,
+      "paragraphs": [
+        "Heute bin ich live.",
+        "Wenn du noch überlegst: Der Link ist unten, es kostet nichts."
+      ]
+    },
+    {
+      "id": "w1k",
+      "group": "Archiv · schon gedreht",
+      "label": "Webinar 8/8 · Freiwillig: kurzer Mittelteil + Schluss (2×) (gedreht 19.11., Anzeigen laufen)",
+      "target": 13,
+      "paragraphs": [
+        "Die Januar-Anfragen kommen über Instagram, WhatsApp, Telefon und Website.",
+        "Wer nicht am selben Tag Antwort kriegt, ist weg.",
+        "Am 16. Dezember zeig ich dir live, wie du das vor dem Januar aufstellst.",
+        "Live, kostenlos, eine Stunde. Klick auf „Mehr dazu“ und trag dich ein."
       ]
     },
     {
