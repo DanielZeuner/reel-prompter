@@ -145,6 +145,8 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 .qrow button:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
 .note{font-size:12px;line-height:1.5;color:var(--muted)}
 .note.miss{color:var(--gold)}
+#revWarn{display:none;margin:0;padding:10px 12px;border-radius:10px;background:#5a1414;color:#fff;font-size:14px;font-weight:800;line-height:1.4}
+#revWarn.on{display:block}
 
 .btn{width:100%;padding:16px;border-radius:14px;border:1px solid var(--line);background:var(--surface);color:var(--text);font-size:15px;font-weight:700;cursor:pointer}
 .btn.primary{background:var(--gold);border-color:var(--gold);color:var(--ground)}
@@ -269,6 +271,7 @@ input[type=range]:focus-visible{outline:2px solid var(--gold);outline-offset:4px
 
 <div class="sheet" id="review">
   <h1>Aufnahme <span id="revLen"></span></h1>
+  <p id="revWarn"></p>
   <video id="revVid" playsinline controls></video>
   <button class="btn primary" id="revSave" type="button">Auf dem Handy sichern</button>
   <div class="pair">
@@ -620,8 +623,8 @@ function startCam(){
     /* Safari beendet den Strom beim Zurückblättern oder Wegschalten still.
        Diese Melder holen ihn zurück, ohne dass die Seite neu geladen werden muss. */
     st.getTracks().forEach(function(t){
-      t.addEventListener("ended",function(){setTimeout(ensureCam,120)});
-      t.addEventListener("mute",function(){setTimeout(ensureCam,400)});
+      t.addEventListener("ended",function(){if(t.kind==="audio"&&S.recording)micLost=true;setTimeout(ensureCam,120)});
+      t.addEventListener("mute",function(){if(t.kind==="audio"&&S.recording)micLost=true;setTimeout(ensureCam,400)});
     });
     readSettings(q);
     shoot.disabled=!canRecord();
@@ -638,7 +641,16 @@ function startCam(){
 function camAlive(){
   if(!stream)return false;
   var t=stream.getVideoTracks()[0];
-  return !!(t && t.readyState==="live" && !t.muted && src.videoWidth>0 && !src.paused);
+  return !!(t && t.readyState==="live" && !t.muted && src.videoWidth>0 && !src.paused && micAlive());
+}
+/* Ton prüfen, nicht nur das Bild: Ein Anruf, eine Sprachnachricht oder ein umgesteckter
+   Funkempfänger beendet das Mikrofon still, das Bild läuft weiter. Ohne diese Prüfung
+   entstehen Aufnahmen ganz ohne Tonspur (passiert am 28.11.2026: vier Takes ohne Ton). */
+var micLost=false;
+function micAlive(){
+  if(!stream)return false;
+  var a=stream.getAudioTracks()[0];
+  return !!(a && a.readyState==="live" && !a.muted && a.enabled);
 }
 function camDead(on){$("camdead").classList.toggle("on",!!on)}
 
@@ -650,6 +662,14 @@ function ensureCam(){
   if(stream&&stream.getVideoTracks()[0]&&stream.getVideoTracks()[0].readyState==="live"&&src.paused){
     src.play().then(function(){camDead(false)}).catch(function(){});
     return;
+  }
+  /* Bild läuft, nur der Ton fehlt: höchstens alle 10 s neu anfragen (während eines
+     Anrufs hält iOS das Mikro fest, sonst würde die Kamera alle 2 s flackern). */
+  var v=stream&&stream.getVideoTracks()[0];
+  if(v&&v.readyState==="live"&&!v.muted&&!src.paused&&!micAlive()){
+    if(Date.now()-camLast<10000)return;
+    toast("Mikrofon war weg, ich verbinde neu");
+    startCam();return;
   }
   if(Date.now()-camLast<1500){camDead(true);return}
   camDead(true);
@@ -716,6 +736,11 @@ function bitrate(){
 }
 function startRec(){
   if(!canRecord()){toast("Aufnahme hier nicht möglich");return}
+  if(!micAlive()){
+    toast("Kein Ton vom Mikrofon. Ich starte Kamera und Mikro neu, dann nochmal auf Aufnahme.");
+    startCam();return;
+  }
+  micLost=false;
   if(S.running||cd>0)stop();
   var cs, vbr;
   recRaw=!!S.raw;
@@ -800,6 +825,11 @@ function dropTake(){
   closeReview();return true;
 }
 
+function revWarn(on){
+  var w=$("revWarn");
+  w.textContent=on?"⚠ Diese Aufnahme hat keinen Ton. Bitte nochmal aufnehmen.":"";
+  w.classList.toggle("on",!!on);
+}
 function showReview(){
   saved=false;$("revDrop").textContent="Verwerfen";
   var sec=takeSec, mb=blob.size/1048576;
@@ -807,8 +837,11 @@ function showReview(){
   $("revLen").textContent="· "+fmtT(sec)+" · "+(recRaw?"Roh":W+"×"+H)+tail;
   var v=$("revVid");
   if(v.src)URL.revokeObjectURL(v.src);
+  revWarn(micLost);
   v.onloadedmetadata=function(){
     if(recRaw&&v.videoWidth)$("revLen").textContent="· "+fmtT(sec)+" · Roh "+v.videoWidth+"×"+v.videoHeight+tail;
+    /* Zweites Netz, egal warum: Safari zeigt, ob die Datei überhaupt eine Tonspur hat. */
+    if(v.audioTracks && v.audioTracks.length===0)revWarn(true);
   };
   v.src=URL.createObjectURL(blob);
   $("review").classList.add("on");
