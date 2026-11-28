@@ -623,8 +623,11 @@ function startCam(){
     /* Safari beendet den Strom beim Zurückblättern oder Wegschalten still.
        Diese Melder holen ihn zurück, ohne dass die Seite neu geladen werden muss. */
     st.getTracks().forEach(function(t){
-      t.addEventListener("ended",function(){if(t.kind==="audio"&&S.recording)micLost=true;setTimeout(ensureCam,120)});
-      t.addEventListener("mute",function(){if(t.kind==="audio"&&S.recording)micLost=true;setTimeout(ensureCam,400)});
+      t.addEventListener("ended",function(){if(t.kind==="audio"&&S.recording)micEnded=true;setTimeout(ensureCam,120)});
+      /* iOS schaltet das Mikro beim Aufnahmestart oft kurz stumm und gleich wieder an.
+         Das kostet keinen Ton — gezählt wird nur, was zusammen länger als 2 s stumm war. */
+      t.addEventListener("mute",function(){if(t.kind==="audio"&&S.recording&&!muteAt)muteAt=Date.now();setTimeout(ensureCam,400)});
+      t.addEventListener("unmute",function(){if(t.kind==="audio"&&muteAt){mutedMs+=Date.now()-muteAt;muteAt=0}});
     });
     readSettings(q);
     shoot.disabled=!canRecord();
@@ -646,7 +649,12 @@ function camAlive(){
 /* Ton prüfen, nicht nur das Bild: Ein Anruf, eine Sprachnachricht oder ein umgesteckter
    Funkempfänger beendet das Mikrofon still, das Bild läuft weiter. Ohne diese Prüfung
    entstehen Aufnahmen ganz ohne Tonspur (passiert am 28.11.2026: vier Takes ohne Ton). */
-var micLost=false;
+var micEnded=false, muteAt=0, mutedMs=0, micName="", revSeq=0;
+function micLostReason(){
+  if(micEnded)return "Das Mikrofon hat sich während der Aufnahme abgemeldet.";
+  if(mutedMs>2000)return "Das Mikrofon war "+Math.round(mutedMs/1000)+" s stumm.";
+  return "";
+}
 function micAlive(){
   if(!stream)return false;
   var a=stream.getAudioTracks()[0];
@@ -740,7 +748,8 @@ function startRec(){
     toast("Kein Ton vom Mikrofon. Ich starte Kamera und Mikro neu, dann nochmal auf Aufnahme.");
     startCam();return;
   }
-  micLost=false;
+  micEnded=false;muteAt=0;mutedMs=0;
+  micName=(stream.getAudioTracks()[0]||{}).label||"";
   if(S.running||cd>0)stop();
   var cs, vbr;
   recRaw=!!S.raw;
@@ -815,7 +824,8 @@ function offerLast(){
       b.style.display="";
       b.onclick=function(){
         if(S.recording){toast("Aufnahme läuft — erst stoppen");return}
-        blob=rec.blob;takeSec=rec.sec;takeName=rec.name;recRaw=rec.raw;showReview();
+        blob=rec.blob;takeSec=rec.sec;takeName=rec.name;recRaw=rec.raw;
+        micEnded=false;muteAt=0;mutedMs=0;micName="";showReview();
       };
     });
   });
@@ -825,10 +835,11 @@ function dropTake(){
   closeReview();return true;
 }
 
-function revWarn(on){
+/* Warnung mit Grund und Mikro-Name, damit man sieht, was los ist. Leerer Grund = keine Warnung. */
+function revWarn(why){
   var w=$("revWarn");
-  w.textContent=on?"⚠ Diese Aufnahme hat keinen Ton. Bitte nochmal aufnehmen.":"";
-  w.classList.toggle("on",!!on);
+  w.textContent=why?"⚠ Kein Ton? "+why+(micName?" (Mikro: "+micName+")":"")+" Kurz abspielen: Hörst du dich, ist alles gut.":"";
+  w.classList.toggle("on",!!why);
 }
 function showReview(){
   saved=false;$("revDrop").textContent="Verwerfen";
@@ -837,11 +848,19 @@ function showReview(){
   $("revLen").textContent="· "+fmtT(sec)+" · "+(recRaw?"Roh":W+"×"+H)+tail;
   var v=$("revVid");
   if(v.src)URL.revokeObjectURL(v.src);
-  revWarn(micLost);
+  if(muteAt){mutedMs+=Date.now()-muteAt;muteAt=0}
+  revWarn(micLostReason());
+  var seq=++revSeq;
   v.onloadedmetadata=function(){
     if(recRaw&&v.videoWidth)$("revLen").textContent="· "+fmtT(sec)+" · Roh "+v.videoWidth+"×"+v.videoHeight+tail;
-    /* Zweites Netz, egal warum: Safari zeigt, ob die Datei überhaupt eine Tonspur hat. */
-    if(v.audioTracks && v.audioTracks.length===0)revWarn(true);
+    /* Zweites Netz: Hat die Datei überhaupt eine Tonspur? Safari meldet Spuren teils erst
+       nach den Metadaten — deshalb 2 s warten, und eine nachgereichte Spur hebt die Warnung auf. */
+    var at=v.audioTracks;
+    if(!at)return;
+    at.onaddtrack=function(){if(seq===revSeq&&!micLostReason())revWarn("")};
+    setTimeout(function(){
+      if(seq===revSeq&&at.length===0)revWarn(micLostReason()||"Die Datei hat keine Tonspur.");
+    },2000);
   };
   v.src=URL.createObjectURL(blob);
   $("review").classList.add("on");
